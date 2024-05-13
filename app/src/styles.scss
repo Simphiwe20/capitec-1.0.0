@@ -1,0 +1,21 @@
+/*Importing default angular material css theme. */
+
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+
+// Sizes
+.full-height {
+    height: 100%;
+}
+.full-view-height {
+    height: 100vh;
+}
+.full-width {
+    width: 100%;
+}
+
+.standard-width {
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px
+}

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "sd_KdfrXK3HkKwA8POg",
+        "type": "tab",
+        "createdDate": "2024-05-13T10:52:20.593Z",
+        "label": "sign_up_stepper",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "sign_up_stepperComponent"
+    },
+    {
+        "id": "sd_a8GhK6xkrCFyDWyz",
+        "type": "OnInit",
+        "z": "sd_KdfrXK3HkKwA8POg",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_a8GhK6xkrCFyDWyz",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_lSkHuVIYFje4JIbK"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "sign_up_stepperComponent"
+    },
+    {
+        "id": "sd_lSkHuVIYFje4JIbK",
+        "type": "PageVariables",
+        "z": "sd_KdfrXK3HkKwA8POg",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_lSkHuVIYFje4JIbK",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "sign_up_stepperComponent",
+        "generated": true
+    }
+]

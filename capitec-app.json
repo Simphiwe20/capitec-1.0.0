@@ -1,0 +1,14 @@
+{
+    "displayName": "capitec-app",
+    "appName": "capitec-app",
+    "description": "This a capitec app replica",
+    "lastModified": "2024-05-07T18:25:02.454Z",
+    "imgSourcePath": "appIcon-1715106302434.png",
+    "version": "1.0.0",
+    "appType": "uiOnly",
+    "templateName": "blank",
+    "createDate": "2024-05-07T18:22:19.766Z",
+    "analyticsId": "d92bf060-b979-e204-3f81-3d359d95037b",
+    "createdStudioVersion": "9.2.1",
+    "isCorrupt": false
+}
