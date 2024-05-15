@@ -11,13 +11,13 @@ import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'
 //append_imports_end
 
 @Component({
-  selector: 'bh-saving_account',
-  templateUrl: './saving_account.template.html',
+  selector: 'bh-enter_remote_pin',
+  templateUrl: './enter_remote_pin.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class saving_accountComponent {
+export class enter_remote_pinComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -35,7 +35,7 @@ export class saving_accountComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_9utjFzd17ucYPa7E(bh);
+      this.sd_GVZg6w9VepytUF1W(bh);
     }
   }
 
@@ -47,24 +47,24 @@ export class saving_accountComponent {
     //append_listeners
   }
 
-  sd_9utjFzd17ucYPa7E(bh) {
+  sd_GVZg6w9VepytUF1W(bh) {
     try {
-      bh = this.sd_OxfpvBF66qJL4jyU(bh);
-      //appendnew_next_sd_9utjFzd17ucYPa7E
+      bh = this.sd_0DIXIfWJfLbYXWiD(bh);
+      //appendnew_next_sd_GVZg6w9VepytUF1W
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_9utjFzd17ucYPa7E');
+      return this.errorHandler(bh, e, 'sd_GVZg6w9VepytUF1W');
     }
   }
 
-  //appendnew_flow_saving_accountComponent_start
+  //appendnew_flow_enter_remote_pinComponent_start
 
-  sd_OxfpvBF66qJL4jyU(bh) {
+  sd_0DIXIfWJfLbYXWiD(bh) {
     try {
-      //appendnew_next_sd_OxfpvBF66qJL4jyU
+      //appendnew_next_sd_0DIXIfWJfLbYXWiD
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_OxfpvBF66qJL4jyU');
+      return this.errorHandler(bh, e, 'sd_0DIXIfWJfLbYXWiD');
     }
   }
 
@@ -84,5 +84,5 @@ export class saving_accountComponent {
     bh.errorSource = src;
     throw e;
   }
-  //appendnew_flow_saving_accountComponent_Catch
+  //appendnew_flow_enter_remote_pinComponent_Catch
 }
