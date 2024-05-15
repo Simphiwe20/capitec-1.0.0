@@ -1,1 +1,38 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" class="standard-width" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="column wrap" style="height:60px; border-bottom: 4px solid steelblue;" class="blue-bg" fxLayoutAlign="end end" [fxShow]="true">
+    <p class="white">
+      <b class="p-right-10">Cancel</b>
+    </p>
+  </div>
+  <div fxLayout="column wrap" style="height:85px;" class="blue-bg" fxLayoutAlign="start stretch" [fxShow]="true">
+    <p class="m-b-8 white text-center">
+      <b>Create Remote App PIN</b>
+    </p>
+    <p class="no-margin white text-center">
+      To access the capitec Banking app (5 - 6 digits)</p>
+  </div>
+  <div fxLayout="column wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true">
+    <form style="gap:1em;" class="padding-6">
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput type="password" placeholder="Create Remote App PIN" [required]="false">
+            <mat-icon matSuffix>visibility_off</mat-icon>
+          </mat-form-field>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput type="password" placeholder="Confirm Remote App PIN" [required]="false">
+            <mat-icon matSuffix>visibility_off</mat-icon>
+          </mat-form-field>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <p style="margin-bottom:10px;" class="m-t-0 padding-left">
+            <small>Your Remote app PIN is not your card PIN</small>
+          </p>
+        </div>
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="blue-bg white padding-10">Create</button></div>
+    </form>
+  </div>
+</div>

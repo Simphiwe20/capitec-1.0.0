@@ -3,6 +3,7 @@
 //CORE_REFERENCE_IMPORTS
 //append_imports_start
 
+import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper'; //_splitter_
 import { Component, Injector } from '@angular/core'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
@@ -13,6 +14,10 @@ import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'
   selector: 'bh-sign_in_stepper',
   templateUrl: './sign_in_stepper.template.html',
   providers: [
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: { showError: true, displayDefaultIndicatorType: false },
+    },
     //appendnew_element_providers
   ],
 })
