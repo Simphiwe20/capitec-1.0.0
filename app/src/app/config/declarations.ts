@@ -16,6 +16,10 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-unable_to_captureComponent
+import { unable_to_captureComponent } from '../components/shared/unable_to_capture.component';
+//CORE_REFERENCE_IMPORT-confirm_picComponent
+import { confirm_picComponent } from '../components/shared/confirm_pic.component';
 //CORE_REFERENCE_IMPORT-footer_homeComponent
 import { footer_homeComponent } from '../components/home/footer_home.component';
 //CORE_REFERENCE_IMPORT-homeComponent
@@ -44,8 +48,6 @@ import { create_remote_pinComponent } from '../components/auth/sign_in/create_re
 import { confirm_app_activationComponent } from '../components/auth/sign_in/confirm_app_activation.component';
 //CORE_REFERENCE_IMPORT-activation_instructionsComponent
 import { activation_instructionsComponent } from '../components/auth/sign_in/activation_instructions.component';
-//CORE_REFERENCE_IMPORT-facial_recognitionComponent
-import { facial_recognitionComponent } from '../components/shared/facial_recognition.component';
 //CORE_REFERENCE_IMPORT-take_picComponent
 import { take_picComponent } from '../components/shared/take_pic.component';
 //CORE_REFERENCE_IMPORT-ft_landingComponent
@@ -118,6 +120,10 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-unable_to_captureComponent
+  unable_to_captureComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-confirm_picComponent
+  confirm_picComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-footer_homeComponent
   footer_homeComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-homeComponent
@@ -146,8 +152,6 @@ export const appDeclarations = [
   confirm_app_activationComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-activation_instructionsComponent
   activation_instructionsComponent,
-  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-facial_recognitionComponent
-  facial_recognitionComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-take_picComponent
   take_picComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-ft_landingComponent
@@ -213,7 +217,10 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: 'confirm_pic', component: confirm_picComponent },
+  { path: 'take-selfie', component: take_picComponent },
+  { path: 'unable_to_capture', component: unable_to_captureComponent },
+  { path: '', redirectTo: '/test', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

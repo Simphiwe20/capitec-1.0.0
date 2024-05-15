@@ -1,0 +1,18 @@
+<div fxLayout="column wrap" class="full-height" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="column wrap" class="full-height standard-width" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" class="full-height full-width" fxLayoutGap="0.5em" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="column wrap" class="full-width padding-20px blue-bg height-60px" fxLayoutAlign="center end" [fxShow]="true">
+        <p class="white no-margin">
+          Cancel</p>
+      </div>
+      <div fxLayout="column wrap" class="middle-height" fxLayoutAlign="start stretch" [fxShow]="true"><img [src]="page.capturedImage" class="full-width full-height"></div>
+      <div fxLayout="column wrap" class="full-width height-60px" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="row wrap" fxLayoutGap="1.5em" fxLayoutAlign="center stretch" [fxShow]="true">
+          <div fxLayout="column wrap" fxFlex="45" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button routerLink="/take-selfie" class="border-blue blue-color">Retake</button></div>
+          <div fxLayout="column wrap" fxFlex="45" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="white blue-bg">Continue</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row wrap" class="standard-width" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+</div>
