@@ -9,6 +9,7 @@ $white: #ffffff;
 $ghostwhite: #f5f5f5;
 $blackish : #2d2d2d; 
 $navy-blue: #00486d;
+$blue-ish: #0299ac;
 
 body{
     margin: 0 ;
@@ -29,9 +30,9 @@ body{
 }
 
 .standard-width {
-    width: 100%;
-    min-width: 300px;
-    max-width: 600px
+    width: 100% !important;
+    min-width: 300px !important;
+    max-width: 600px !important;
 }
 
 
@@ -176,4 +177,20 @@ body{
 
 .mat-horizontal-content-container {
     padding: 0 !important;
+}
+
+.mat-checkbox-inner-container {
+    height: 27px !important;
+    width: 27px !important;
+}
+.update-permanent-limits    {
+    .mat-form-field-infix {
+    border-top: 0 !important;
+}
+}
+
+
+input.mat-input-element {
+    font-weight: 700;
+    font-size: larger;
 }
