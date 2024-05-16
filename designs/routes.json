@@ -13,8 +13,60 @@
             "component": "unable_to_captureComponent"
         },
         {
+            "path": "savings-account",
+            "component": "saving_accountComponent"
+        },
+        {
+            "path": "remote-app-pin",
+            "component": "remote_app_pinComponent"
+        },
+        {
+            "path": "feedback",
+            "component": "feedbackComponent"
+        },
+        {
+            "path": "activate-new-app",
+            "component": "confirm_app_activationComponent"
+        },
+        {
+            "path": "activation-instructions",
+            "component": "activation_instructionsComponent"
+        },
+        {
+            "path": "create-remote-pin",
+            "component": "create_remote_pinComponent"
+        },
+        {
+            "path": "enter-remote-pin",
+            "component": "enter_remote_pinComponent"
+        },
+        {
+            "path": "sign-in-stepper",
+            "component": "sign_in_stepperComponent"
+        },
+        {
+            "path": "cards",
+            "component": "cardsComponent"
+        },
+        {
+            "path": "tap-to-pay",
+            "component": "tap_to_payComponent"
+        },
+        {
+            "path": "stop-card",
+            "component": "stop_cardComponent"
+        },
+        {
+            "path": "set-temporary-limits",
+            "component": "set_temporary_limitsComponent"
+        },
+        {
+            "path": "update-permanent-limits",
+            "component": "update_permanent_limitsComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "/test",
+            "redirectTo": "/savings-account",
             "pathMatch": "full",
             "default": true
         },
