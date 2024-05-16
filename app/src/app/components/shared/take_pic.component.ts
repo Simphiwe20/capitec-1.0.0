@@ -156,6 +156,21 @@ export class take_picComponent implements AfterViewInit {
       return this.errorHandler(bh, e, 'sd_32EsT2sQhBnYG5Rb');
     }
   }
+
+  stopCamera(...others) {
+    let bh: any = {};
+    try {
+      bh = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+      bh = this.sd_AKDWkBiepZwaaYrh(bh);
+      //appendnew_next_stopCamera
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_E9lmG3PdUQmRNlLw');
+    }
+  }
   //appendnew_flow_take_picComponent_start
 
   sd_y4FhvWW38E7URPcN(bh) {
@@ -346,14 +361,14 @@ export class take_picComponent implements AfterViewInit {
         //   page.detection,
         //   page.displaySize
         // );
-        if (page.detection.length) page.isDetected = !page.isDetected;
+        if (!page.detection.length) return;
         console.log(page.detection);
         this.compareFaces();
         // page.canvas.getContext('2d').clearRect(0, 0, page.canvas.width, page.canvas.height);
         // faceapi.draw.drawDetections(page.canvas, page.resizedDetections);
         // faceapi.draw.drawFaceLandmarks(page.canvas, page.resizedDetections);
         // faceapi.draw.drawFaceExpressions(page.canvas, page.resizedDetections);
-      }, 100);
+      }, 1500);
 
       console.log('Inside the face detect:', page.intervalID);
       bh = this.sd_Sda6NtePn0DKCPTN(bh);
@@ -463,20 +478,27 @@ export class take_picComponent implements AfterViewInit {
           detection.descriptor,
           bh.local.singleDetect.descriptor
         );
+        console.log(
+          `descriptor: ${page.desctriptorDistance} and similiarity: ${page.similiarityNu}`
+        );
         if (page.desctriptorDistance <= page.similiarityNu) {
           page.isCorrect = !page.isCorrect;
           label = 'Simphiwe';
           console.log('You are Simphiwe');
           this.captureImage();
+          // clearInterval(page.intervalID)
           return new faceapi.LabeledFaceDescriptors(
             label,
             bh.local.detectionDescriptor
           );
         } else {
+          // clearInterval(page.intervalID)
+          this.stopCamera();
           page.isCorrect = false;
           label = 'Not Simphiwe';
           console.log('You are not Simphiwe');
-          page.router.navigation(['/unable_to_capture']);
+          // console.log(page.router)
+          page.router.navigate(['/unable_to_capture']);
           return new faceapi.LabeledFaceDescriptors(
             'You are not Simphiwe',
             bh.local.detectionDescriptor
@@ -543,7 +565,7 @@ export class take_picComponent implements AfterViewInit {
       bh.data = { data: page.capturedImage };
       console.log(page.capturedImage);
       // page.router.navigate(['/test'], {queryParams: {image: page.capturedImage}})
-      bh = this.sd_AbgviUGdZjNQ9tHM(bh);
+      bh = this.sd_XP7VTJacOBSaxYFa(bh);
       //appendnew_next_sd_GyyDI8yMgC72VzdC
       return bh;
     } catch (e) {
@@ -551,26 +573,15 @@ export class take_picComponent implements AfterViewInit {
     }
   }
 
-  sd_AbgviUGdZjNQ9tHM(bh) {
+  sd_XP7VTJacOBSaxYFa(bh) {
     try {
-      const page = this.page;
-      let video = bh.pageViews.video.nativeElement;
-      // Get streams
-      let streams = video.srcObject;
-      // Get all tracks
-      let tracks = streams.getTracks();
-      // Closing each track
-      tracks.forEach((track) => {
-        track.stop();
-      });
-      console.log('Interval ID: ', page.intervalID);
-      clearInterval(page.intervalID);
+      let outputVariables = this.stopCamera();
 
       bh = this.sd_Rtr284XTllf0kkPT(bh);
-      //appendnew_next_sd_AbgviUGdZjNQ9tHM
+      //appendnew_next_sd_XP7VTJacOBSaxYFa
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_AbgviUGdZjNQ9tHM');
+      return this.errorHandler(bh, e, 'sd_XP7VTJacOBSaxYFa');
     }
   }
 
@@ -587,6 +598,42 @@ export class take_picComponent implements AfterViewInit {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_Rtr284XTllf0kkPT');
+    }
+  }
+
+  sd_AKDWkBiepZwaaYrh(bh) {
+    try {
+      bh.pageViews = Object.assign(bh.pageViews || {}, {
+        canva: this.canva,
+        video: this.video,
+      });
+      bh = this.sd_S3QC4fywTtBugn1k(bh);
+      //appendnew_next_sd_AKDWkBiepZwaaYrh
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_AKDWkBiepZwaaYrh');
+    }
+  }
+
+  sd_S3QC4fywTtBugn1k(bh) {
+    try {
+      const page = this.page;
+      let video = bh.pageViews.video.nativeElement;
+      // Get streams
+      let streams = video.srcObject;
+      // Get all tracks
+      let tracks = streams.getTracks();
+      // Closing each track
+      tracks.forEach((track) => {
+        track.stop();
+      });
+      console.log('Interval ID: ', page.intervalID);
+      clearInterval(page.intervalID);
+
+      //appendnew_next_sd_S3QC4fywTtBugn1k
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_S3QC4fywTtBugn1k');
     }
   }
 

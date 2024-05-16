@@ -20,6 +20,16 @@ window['neutrinos'] = {
 import { unable_to_captureComponent } from '../components/shared/unable_to_capture.component';
 //CORE_REFERENCE_IMPORT-confirm_picComponent
 import { confirm_picComponent } from '../components/shared/confirm_pic.component';
+//CORE_REFERENCE_IMPORT-update_permanent_limitsComponent
+import { update_permanent_limitsComponent } from '../components/cards/update_permanent_limits.component';
+//CORE_REFERENCE_IMPORT-set_temporary_limitsComponent
+import { set_temporary_limitsComponent } from '../components/cards/set_temporary_limits.component';
+//CORE_REFERENCE_IMPORT-stop_cardComponent
+import { stop_cardComponent } from '../components/cards/stop_card.component';
+//CORE_REFERENCE_IMPORT-tap_to_payComponent
+import { tap_to_payComponent } from '../components/cards/tap_to_pay.component';
+//CORE_REFERENCE_IMPORT-enter_remote_pinComponent
+import { enter_remote_pinComponent } from '../components/auth/sign_in/enter_remote_pin.component';
 //CORE_REFERENCE_IMPORT-footer_homeComponent
 import { footer_homeComponent } from '../components/home/footer_home.component';
 //CORE_REFERENCE_IMPORT-homeComponent
@@ -124,6 +134,16 @@ export const appDeclarations = [
   unable_to_captureComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-confirm_picComponent
   confirm_picComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-update_permanent_limitsComponent
+  update_permanent_limitsComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-set_temporary_limitsComponent
+  set_temporary_limitsComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-stop_cardComponent
+  stop_cardComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-tap_to_payComponent
+  tap_to_payComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-enter_remote_pinComponent
+  enter_remote_pinComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-footer_homeComponent
   footer_homeComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-homeComponent
@@ -217,10 +237,23 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
+  { path: '', redirectTo: '/test', pathMatch: 'full' },
   { path: 'confirm_pic', component: confirm_picComponent },
   { path: 'take-selfie', component: take_picComponent },
   { path: 'unable_to_capture', component: unable_to_captureComponent },
-  { path: '', redirectTo: '/test', pathMatch: 'full' },
+  { path: 'savings-account', component: saving_accountComponent },
+  { path: 'remote-app-pin', component: remote_app_pinComponent },
+  { path: 'feedback', component: feedbackComponent },
+  { path: 'activate-new-app', component: confirm_app_activationComponent },
+  { path: 'activation-instructions',component: activation_instructionsComponent },
+  { path: 'create-remote-pin', component: create_remote_pinComponent },
+  { path: 'enter-remote-pin', component: enter_remote_pinComponent },
+  { path: 'sign-in-stepper', component: sign_in_stepperComponent },
+  { path: 'cards', component: cardsComponent },
+  { path: 'tap-to-pay', component: tap_to_payComponent },
+  { path: 'stop-card', component: stop_cardComponent },
+  { path: 'set-temporary-limits', component: set_temporary_limitsComponent },
+  {path: 'update-permanent-limits', component: update_permanent_limitsComponent},
   { path: '**', component: PageNotFoundComponent },
 ];
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

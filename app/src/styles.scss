@@ -4,6 +4,8 @@
 @import "nDefaults.scss";
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 // html, body { height: 100%; }
 // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -13,9 +15,12 @@ $cyan-blue: #00385e;
 $white: #fff;
 $blue: #0f9ddf;
 $white: #ffffff;
-$ghostwhite: #f6f4f5;
+// $ghostwhite: #f6f4f5;
 $blackish : #2d2d2d; 
 $navy-blue: #00486d;
+$ghostwhite: #f5f5f5;
+$blackish : #2d2d2d; 
+// $navy-blue: #00486d;
 
 
 body {
@@ -41,6 +46,13 @@ video {
     height: 401px;
     border-radius: 50%;
 }
+
+// body{
+//     margin: 0 ;
+//     background-color: #f5f5f5;
+//     color:#2d2d2d;
+//     font-family: "Roboto", sans-serif;
+// }
 
 // Sizes
 .full-height {
@@ -190,6 +202,25 @@ body{
 }
 
 // Position
+
+//Margins
+.no-margin {
+    margin: 0;
+}
+
+.m-b-0 {
+    margin-bottom: 0;
+}
+
+.m-b-8 {
+    margin-bottom: 8px;
+}
+
+.m-t-0 {
+    margin-top: 0;
+}
+
+//Positions
 .text-center {
     text-align: center;
 }
@@ -236,6 +267,45 @@ body{
 
 .mat-mdc-form-field-infix {
     width: 143px !important;
+
+}
+//Paddings
+.padding-6 {
+    padding: 6px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-left {
+    padding-left: 10px;
+}
+
+.p-right-10 {
+    padding-right: 10px;
+}
+
+//Material Changes
+.mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon{
+    color: $blue;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: transparent;
+}
+
+.mat-raised-button {
+    height: 45px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-flex {
+    padding: 0 .75em 0 .75em;
+    margin-top: 0; 
+    position: relative;
+    border: 2px solid lightgrey;
+    background-color: $white;
+    border-top: none;
 }
 
 .mat-mdc-button:not(:disabled) {
@@ -254,6 +324,10 @@ body{
     color: transparent !important;
 }
 
+.mat-step-header {
+    padding-bottom: 0;
+}
+
 .mat-step-icon {
     color: transparent !important;
     background-color: #00486d !important;
@@ -261,6 +335,7 @@ body{
 
 .mat-step-icon .mat-step-icon-state-number .mat-step-icon-selected{
 background-color: #00486d !important;
+    background-color: #00486d !important;
 }
 
 .mat-stepper-vertical-line::before {
@@ -287,4 +362,21 @@ background-color: #00486d !important;
     .title {
         width: 100%;
     }
+}
+
+.mat-form-field-underline {
+    width: 0% !important;
+    transform: none !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: transparent !important;
+}
+.mat-form-field-underline {
+   width: 0% !important;
+    transform: none !important;
+}
+
+.mat-horizontal-content-container {
+    padding: 0 !important;
 }

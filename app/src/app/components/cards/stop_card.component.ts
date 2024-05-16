@@ -11,13 +11,13 @@ import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'
 //append_imports_end
 
 @Component({
-  selector: 'bh-saving_account',
-  templateUrl: './saving_account.template.html',
+  selector: 'bh-stop_card',
+  templateUrl: './stop_card.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class saving_accountComponent {
+export class stop_cardComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -35,7 +35,7 @@ export class saving_accountComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_9utjFzd17ucYPa7E(bh);
+      this.sd_15IjQ90AdZT67XFt(bh);
     }
   }
 
@@ -47,24 +47,24 @@ export class saving_accountComponent {
     //append_listeners
   }
 
-  sd_9utjFzd17ucYPa7E(bh) {
+  sd_15IjQ90AdZT67XFt(bh) {
     try {
-      bh = this.sd_OxfpvBF66qJL4jyU(bh);
-      //appendnew_next_sd_9utjFzd17ucYPa7E
+      bh = this.sd_uSbuwVdEHjoq9m9i(bh);
+      //appendnew_next_sd_15IjQ90AdZT67XFt
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_9utjFzd17ucYPa7E');
+      return this.errorHandler(bh, e, 'sd_15IjQ90AdZT67XFt');
     }
   }
 
-  //appendnew_flow_saving_accountComponent_start
+  //appendnew_flow_stop_cardComponent_start
 
-  sd_OxfpvBF66qJL4jyU(bh) {
+  sd_uSbuwVdEHjoq9m9i(bh) {
     try {
-      //appendnew_next_sd_OxfpvBF66qJL4jyU
+      //appendnew_next_sd_uSbuwVdEHjoq9m9i
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_OxfpvBF66qJL4jyU');
+      return this.errorHandler(bh, e, 'sd_uSbuwVdEHjoq9m9i');
     }
   }
 
@@ -84,5 +84,5 @@ export class saving_accountComponent {
     bh.errorSource = src;
     throw e;
   }
-  //appendnew_flow_saving_accountComponent_Catch
+  //appendnew_flow_stop_cardComponent_Catch
 }

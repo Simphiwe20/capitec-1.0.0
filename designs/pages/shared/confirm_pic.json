@@ -1,0 +1,165 @@
+[
+    {
+        "id": "sd_zj6zTuw810wiItsr",
+        "type": "tab",
+        "createdDate": "2024-05-13T10:55:11.694Z",
+        "label": "confirm_pic",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "confirm_picComponent"
+    },
+    {
+        "id": "sd_bYTRyaOwIR2Vf6Wb",
+        "type": "OnInit",
+        "z": "sd_zj6zTuw810wiItsr",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_bYTRyaOwIR2Vf6Wb",
+        "category": "Lifecycle Events",
+        "x": 25,
+        "y": 40,
+        "wires": [
+            [
+                "sd_f5M7f0i1GQp4Sdw6"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "confirm_picComponent"
+    },
+    {
+        "id": "sd_uZ7bm8ChFogAfddq",
+        "type": "PageVariables",
+        "z": "sd_zj6zTuw810wiItsr",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "capturedImage",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_uZ7bm8ChFogAfddq",
+        "category": "Function",
+        "x": 245,
+        "y": 40,
+        "wires": [
+            [
+                "sd_i5yMde6qQ3VkFHDt"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "confirm_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_f5M7f0i1GQp4Sdw6",
+        "type": "UseDependency",
+        "z": "sd_zj6zTuw810wiItsr",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "ActivatedRoute",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "routes"
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/router",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_f5M7f0i1GQp4Sdw6",
+        "category": "Function",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "sd_uZ7bm8ChFogAfddq"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "confirm_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_jsOnwtlnYKniVsCn",
+        "type": "Script",
+        "z": "sd_zj6zTuw810wiItsr",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.capturedImage = page.capturedImage['data']\n",
+        "functionName": "sd_jsOnwtlnYKniVsCn",
+        "category": "Function",
+        "x": 465,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "confirm_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_i5yMde6qQ3VkFHDt",
+        "type": "NavigationData",
+        "z": "sd_zj6zTuw810wiItsr",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "tmpOp": "",
+        "tmpOpType": "",
+        "operationType": "queryParams",
+        "operation": "keys",
+        "key": "bh",
+        "resultMapping": "this.page.capturedImage",
+        "functionName": "sd_i5yMde6qQ3VkFHDt",
+        "category": "Navigation",
+        "x": 345,
+        "y": 40,
+        "wires": [
+            [
+                "sd_jsOnwtlnYKniVsCn"
+            ]
+        ],
+        "__ssdTypeInputs__": {
+            "key": {
+                "type": "bh",
+                "value": "",
+                "constant": false
+            },
+            "resultMapping": {
+                "type": "this.page",
+                "value": "capturedImage",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "confirm_picComponent",
+        "generated": true
+    }
+]

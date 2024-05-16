@@ -1,9 +1,22 @@
 {
     "routes": [
         {
+            "path": "confirm_pic",
+            "component": "confirm_picComponent"
+        },
+        {
+            "path": "take-selfie",
+            "component": "take_picComponent"
+        },
+        {
+            "path": "unable_to_capture",
+            "component": "unable_to_captureComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "",
-            "pathMatch": "full"
+            "redirectTo": "/test",
+            "pathMatch": "full",
+            "default": true
         },
         {
             "path": "**",
