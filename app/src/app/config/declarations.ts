@@ -213,7 +213,16 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: 'ftlanding', component: ft_landingComponent },
+  {
+    path: 'activation-instruction',
+    component: activation_instructionsComponent,
+  },
+  { path: 'instruction', component: instructionsComponent },
+  { path: 'identity', component: verify_identityComponent },
+  { path: 'home', component: homeComponent },
+  { path: 'footer', component: footer_homeComponent },
+  { path: '', redirectTo: 'ftlanding', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

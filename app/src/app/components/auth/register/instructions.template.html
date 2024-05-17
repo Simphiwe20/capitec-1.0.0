@@ -1,1 +1,22 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" class="instructions standard-width" fxLayoutAlign="start stretch" [fxShow]="true" fxFill>
+  <div fxLayout="column wrap" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-toolbar color="warn" class="blue border-b toolbar"><mat-icon>arrow_back</mat-icon>
+          <p>
+            Open a savings account</p>
+        </mat-toolbar></div>
+      <div fxLayout="column wrap" style=" height: 418px;" class="white-bg height-418px" fxLayoutAlign="center center" [fxShow]="true">
+        <div fxLayout="column wrap" class="width-90" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/image/id-pic.png"></div>
+        <div fxLayout="column wrap" class="text-center width-90" fxLayoutAlign="start stretch" [fxShow]="true">
+          <p class="text-center">
+            You need to be 16 years or older and have a valid SA ID <br> to open an account.</p>
+          <p class="text-center">
+            In the next steps we will verft your identity with the <br> Department of Home Affairs.</p>
+        </div>
+      </div>
+      <div fxLayout="column wrap" fxLayoutGap="1EM" fxLayoutAlign="center center" [fxShow]="true"><button mat-raised-button routerLink="/identity" class="btn-bl width-90">Start</button>
+        <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true"><img imgSrc="/Web/image/homeAffairs.png" width="80%"></div>
+      </div>
+    </div>
+  </div>
+</div>

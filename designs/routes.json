@@ -1,9 +1,34 @@
 {
     "routes": [
         {
+            "path": "ftlanding",
+            "component": "ft_landingComponent"
+        },
+        {
+            "path": "activation-instruction",
+            "component": "activation_instructionsComponent"
+        },
+        {
+            "component": "instructionsComponent",
+            "path": "instruction"
+        },
+        {
+            "path": "identity",
+            "component": "verify_identityComponent"
+        },
+        {
+            "path": "home",
+            "component": "homeComponent"
+        },
+        {
+            "path": "footer",
+            "component": "footer_homeComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "",
-            "pathMatch": "full"
+            "redirectTo": "ftlanding",
+            "pathMatch": "full",
+            "default": true
         },
         {
             "path": "**",

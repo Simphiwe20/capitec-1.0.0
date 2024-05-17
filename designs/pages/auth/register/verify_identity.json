@@ -19,11 +19,11 @@
         "name": "",
         "functionName": "sd_lZDyEpfnThvl8PcC",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 25,
+        "y": 40,
         "wires": [
             [
-                "sd_Nts7LXLNkF4cXfIp"
+                "sd_ovlJrf4RFzxVqSXu"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -40,11 +40,135 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "registerForm",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "[[]]"
+                }
+            },
+            {
+                "textIp": "fileElement",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "fileElement1",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            }
+        ],
         "functionName": "sd_Nts7LXLNkF4cXfIp",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 285,
+        "y": 40,
+        "wires": [
+            [
+                "sd_lzR62Q4QLHBX9c5F"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ovlJrf4RFzxVqSXu",
+        "type": "UseDependency",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "FormGroup",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "registerForm"
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "FormControl",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "Validators",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/forms",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_ovlJrf4RFzxVqSXu",
+        "category": "Function",
+        "x": 160,
+        "y": 40,
+        "wires": [
+            [
+                "sd_Nts7LXLNkF4cXfIp"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_upq3ammtCsx9w18p",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "submit_form",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "submitForm",
+        "category": "General",
+        "x": 45,
+        "y": 480,
+        "wires": [
+            [
+                "sd_zmJxJSdl2zewMabG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_lzR62Q4QLHBX9c5F",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.registerForm =new FormGroup({\n      fullName :new FormControl('' , Validators.required),\n       ID :new FormControl('', [Validators.required, Validators.pattern(/^\\d{13}$/), Validators.max(13)]),\n       contact :new FormControl('' ,Validators.required) ,\n       email:new FormControl('' ,[Validators.required, Validators.pattern(/^[^\\s@]+@([^\\s@.,]+\\.)+[^\\s@.,]{2,}$/)]),\n       pin :new FormControl('',[ Validators.required,Validators.minLength(5), Validators.maxLength(5)]),\n       PasswordConfirm :new FormControl('' ,Validators.required),\n       balance:new FormControl(50),\n       accountNumber :new FormControl(null),\n       status:new FormControl(\"pending\")\n    })\n   ",
+        "functionName": "sd_lzR62Q4QLHBX9c5F",
+        "category": "Function",
+        "x": 385,
+        "y": 40,
         "wires": [
             []
         ],
@@ -52,5 +176,176 @@
         "generateNext": false,
         "serviceName": "verify_identityComponent",
         "generated": true
+    },
+    {
+        "id": "sd_zmJxJSdl2zewMabG",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "console",
+        "script": " console.log('fullname' , page.registerForm.value)",
+        "functionName": "console",
+        "category": "Function",
+        "x": 225,
+        "y": 480,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_7bo8mH5cnWlMA1CP",
+        "type": "AfterViewInit",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "After View Init",
+        "functionName": "ngAfterViewInit",
+        "category": "Lifecycle Events",
+        "x": 45,
+        "y": 140,
+        "wires": [
+            [
+                "sd_jfe0bdfgpN36Rsnp"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_jfe0bdfgpN36Rsnp",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": " page.fileElement = document.getElementById('file');\npage.fileElement1 = document.getElementById('file1');",
+        "functionName": "sd_jfe0bdfgpN36Rsnp",
+        "category": "Function",
+        "x": 225,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_OXjrVlhLaDux3k28",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "onInputChange",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "event",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "onInputChange",
+        "category": "General",
+        "x": 45,
+        "y": 240,
+        "wires": [
+            [
+                "sd_4K8i3KHHjhBnVO93"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_4K8i3KHHjhBnVO93",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": " // Get the input value from the event\n  let  inputText\n    let inputValue: string =bh.input.event.target.value;\n    // Replace all characters except digits using a regular expression\n    inputValue = inputValue.replace(/[^\\d]/g, '');\n    // Update the input field value with the modified value\n    bh.input.event.target.value = inputValue;\n    // Update the inputText property with the modified value\n    inputText = inputValue;",
+        "functionName": "sd_4K8i3KHHjhBnVO93",
+        "category": "Function",
+        "x": 225,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_4NgGlP9VLuMUKg8f",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "fileUpload",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "event",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "n",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "fileUpload",
+        "category": "General",
+        "x": 45,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_g734ED0TcU933Is5",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": " ",
+        "script": "// page.uploadedfiles: File[][] = []\nconst files: FileList = event.target.files;\n    console.log(files)\n    const fileArray: File[] = [];\n    for (let i = 0; i < files.length; i++) {\n      fileArray.push(files[i]);\n    }\n    page.uploadedfiles[n] = fileArray;;",
+        "functionName": "sd_g734ED0TcU933Is5",
+        "category": "Function",
+        "x": 220,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
     }
 ]

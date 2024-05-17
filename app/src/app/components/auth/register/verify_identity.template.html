@@ -1,1 +1,57 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" class="verify_identity standard-width" fxLayoutAlign="start stretch" [fxShow]="true" fxFill>
+  <div fxLayout="column wrap" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-toolbar color="warn" class="blue border-b toolbar"><mat-icon routerLink="/instructions">arrow_back</mat-icon>
+        <p class="text-center">
+          step 1 </p>
+      </mat-toolbar><mat-toolbar color="warn" class="text-center blue toolbar">
+        <div fxLayout="column wrap" class="full-width text-center" fxLayoutAlign="center center" [fxShow]="true">
+          <p>
+            Verify your identity</p>
+        </div>
+      </mat-toolbar></div>
+    <div fxLayout="column wrap" class="white-bg text-center" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/image/id-pic.png">
+      <p>
+        Firstly , we&apos;ll check that it&apos;s really you.</p>
+    </div>
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+      <form [formGroup]="page.registerForm" class="form full-width">
+        <mat-form-field class="full-width" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput placeholder="full Name" [required]="true" formControlName="fullName">
+
+        </mat-form-field>
+        <mat-form-field class="full-width" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput placeholder="ID Number" [required]="true" formControlName="ID" (input)="onInputChange($event)">
+
+        </mat-form-field>
+        <mat-form-field class="full-width" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput placeholder="Contacts" [required]="true" formControlName="contact" (input)="onInputChange($event)">
+
+        </mat-form-field>
+        <mat-form-field class="full-width" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput placeholder="Email" [required]="true" formControlName="email">
+
+        </mat-form-field>
+        <mat-form-field class="full-width" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput type="password" placeholder="Pin" [required]="true" formControlName="pin" (input)="onInputChange($event)">
+
+        </mat-form-field>
+        <mat-form-field class="full-width" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput type="password" placeholder="Confirm Pin" [required]="true" formControlName="PasswordConfirm" (input)="onInputChange($event)">
+
+        </mat-form-field>
+        <div class="flex-c">
+          <mat-label>ID Document</mat-label>
+          <input id="file" class="margin-b-1em" type="file">
+          <!-- <mat-label>Proof of Address</mat-label>
+  <input  id="file1"   type="file" > -->
+        </div>
+        <div class="flex-c">
+          <!-- <mat-label>ID Document</mat-label>
+ <input  id="file"  class="margin-b-1em"  type="file" > -->
+          <mat-label>Proof of Address</mat-label>
+          <input id="file1" type="file">
+        </div><button mat-raised-button class="full-width btn-bl" (click)="submitForm()">Create</button>
+      </form>
+    </div>
+  </div>
+</div>

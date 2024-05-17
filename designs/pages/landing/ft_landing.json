@@ -40,7 +40,36 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "show",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "false"
+                }
+            },
+            {
+                "textIp": "business",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "false"
+                }
+            },
+            {
+                "textIp": "startmyself",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "false"
+                }
+            },
+            {
+                "textIp": "signIn",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "false"
+                }
+            }
+        ],
         "functionName": "sd_17kdEIkYAyuJoKRP",
         "category": "Function",
         "x": 180,
@@ -48,6 +77,302 @@
         "wires": [
             []
         ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "ft_landingComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_xhf9S7w9fRlcOK2F",
+        "type": "PageStart",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "direction",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "type_",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "signIn",
+                "defaultValue": {
+                    "type": "bool",
+                    "value": "true"
+                },
+                "output": true
+            }
+        ],
+        "flow_type": "sync",
+        "functionName": "direction",
+        "category": "General",
+        "x": 80,
+        "y": 180,
+        "wires": [
+            [
+                "sd_C81M3PULyXyTkONL"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "ft_landingComponent"
+    },
+    {
+        "id": "sd_C81M3PULyXyTkONL",
+        "type": "PageSwitch",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "type_",
+        "propertyType": "bh.input",
+        "propertyGv": "bh.input.type_",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "signIn",
+                "vt": "str",
+                "gv": "\"signIn\""
+            },
+            {
+                "t": "eq",
+                "v": "signUp",
+                "vt": "str",
+                "gv": "\"signUp\""
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_C81M3PULyXyTkONL",
+        "category": "Function",
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "sd_akZL0ZNJxA4eGvh6"
+            ],
+            [
+                "sd_WVmazcXvaX7lQSwT"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "ft_landingComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_akZL0ZNJxA4eGvh6",
+        "type": "Script",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "signin",
+        "script": "page.signIn = true\npage.show = true;\npage.business = false\nconsole.log('Sign In', bh.input)\n// return true",
+        "functionName": "signin",
+        "category": "Function",
+        "x": 285,
+        "y": 140,
+        "wires": [
+            [
+                "sd_hS7QZwjSXQGlbakv"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "ft_landingComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_WVmazcXvaX7lQSwT",
+        "type": "Script",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "signup",
+        "script": "page.signIn = false\n      page.show = true;\n      page.business = false\n      console.log(bh.input)\n      // return false",
+        "functionName": "signup",
+        "category": "Function",
+        "x": 285,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "ft_landingComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Qi8BkQNRqs0sHLL3",
+        "type": "PageStart",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "nextstep",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "kind",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "nextstep",
+        "category": "General",
+        "x": 105,
+        "y": 360,
+        "wires": [
+            [
+                "sd_jWmbmKLsThsn8B2i"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "ft_landingComponent"
+    },
+    {
+        "id": "sd_jWmbmKLsThsn8B2i",
+        "type": "PageSwitch",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "kind",
+        "propertyType": "bh.input",
+        "propertyGv": "bh.input.kind",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "myself",
+                "vt": "str",
+                "gv": "\"myself\""
+            },
+            {
+                "t": "eq",
+                "v": "business",
+                "vt": "str",
+                "gv": "\"business\""
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_jWmbmKLsThsn8B2i",
+        "category": "Function",
+        "x": 245,
+        "y": 360,
+        "wires": [
+            [
+                "sd_WyxLMIPCBN0KTwG7"
+            ],
+            [
+                "sd_UL0IEOvRtfQrWgUn"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "ft_landingComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_WyxLMIPCBN0KTwG7",
+        "type": "Script",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "fi",
+        "script": "  page.startmyself = true;\n    page.business = false",
+        "functionName": "fi",
+        "category": "Function",
+        "x": 365,
+        "y": 300,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "ft_landingComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_UL0IEOvRtfQrWgUn",
+        "type": "Script",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "business",
+        "script": "  page.startmyself = false;\n      page.business = true\n      console.log(bh.input.kind)",
+        "functionName": "business",
+        "category": "Function",
+        "x": 360,
+        "y": 400,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "ft_landingComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Q9xrsZKwBX640FqV",
+        "type": "Log",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "\"click\"",
+        "functionName": "sd_Q9xrsZKwBX640FqV",
+        "category": "General",
+        "x": 160,
+        "y": 140,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "str",
+                "value": "click",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "ft_landingComponent"
+    },
+    {
+        "id": "sd_hS7QZwjSXQGlbakv",
+        "type": "Log",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "bh.input.type_",
+        "functionName": "sd_hS7QZwjSXQGlbakv",
+        "category": "General",
+        "x": 400,
+        "y": 140,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "bh.input",
+                "value": "type_",
+                "constant": false
+            }
+        },
         "__n_excludedFromValidation__": {},
         "generateNext": false,
         "serviceName": "ft_landingComponent",

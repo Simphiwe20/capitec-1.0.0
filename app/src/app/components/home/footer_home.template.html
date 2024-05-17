@@ -1,1 +1,30 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <footer style="display: flex;     align-items: center;     justify-content: center;    height: 87px;     position: relative; border-top: 1px solid black;">
+    <div fxLayout="row wrap" style="width :90%;" fxLayoutAlign="space-between space-between" [fxShow]="true">
+      <div fxLayout="row wrap" fxLayoutGap="2em" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" routerLink="/home"><img imgSrc="/Web/image/home-icon.png" style="    height: 31px;">
+          <div>
+            Home</div>
+        </div>
+        <div fxLayout="column wrap" style="width: 66px;" fxLayoutGap="    5.6px" fxLayoutAlign="center center" [fxShow]="true"><img imgSrc="/Web/image/card-icon.png">
+          <div>
+            Cards</div>
+        </div>
+      </div>
+      <div fxLayout="column wrap" style="overflow:hidden;" class="midcard" fxLayoutAlign="center center" [fxShow]="true"><img imgSrc="/Web/image/transect-icon.png" style="position: absolute;     top: 4px;">
+        <div>
+          Transact</div>
+      </div>
+      <div fxLayout="row wrap" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true"><img imgSrc="/Web/image/message-icon.png">
+          <div>
+            Messages</div>
+        </div>
+        <div fxLayout="column wrap" fxLayoutGap=" 3.6px" fxLayoutAlign="center center" [fxShow]="true"><img imgSrc="/Web/image/explore-icon.png" style="width: 39px;">
+          <div>
+            Explore</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
