@@ -65,8 +65,12 @@
             "component": "update_permanent_limitsComponent"
         },
         {
+            "path": "home",
+            "component": "homeComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "/savings-account",
+            "redirectTo": "/sign-in-stepper",
             "pathMatch": "full",
             "default": true
         },

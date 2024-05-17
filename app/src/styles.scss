@@ -88,9 +88,9 @@ video {
 }
 
 .standard-width {
-    width: 50%;
-    min-width: 300px;
-    max-width: 600px;
+    width: 50% !important;
+    min-width: 300px !important;
+    max-width: 600px !important;
     // width: 100% !important;
     // min-width: 300px !important;
     // max-width: 600px !important;
