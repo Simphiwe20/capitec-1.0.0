@@ -85,7 +85,9 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": [
+                        "standard-width"
+                    ],
                     "_type": "dav",
                     "_attrDef": "p"
                 },
@@ -396,7 +398,7 @@
                             },
                             {
                                 "_key": "html",
-                                "_value": "Welcome",
+                                "_value": "Successfully",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }
@@ -672,7 +674,7 @@
                             },
                             {
                                 "_key": "html",
-                                "_value": "<p class=\"m-t-0\">Welcome <b>mathotolebogang@gmail</b></p>",
+                                "_value": "<p class=\"m-t-0\">You will receive an activation email on <b>mathotolebogang@gmail</b></p>",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }

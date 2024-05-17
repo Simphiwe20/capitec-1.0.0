@@ -1,19 +1,19 @@
-<div fxLayout="column wrap" class="relative standard-width" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true" fxFill>
-  <div fxLayout="column wrap" class="white-bg" fxLayoutAlign="start stretch" [fxShow]="true">
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/Images/activate.PNG"></div>
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-      <h2 class="no-margin text-center">
-        Activate New App</h2>
-    </div>
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-      <p style="font-size: larger; margin-top: 5px;" class="text-center">
-        You will no longer be able to use your<br>previously installed app once you finish<br>activating this app</p>
-    </div>
+<div fxLayout="column wrap" class="full-height relative" fxLayoutGap="1em" fxLayoutAlign="start center" [fxShow]="true" fxFill>
+  <div fxLayout="column wrap" class="full-height standard-width" fxLayoutAlign="space-between stretch" [fxShow]="true">
+    <div fxLayout="column wrap" style="height: 60%" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="column wrap" style="height: 62%;" class="white-bg" fxLayoutAlign="center center" [fxShow]="true"><img imgSrc="/Web/Images/activate.PNG" style="width:15%">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <h3 class="no-margin text-center">
+            Activate New App</h3>
+          <p style="margin-top: 5px;" class="text-center">
+            You will no longer be able to use your<br>previously installed app once you finish<br>activating this app</p>
+        </div>
+      </div>
+      <div fxLayout="column wrap" class="padding-10" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button routerLink="/activation-instructions" class="blue-bg white">Confirm</button></div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button style="border: 2px solid #0f9ddf;" routerLink="/sign-in-stepper" class="blue-color">Cancel</button></div>
+      </div>
+    </div><bh-footer class="text-center"></bh-footer>
   </div>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-    <div fxLayout="column wrap" class="padding-10" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true">
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="blue-bg white">Confirm</button></div>
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button style="border: 2px solid #0f9ddf;" class="blue-color">Cancel</button></div>
-    </div>
-  </div><bh-footer style="position: absolute;     bottom: 0;" class="text-center"></bh-footer>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"></div>
 </div>

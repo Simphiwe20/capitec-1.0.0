@@ -1,6 +1,18 @@
 {
     "routes": [
         {
+            "path": "confirm_pic",
+            "component": "confirm_picComponent"
+        },
+        {
+            "path": "take-selfie",
+            "component": "take_picComponent"
+        },
+        {
+            "path": "unable_to_capture",
+            "component": "unable_to_captureComponent"
+        },
+        {
             "path": "savings-account",
             "component": "saving_accountComponent"
         },
@@ -53,8 +65,12 @@
             "component": "update_permanent_limitsComponent"
         },
         {
+            "path": "home",
+            "component": "homeComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "/savings-account",
+            "redirectTo": "/sign-in-stepper",
             "pathMatch": "full",
             "default": true
         },

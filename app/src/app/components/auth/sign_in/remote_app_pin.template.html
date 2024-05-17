@@ -1,18 +1,22 @@
-<div fxLayout="column wrap" class="standard-width" fxLayoutAlign="start stretch" [fxShow]="true" fxFill>
-  <div fxLayout="column wrap" style="height: 20%" class="relative" fxLayoutAlign="start stretch" [fxShow]="true">
-    <div fxLayout="column wrap" style="height: 40%;" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon style="    width: 100%;     height: 100%;     color: whitesmoke;     z-index: 1;position: absolute;     top: 11px;     bottom: 5px;     left: 4px;     font-size: 33px;">arrow_back</mat-icon><img imgSrc="/Web/Images/Hello.PNG" style="position:absolute;" class="full-height full-width"></div>
-  </div>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-    <form style="height:20%;">
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-        <div fxLayout="row wrap" class="padding-6" fxLayoutAlign="center center" [fxShow]="true">
-          <mat-form-field class="white-bg full-width" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput type="password" placeholder="Remote App PIN" [required]="false">
-            <mat-icon matSuffix>visibility_off</mat-icon> <mat-icon matPrefix>lock</mat-icon>
-          </mat-form-field>
-        </div>
-        <div fxLayout="row wrap" class="padding-10" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="white blue-bg full-width">Continue</button></div>
+<div fxLayout="column wrap" class="full-height" fxLayoutAlign="start center" [fxShow]="true" fxFill>
+  <div fxLayout="column wrap" class="full-height standard-width" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" style="height: 86%" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="column wrap" style="height: 100px" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" style="height:100%;" class="relative" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/Images/Hello.PNG" class="full-height full-width"><mat-icon class="absolute">arrow_back</mat-icon></div>
       </div>
-    </form>
-  </div><bh-footer style="position: absolute;     bottom: 0;" class="text-center"></bh-footer>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+        <form style="height:20%;">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div fxLayout="row wrap" class="padding-6" fxLayoutAlign="center center" [fxShow]="true">
+              <mat-form-field class="white-bg full-width" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                <input matInput type="password" placeholder="Remote App PIN" [required]="false">
+                <mat-icon matSuffix>visibility_off</mat-icon> <mat-icon matPrefix>lock</mat-icon>
+              </mat-form-field>
+            </div>
+            <div fxLayout="row wrap" class="padding-10" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button routerLink="/activate-new-app" class="white blue-bg full-width">Continue</button></div>
+          </div>
+        </form>
+      </div>
+    </div><bh-footer class="text-center"></bh-footer>
+  </div>
 </div>
