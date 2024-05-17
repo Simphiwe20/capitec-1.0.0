@@ -3506,7 +3506,9 @@
                         },
                         {
                             "_key": "class",
-                            "_value": "",
+                            "_value": [
+                                "full-width"
+                            ],
                             "_type": "dav",
                             "_attrDef": "p"
                         },
@@ -3561,13 +3563,15 @@
                             },
                             {
                                 "_key": "style",
-                                "_value": "",
+                                "_value": "height:113px ; background:  blue ;",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
                             {
                                 "_key": "class",
-                                "_value": "",
+                                "_value": [
+                                    "full-width"
+                                ],
                                 "_type": "dav",
                                 "_attrDef": "p"
                             },
@@ -4051,13 +4055,15 @@
                             },
                             {
                                 "_key": "style",
-                                "_value": "",
+                                "_value": "height:113px ; background:  blue ;",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
                             {
                                 "_key": "class",
-                                "_value": "",
+                                "_value": [
+                                    "full-width"
+                                ],
                                 "_type": "dav",
                                 "_attrDef": "p"
                             },
@@ -4541,13 +4547,15 @@
                             },
                             {
                                 "_key": "style",
-                                "_value": "",
+                                "_value": "height:113px ; background:  blue ;",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
                             {
                                 "_key": "class",
-                                "_value": "",
+                                "_value": [
+                                    "full-width"
+                                ],
                                 "_type": "dav",
                                 "_attrDef": "p"
                             },
