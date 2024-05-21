@@ -2,8 +2,9 @@
     "routes": [
         {
             "path": "''",
-            "redirectTo": "",
-            "pathMatch": "full"
+            "redirectTo": "scan-to-pay",
+            "pathMatch": "full",
+            "default": true
         },
         {
             "path": "**",

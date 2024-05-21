@@ -4,6 +4,7 @@
 //append_imports_start
 
 import { Component, Injector } from '@angular/core'; //_splitter_
+import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'; //_splitter_
@@ -19,12 +20,16 @@ import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'
 export class ft_landingComponent {
   page: any = { dep: {} };
   constructor(
+    
     private __page_injector__: Injector,
     private sdService: SDBaseService,
-    public __serviceInvoker__: NeuServiceInvokerService
+    public __serviceInvoker__: NeuServiceInvokerService,
+    private bottomSheetRef: MatBottomSheetRef<ft_landingComponent>
   ) {
     this.__page_injector__.get(SDPageCommonService).addPageDefaults(this.page);
     this.registerListeners();
+    console.log("hey")
+
     //appendnew_element_inject
   }
 
@@ -35,6 +40,7 @@ export class ft_landingComponent {
     {
       this.sd_5W6CdYlblZVEh4RY(bh);
     }
+
   }
 
   private registerListeners() {

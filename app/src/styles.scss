@@ -19,3 +19,28 @@
     min-width: 300px;
     max-width: 600px
 }
+////////////////////////////////////////////////////////
+//////////////////////////////////////// scan to pay
+
+.scan-blue {
+    background-color: #0f9ddf;
+}
+
+.scan-header{
+    font-size: xx-large;
+    margin: 0;
+    color: white;
+    font-weight: bolder;
+}
+
+.scan-under-header{
+    background-color: #f6f4f5;
+}
+
+bh-scan_to_pay{
+        video {
+            height: 79vh !important;
+            object-fit: cover;
+}
+    }
+

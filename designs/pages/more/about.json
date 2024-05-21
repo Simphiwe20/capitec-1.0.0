@@ -46,6 +46,90 @@
         "x": 180,
         "y": 30,
         "wires": [
+            [
+                "sd_aZOVZgpuPms22aZ3"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "aboutComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_aZOVZgpuPms22aZ3",
+        "type": "UseDependency",
+        "z": "sd_QgRMP4m2ouIJJJ4Z",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "MatBottomSheet",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "bottomSheet"
+                },
+                "injectable": true
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/material/bottom-sheet",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_aZOVZgpuPms22aZ3",
+        "category": "Function",
+        "x": 325,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "aboutComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_dex3HxqoROjm2weM",
+        "type": "PageStart",
+        "z": "sd_QgRMP4m2ouIJJJ4Z",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "openSheet",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "openSheet",
+        "category": "General",
+        "x": 80,
+        "y": 180,
+        "wires": [
+            [
+                "sd_phKnzEanbjgtpuDX"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "aboutComponent"
+    },
+    {
+        "id": "sd_phKnzEanbjgtpuDX",
+        "type": "Script",
+        "z": "sd_QgRMP4m2ouIJJJ4Z",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "",
+        "functionName": "sd_phKnzEanbjgtpuDX",
+        "category": "Function",
+        "x": 200,
+        "y": 180,
+        "wires": [
             []
         ],
         "__n_excludedFromValidation__": {},

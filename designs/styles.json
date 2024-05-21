@@ -3,6 +3,9 @@
         "full-height",
         "full-view-height",
         "full-width",
-        "standard-width"
+        "standard-width",
+        "scan-blue",
+        "scan-header",
+        "scan-under-header"
     ]
 }
