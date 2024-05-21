@@ -1,1 +1,38 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="column wrap" class="standard-width" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" style="height: 60px;" fxLayoutGap="30%" fxLayoutAlign="start center" [fxShow]="true"><mat-icon style="font-size: xx-large; padding-left: 6px;" class="blue-color">arrow_back</mat-icon>
+        <p style="    width: 27%;     height: 50%;     border-radius: 16px;     display: flex;     align-items: center;     justify-content: center;" class="blue-bg white">
+          <b>For me</b>
+        </p>
+      </div>
+    </div>
+    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
+      <h1 style=" margin-bottom: 7px;">
+        <h1 class="navy no-margin">Global<span class="blue-color">One</span></h1>
+      </h1>
+      <h2 class="no-margin text-center">
+        Activate your app</h2>
+    </div>
+    <div fxLayout="column wrap" class="padding-10" fxLayoutAlign="start stretch" [fxShow]="true"><mat-vertical-stepper [linear]="true"><mat-step label="Enter your account number" completed="true" optional="false" editable="true" style="padding-bottom: 0 !important;" hasError="false">
+          <p class="no-margin">
+            <small>You&apos;ll find it on your Capitec card</small>
+          </p>
+        </mat-step><mat-step label="Enter PIN" completed="true" optional="false" editable="false">
+          <p class="no-margin">
+            <small>You&apos;ll find it on your Capitec card</small>
+          </p>
+        </mat-step><mat-step label="Verify your identity" completed="true" optional="false" editable="false">
+          <p class="no-margin">
+            <small>You&apos;ll find it on your Capitec card</small>
+          </p>
+        </mat-step><mat-step label="Start using the app" completed="true" optional="false" editable="false">
+          <p class="no-margin">
+            <small>You&apos;ll find it on your Capitec card</small>
+          </p>
+        </mat-step></mat-vertical-stepper></div>
+    <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true">
+      <div fxLayout="column wrap" fxFlex="95" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button routerLink="/savings-account" class="white blue-bg">Continue</button></div>
+    </div>
+  </div>
+</div>

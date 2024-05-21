@@ -19,11 +19,11 @@
         "name": "",
         "functionName": "sd_eCZZUnlSMVwfMcyH",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 45,
+        "y": 40,
         "wires": [
             [
-                "sd_96fKaQJjKC3iVykX"
+                "sd_y4FhvWW38E7URPcN"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -40,13 +40,1356 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "canvas",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "displaySize",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "isDetected",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "isCorrect",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "detection",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "resizedDetections",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "similiarityNu",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "0.5029092815091631"
+                }
+            },
+            {
+                "textIp": "desctriptorDistance",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "intervalID",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            }
+        ],
         "functionName": "sd_96fKaQJjKC3iVykX",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 525,
+        "y": 40,
+        "wires": [
+            [
+                "sd_O16ctU6Zppzpt1L5"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_y4FhvWW38E7URPcN",
+        "type": "UseDependency",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "PLATFORM_ID",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "platform"
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "ElementRef",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/core",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_y4FhvWW38E7URPcN",
+        "category": "Function",
+        "x": 125,
+        "y": 40,
+        "wires": [
+            [
+                "sd_BILA5xRajUmYuJJn"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_DsGnTWREu6BlJp2o",
+        "type": "PageStart",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "onStart",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "onStart",
+        "category": "General",
+        "x": 45,
+        "y": 300,
+        "wires": [
+            [
+                "sd_hL4iXR6BqCoSK9vG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "take_picComponent"
+    },
+    {
+        "id": "sd_hL4iXR6BqCoSK9vG",
+        "type": "ViewPicker",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "childViewVariables": [
+            {
+                "key": {
+                    "type": "str",
+                    "value": "video"
+                },
+                "defaultValue": "ElementRef",
+                "isViewChildren": false
+            }
+        ],
+        "functionName": "sd_hL4iXR6BqCoSK9vG",
+        "category": "Function",
+        "x": 145,
+        "y": 300,
+        "wires": [
+            [
+                "sd_GQWGg2zFLUO9NZNp"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_HUS1fOtmgfDCv9Sr",
+        "type": "AfterViewInit",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "After View Init",
+        "functionName": "ngAfterViewInit",
+        "category": "Lifecycle Events",
+        "x": 45,
+        "y": 120,
+        "wires": [
+            [
+                "sd_sY0xXmNWESxKr2bi"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "take_picComponent"
+    },
+    {
+        "id": "sd_sY0xXmNWESxKr2bi",
+        "type": "PageCallService",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_uXUqXL52pBrLhCAP",
+            "type": "tab",
+            "createdDate": "2024-05-13T10:54:53.736Z",
+            "label": "take_pic",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_DsGnTWREu6BlJp2o",
+            "flowName": "onStart"
+        },
+        "inputVariables": [],
+        "outputMapping": [],
+        "serviceImportPath": "./",
+        "startName": "onStart",
+        "inputParams": [],
+        "accept_bh": false,
+        "accept_csd": false,
+        "functionName": "sd_sY0xXmNWESxKr2bi",
+        "category": "General",
+        "x": 165,
+        "y": 120,
         "wires": [
             []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_GQWGg2zFLUO9NZNp",
+        "type": "Script",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.video = bh.pageViews.video.nativeElement\nconsole.log(bh.video)\nnavigator.mediaDevices.getUserMedia({video: true}).then(\n        (ms: MediaStream) => {\n          const _video = bh.video;\n          console.log(_video)\n          _video.srcObject = ms;\n          _video.play()\n          console.log(_video)\n        }\n      )",
+        "functionName": "sd_GQWGg2zFLUO9NZNp",
+        "category": "Function",
+        "x": 240,
+        "y": 300,
+        "wires": [
+            [
+                "sd_pcm3vhG3lD7DSgqQ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_QxYs965OkMcTzph2",
+        "type": "PageStart",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "fetchModels",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "fetchModels",
+        "category": "General",
+        "x": 145,
+        "y": 220,
+        "wires": [
+            [
+                "sd_VMrmvza7EXXEHHti"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "take_picComponent"
+    },
+    {
+        "id": "sd_VMrmvza7EXXEHHti",
+        "type": "Script",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(bh)\nconsole.log(faceapi)\n\nawait Promise.all([faceapi.nets.tinyFaceDetector.loadFromUri('../../../assets/models'),\n    await faceapi.nets.faceLandmark68Net.loadFromUri('../../../assets/models'),\n    await faceapi.nets.faceRecognitionNet.loadFromUri('../../../assets/models'),\n    await faceapi.nets.faceExpressionNet.loadFromUri('../../../assets/models'),\n    // await faceapi.nets.ssdMobilenetv1.loadFromUri('./models')\n    ,])",
+        "functionName": "sd_VMrmvza7EXXEHHti",
+        "category": "Function",
+        "x": 260,
+        "y": 220,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_O16ctU6Zppzpt1L5",
+        "type": "PageCallService",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_uXUqXL52pBrLhCAP",
+            "type": "tab",
+            "createdDate": "2024-05-13T10:54:53.736Z",
+            "label": "take_pic",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_QxYs965OkMcTzph2",
+            "flowName": "fetchModels"
+        },
+        "inputVariables": [],
+        "outputMapping": [],
+        "serviceImportPath": "./",
+        "startName": "fetchModels",
+        "inputParams": [],
+        "accept_bh": false,
+        "accept_csd": false,
+        "functionName": "sd_O16ctU6Zppzpt1L5",
+        "category": "General",
+        "x": 625,
+        "y": 40,
+        "wires": [
+            [
+                "sd_DORYlrRBmRqCKXWR"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_hK7Bc3ximLPCi0sF",
+        "type": "UseDependency",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "faceapi",
+        "propertyType": "bh",
+        "propertyGv": "bh.faceapi",
+        "alias": "faceapi",
+        "modules": [],
+        "import_all": true,
+        "library": "face-api.js",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_hK7Bc3ximLPCi0sF",
+        "category": "Function",
+        "x": 425,
+        "y": 40,
+        "wires": [
+            [
+                "sd_96fKaQJjKC3iVykX"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_DORYlrRBmRqCKXWR",
+        "type": "Log",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "bh.faceapi",
+        "functionName": "sd_DORYlrRBmRqCKXWR",
+        "category": "General",
+        "x": 705,
+        "y": 120,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "bh",
+                "value": "faceapi",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Ug0ZXT4p9mcslPvC",
+        "type": "PageStart",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "detectFace",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "video",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "detectFace",
+        "category": "General",
+        "x": 45,
+        "y": 400,
+        "wires": [
+            [
+                "sd_kfXCcCwWyvzZWLFl"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "take_picComponent"
+    },
+    {
+        "id": "sd_kfXCcCwWyvzZWLFl",
+        "type": "Script",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(faceapi)\n    page.displaySize = {\n      width: bh.input.video.width,\n      height: bh.input.video.width,\n    };\n    console.log(page.displaySize)\n    // faceapi.matchDimensions(page.canvas, page.displaySize);\npage.intervalID = setInterval(async () => {\n      page.isDetected = false\n      page.detection = await faceapi.detectAllFaces(bh.input.video, new faceapi.TinyFaceDetectorOptions())\n      .withFaceLandmarks().withFaceExpressions().withFaceDescriptors();\n      // page.resizedDetections = faceapi.resizeResults(\n      //   page.detection,\n      //   page.displaySize\n      // );\n      if(!page.detection.length) return\n      console.log(page.detection)\n      this.compareFaces()\n      // page.canvas.getContext('2d').clearRect(0, 0, page.canvas.width, page.canvas.height);\n      // faceapi.draw.drawDetections(page.canvas, page.resizedDetections);\n      // faceapi.draw.drawFaceLandmarks(page.canvas, page.resizedDetections);\n      // faceapi.draw.drawFaceExpressions(page.canvas, page.resizedDetections);\n    }, 1500);\n\nconsole.log('Inside the face detect:', page.intervalID)",
+        "functionName": "sd_kfXCcCwWyvzZWLFl",
+        "category": "Function",
+        "x": 145,
+        "y": 400,
+        "wires": [
+            [
+                "sd_Sda6NtePn0DKCPTN"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_pcm3vhG3lD7DSgqQ",
+        "type": "PageCallService",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_uXUqXL52pBrLhCAP",
+            "type": "tab",
+            "createdDate": "2024-05-13T10:54:53.736Z",
+            "label": "take_pic",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_Ug0ZXT4p9mcslPvC",
+            "flowName": "detectFace"
+        },
+        "inputVariables": [
+            {
+                "key": "video",
+                "map": true,
+                "valueType": "bh",
+                "value": "video"
+            }
+        ],
+        "outputMapping": [],
+        "serviceImportPath": "./",
+        "startName": "detectFace",
+        "inputParams": [
+            "bh.video"
+        ],
+        "accept_bh": false,
+        "accept_csd": false,
+        "functionName": "sd_pcm3vhG3lD7DSgqQ",
+        "category": "General",
+        "x": 360,
+        "y": 300,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ex6lfY9xGi7qDtvh",
+        "type": "PageStart",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "compareFaces",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "singleDetect",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "detectionDescriptor",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "flow_type": "sync",
+        "functionName": "compareFaces",
+        "category": "General",
+        "x": 45,
+        "y": 520,
+        "wires": [
+            [
+                "sd_76kbiWtvmvCzNpx6"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "take_picComponent"
+    },
+    {
+        "id": "sd_7oKOX1IeFEoAPPjC",
+        "type": "Script",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "\nconsole.log('Compare')\n    console.log(this.queryImage)\n     bh.local.singleDetect = await faceapi.detectSingleFace(this.queryImage.nativeElement,\n      new faceapi.TinyFaceDetectorOptions())\n      .withFaceLandmarks()\n      .withFaceDescriptor()\n\n    console.log('Single image', bh.local.singleDetect)",
+        "functionName": "sd_7oKOX1IeFEoAPPjC",
+        "category": "Function",
+        "x": 265,
+        "y": 520,
+        "wires": [
+            [
+                "sd_n7wvG87rDSlZpwDR"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_76kbiWtvmvCzNpx6",
+        "type": "ViewPicker",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "childViewVariables": [
+            {
+                "key": {
+                    "type": "str",
+                    "value": "queryImage"
+                },
+                "defaultValue": "ElementRef",
+                "isViewChildren": false
+            }
+        ],
+        "functionName": "sd_76kbiWtvmvCzNpx6",
+        "category": "Function",
+        "x": 165,
+        "y": 520,
+        "wires": [
+            [
+                "sd_7oKOX1IeFEoAPPjC"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_n7wvG87rDSlZpwDR",
+        "type": "PageSwitch",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "singleDetect",
+        "propertyType": "bh.local",
+        "propertyGv": "bh.local.singleDetect",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_n7wvG87rDSlZpwDR",
+        "category": "Function",
+        "x": 380,
+        "y": 520,
+        "wires": [
+            [
+                "sd_K1pkz6XwYqzzxyys"
+            ],
+            [
+                "sd_5hmJwF6uT4fTFq4u"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_K1pkz6XwYqzzxyys",
+        "type": "PageSwitch",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "detection",
+        "propertyType": "this.page",
+        "propertyGv": "this.page.detection",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_K1pkz6XwYqzzxyys",
+        "category": "Function",
+        "x": 485,
+        "y": 480,
+        "wires": [
+            [
+                "sd_pN4Tv5lsQzB8ExBT"
+            ],
+            [
+                "sd_KAz0tdw3J2NhmbrD"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_pN4Tv5lsQzB8ExBT",
+        "type": "Script",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.detection.forEach((detection: any) => {\n        bh.local.detectionDescriptor = [detection.descriptor]\n        let label = ''\n\n        page.desctriptorDistance = faceapi.euclideanDistance(detection.descriptor, bh.local.singleDetect.descriptor)\n        console.log(`descriptor: ${page.desctriptorDistance} and similiarity: ${page.similiarityNu}`)\n        if (page.desctriptorDistance <= page.similiarityNu) {\n          page.isCorrect = !page.isCorrect\n          label = 'Simphiwe'\n          console.log(\"You are Simphiwe\")\n          this.captureImage()\n          // clearInterval(page.intervalID)\n          return new faceapi.LabeledFaceDescriptors(label,  bh.local.detectionDescriptor)\n        } else {\n          // clearInterval(page.intervalID)\n          this.stopCamera()\n          page.isCorrect = false\n          label = \"Not Simphiwe\"\n          console.log(\"You are not Simphiwe\")\n          // console.log(page.router)\n          page.router.navigate(['/unable_to_capture'])\n          return new faceapi.LabeledFaceDescriptors('You are not Simphiwe',  bh.local.detectionDescriptor)\n\n        }\n      })",
+        "functionName": "sd_pN4Tv5lsQzB8ExBT",
+        "category": "Function",
+        "x": 625,
+        "y": 400,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Sda6NtePn0DKCPTN",
+        "type": "PageCallService",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_uXUqXL52pBrLhCAP",
+            "type": "tab",
+            "createdDate": "2024-05-13T10:54:53.736Z",
+            "label": "take_pic",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_ex6lfY9xGi7qDtvh",
+            "flowName": "compareFaces"
+        },
+        "inputVariables": [],
+        "outputMapping": [],
+        "serviceImportPath": "./",
+        "startName": "compareFaces",
+        "inputParams": [],
+        "accept_bh": false,
+        "accept_csd": false,
+        "functionName": "sd_Sda6NtePn0DKCPTN",
+        "category": "General",
+        "x": 265,
+        "y": 400,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_31XWMetOPMyo9Ys3",
+        "type": "PageAsync",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "flowNodes": [
+            {
+                "serviceId": "sd_uXUqXL52pBrLhCAP",
+                "serviceName": "take_pic",
+                "flowId": "sd_QxYs965OkMcTzph2",
+                "flowName": "fetchModels",
+                "functionName": "fetchModels",
+                "inputParams": [],
+                "inputVariables": [],
+                "accept_bh": false,
+                "viewType": "pages",
+                "randomVal": 962089,
+                "relativePath": "./"
+            },
+            {
+                "id": "sd_Ug0ZXT4p9mcslPvC",
+                "type": "PageStart",
+                "z": "sd_uXUqXL52pBrLhCAP",
+                "viewType": "pages",
+                "nodeType": "start",
+                "name": "detectFace",
+                "outputs": 1,
+                "inputVariables": [
+                    {
+                        "key": "video",
+                        "map": true,
+                        "valueType": "bh",
+                        "value": ""
+                    }
+                ],
+                "localVariables": [],
+                "flow_type": "sync",
+                "functionName": "detectFace",
+                "category": "General",
+                "x": 145,
+                "y": 400,
+                "wires": [
+                    [
+                        "sd_kfXCcCwWyvzZWLFl"
+                    ]
+                ],
+                "__n_excludedFromValidation__": {},
+                "_imported_service_designer_type": "pages",
+                "editorTabConfigType": "pages",
+                "flowId": "sd_Ug0ZXT4p9mcslPvC",
+                "serviceId": "sd_uXUqXL52pBrLhCAP",
+                "serviceName": "take_pic",
+                "accept_bh": false,
+                "randomVal": 590191,
+                "inputParams": [
+                    null
+                ],
+                "relativePath": "./"
+            },
+            {
+                "id": "sd_ex6lfY9xGi7qDtvh",
+                "type": "PageStart",
+                "z": "sd_uXUqXL52pBrLhCAP",
+                "viewType": "pages",
+                "nodeType": "start",
+                "name": "compareFaces",
+                "outputs": 1,
+                "inputVariables": [],
+                "localVariables": [
+                    {
+                        "key": "singleDetect",
+                        "defaultValue": {
+                            "type": "any",
+                            "value": ""
+                        },
+                        "output": false
+                    }
+                ],
+                "flow_type": "sync",
+                "functionName": "compareFaces",
+                "category": "General",
+                "x": 145,
+                "y": 520,
+                "wires": [
+                    [
+                        "sd_76kbiWtvmvCzNpx6"
+                    ]
+                ],
+                "__n_excludedFromValidation__": {},
+                "_imported_service_designer_type": "pages",
+                "editorTabConfigType": "pages",
+                "flowId": "sd_ex6lfY9xGi7qDtvh",
+                "serviceId": "sd_uXUqXL52pBrLhCAP",
+                "serviceName": "take_pic",
+                "accept_bh": false,
+                "randomVal": 617836,
+                "inputParams": [],
+                "relativePath": "./"
+            }
+        ],
+        "_flowNodes": [
+            {
+                "serviceId": "sd_uXUqXL52pBrLhCAP",
+                "serviceName": "take_pic",
+                "flowId": "sd_QxYs965OkMcTzph2",
+                "flowName": "fetchModels",
+                "functionName": "fetchModels",
+                "inputParams": [],
+                "inputVariables": [],
+                "accept_bh": false,
+                "viewType": "pages",
+                "randomVal": 962089,
+                "relativePath": "./"
+            },
+            {
+                "id": "sd_Ug0ZXT4p9mcslPvC",
+                "type": "PageStart",
+                "z": "sd_uXUqXL52pBrLhCAP",
+                "viewType": "pages",
+                "nodeType": "start",
+                "name": "detectFace",
+                "outputs": 1,
+                "inputVariables": [
+                    {
+                        "key": "video",
+                        "map": true,
+                        "valueType": "bh",
+                        "value": ""
+                    }
+                ],
+                "localVariables": [],
+                "flow_type": "sync",
+                "functionName": "detectFace",
+                "category": "General",
+                "x": 145,
+                "y": 400,
+                "wires": [
+                    [
+                        "sd_kfXCcCwWyvzZWLFl"
+                    ]
+                ],
+                "__n_excludedFromValidation__": {},
+                "_imported_service_designer_type": "pages",
+                "editorTabConfigType": "pages",
+                "flowId": "sd_Ug0ZXT4p9mcslPvC",
+                "serviceId": "sd_uXUqXL52pBrLhCAP",
+                "serviceName": "take_pic",
+                "accept_bh": false,
+                "randomVal": 590191,
+                "inputParams": [
+                    null
+                ],
+                "relativePath": "./"
+            },
+            {
+                "id": "sd_ex6lfY9xGi7qDtvh",
+                "type": "PageStart",
+                "z": "sd_uXUqXL52pBrLhCAP",
+                "viewType": "pages",
+                "nodeType": "start",
+                "name": "compareFaces",
+                "outputs": 1,
+                "inputVariables": [],
+                "localVariables": [
+                    {
+                        "key": "singleDetect",
+                        "defaultValue": {
+                            "type": "any",
+                            "value": ""
+                        },
+                        "output": false
+                    }
+                ],
+                "flow_type": "sync",
+                "functionName": "compareFaces",
+                "category": "General",
+                "x": 145,
+                "y": 520,
+                "wires": [
+                    [
+                        "sd_76kbiWtvmvCzNpx6"
+                    ]
+                ],
+                "__n_excludedFromValidation__": {},
+                "_imported_service_designer_type": "pages",
+                "editorTabConfigType": "pages",
+                "flowId": "sd_ex6lfY9xGi7qDtvh",
+                "serviceId": "sd_uXUqXL52pBrLhCAP",
+                "serviceName": "take_pic",
+                "accept_bh": false,
+                "randomVal": 617836,
+                "inputParams": [],
+                "relativePath": "./"
+            }
+        ],
+        "resultMapping": "bh.result",
+        "accept_csd": false,
+        "isValidNode": true,
+        "functionName": "sd_31XWMetOPMyo9Ys3",
+        "category": "Function",
+        "x": 45,
+        "y": 220,
+        "wires": [
+            []
+        ],
+        "__ssdTypeInputs__": {
+            "resultMapping": {
+                "type": "bh",
+                "value": "result",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "take_picComponent"
+    },
+    {
+        "id": "sd_5hmJwF6uT4fTFq4u",
+        "type": "Log",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "\"Single detection is empty\"",
+        "functionName": "sd_5hmJwF6uT4fTFq4u",
+        "category": "General",
+        "x": 505,
+        "y": 560,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "str",
+                "value": "Single detection is empty",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_KAz0tdw3J2NhmbrD",
+        "type": "Log",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "\"detection is empty\"",
+        "functionName": "sd_KAz0tdw3J2NhmbrD",
+        "category": "General",
+        "x": 625,
+        "y": 500,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "str",
+                "value": "detection is empty",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_32EsT2sQhBnYG5Rb",
+        "type": "PageStart",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "captureImage",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "captured",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "captureImage",
+        "category": "General",
+        "x": 45,
+        "y": 640,
+        "wires": [
+            [
+                "sd_Kf4jme34CMv9Geiw"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "take_picComponent"
+    },
+    {
+        "id": "sd_Kf4jme34CMv9Geiw",
+        "type": "ViewPicker",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "childViewVariables": [
+            {
+                "key": {
+                    "type": "str",
+                    "value": "canva"
+                },
+                "defaultValue": "",
+                "isViewChildren": false
+            },
+            {
+                "key": {
+                    "type": "str",
+                    "value": "video"
+                },
+                "defaultValue": "",
+                "isViewChildren": false
+            }
+        ],
+        "functionName": "sd_Kf4jme34CMv9Geiw",
+        "category": "Function",
+        "x": 145,
+        "y": 640,
+        "wires": [
+            [
+                "sd_GyyDI8yMgC72VzdC"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_BILA5xRajUmYuJJn",
+        "type": "UseDependency",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "Router",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "router"
+                },
+                "injectable": true
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/router",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_BILA5xRajUmYuJJn",
+        "category": "Function",
+        "x": 225,
+        "y": 40,
+        "wires": [
+            [
+                "sd_6b86hSzuCJQ9MXHu"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Rtr284XTllf0kkPT",
+        "type": "Navigation",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/confirm_pic",
+        "pathMap": "",
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": {
+            "type": "bh",
+            "value": "data"
+        },
+        "qparamsArray": "",
+        "resultMapping": {
+            "type": "this.page",
+            "value": "result"
+        },
+        "functionName": "sd_Rtr284XTllf0kkPT",
+        "category": "Navigation",
+        "x": 445,
+        "y": 640,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_GyyDI8yMgC72VzdC",
+        "type": "Script",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.canvas = bh.pageViews.canva\npage.video = bh.pageViews.video.nativeElement\nconst context = page.canvas.nativeElement.getContext(\"2d\");\nconsole.log('Canvas', page.canvas)\nconsole.log('Context', context)\nconsole.log('bh videoInput', page.video)\n\npage.canvas.nativeElement.width = 100;\npage.canvas.nativeElement.height = 100;\ncontext.drawImage(page.video, 0, 0, 100, 100);\n\npage.capturedImage = page.canvas.nativeElement.toDataURL(\"image/png\");\npage.capturedImage = page.capturedImage\nbh.data = {data: page.capturedImage}\nconsole.log(page.capturedImage)\n// page.router.navigate(['/test'], {queryParams: {image: page.capturedImage}})",
+        "functionName": "sd_GyyDI8yMgC72VzdC",
+        "category": "Function",
+        "x": 245,
+        "y": 640,
+        "wires": [
+            [
+                "sd_XP7VTJacOBSaxYFa"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_6b86hSzuCJQ9MXHu",
+        "type": "UseDependency",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "faceapi",
+        "propertyType": "bh",
+        "propertyGv": "bh.faceapi",
+        "alias": "faceapi",
+        "modules": [
+            {
+                "textIp": "DomSanitizer",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "sanitizer"
+                },
+                "injectable": true
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/platform-browser",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_6b86hSzuCJQ9MXHu",
+        "category": "Function",
+        "x": 325,
+        "y": 40,
+        "wires": [
+            [
+                "sd_hK7Bc3ximLPCi0sF"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_E9lmG3PdUQmRNlLw",
+        "type": "PageStart",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "stopCamera",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "stopCamera",
+        "category": "General",
+        "x": 45,
+        "y": 740,
+        "wires": [
+            [
+                "sd_AKDWkBiepZwaaYrh"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "take_picComponent"
+    },
+    {
+        "id": "sd_S3QC4fywTtBugn1k",
+        "type": "Script",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "let video = bh.pageViews.video.nativeElement\n// Get streams\nlet streams = video.srcObject\n// Get all tracks\nlet tracks = streams.getTracks()\n// Closing each track\ntracks.forEach((track) => {\n  track.stop()\n})\nconsole.log('Interval ID: ', page.intervalID)\nclearInterval(page.intervalID)\n",
+        "functionName": "sd_S3QC4fywTtBugn1k",
+        "category": "Function",
+        "x": 265,
+        "y": 740,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_AKDWkBiepZwaaYrh",
+        "type": "ViewPicker",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "childViewVariables": [
+            {
+                "key": {
+                    "type": "str",
+                    "value": "canva"
+                },
+                "defaultValue": "",
+                "isViewChildren": false
+            },
+            {
+                "key": {
+                    "type": "str",
+                    "value": "video"
+                },
+                "defaultValue": "",
+                "isViewChildren": false
+            }
+        ],
+        "functionName": "sd_AKDWkBiepZwaaYrh",
+        "category": "Function",
+        "x": 145,
+        "y": 740,
+        "wires": [
+            [
+                "sd_S3QC4fywTtBugn1k"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "take_picComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_XP7VTJacOBSaxYFa",
+        "type": "PageCallService",
+        "z": "sd_uXUqXL52pBrLhCAP",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_uXUqXL52pBrLhCAP",
+            "type": "tab",
+            "createdDate": "2024-05-13T10:54:53.736Z",
+            "label": "take_pic",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_E9lmG3PdUQmRNlLw",
+            "flowName": "stopCamera"
+        },
+        "inputVariables": [],
+        "outputMapping": [],
+        "serviceImportPath": "./",
+        "startName": "stopCamera",
+        "inputParams": [],
+        "accept_csd": false,
+        "functionName": "sd_XP7VTJacOBSaxYFa",
+        "category": "General",
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "sd_Rtr284XTllf0kkPT"
+            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,

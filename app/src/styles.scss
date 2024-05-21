@@ -2,16 +2,89 @@
 
 @import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "nDefaults.scss";
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$red: #f80023;
+$cyan-blue: #00385e;
+$white: #fff;
+$blue: #0f9ddf;
+$white: #ffffff;
+// $ghostwhite: #f6f4f5;
+$blackish : #2d2d2d; 
+$navy-blue: #00486d;
+$ghostwhite: #f5f5f5;
+$blackish : #2d2d2d; 
+// $navy-blue: #00486d;
+$blue-ish: #0299ac;
+
+
+body {
+    background-color: #f5f5f5;
+    height: 100vh;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.origin-video {
+    width: 100%;
+    background-color: #262626;
+    height: 93vh !important;
+}
+
+video {
+    object-fit: cover !important;
+    pointer-events: none;
+}
+
+.selfie-video {
+    width: 80%;
+    height: 401px;
+    border-radius: 50%;
+}
+
+// body{
+//     margin: 0 ;
+//     background-color: #f5f5f5;
+//     color:#2d2d2d;
+//     font-family: "Roboto", sans-serif;
+// }
 
 // Sizes
 .full-height {
     height: 100%;
 }
-.full-view-height {
-    height: 100vh;
+.half-height {
+    height: 50%;
 }
+
+.height-60px {
+    height: 60px;
+}
+
+.height-60 {
+    height: calc(100% - 170px);
+}
+
+.middle-height {
+    height: calc(100% - 140px);
+}
+
 .full-width {
     width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.width-95 {
+    width: 95%;
 }
 
 .standard-width {
@@ -44,3 +117,310 @@ bh-scan_to_pay{
 }
     }
 
+  
+
+// flex
+.flex{
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+ .center-center{
+    justify-content: center;
+    align-items: center;
+ }
+ .text-center{
+    text-align: center;
+}
+body{
+    margin: 0 ;
+    background-color: #f6f4f5;
+    color:#2d2d2d;;
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color:white !important;
+}
+
+
+//Margins
+.no-margin {
+    margin: 0;
+}
+
+.margin-top-7px {
+    margin-top: 7px;
+}
+
+.margin-bottom-7px {
+    margin-bottom: 7px;
+}
+
+.margin-top-1em {
+    margin-top: 1em;
+}
+
+.padding-20px {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+// Colors
+
+.white {
+    color: $white;
+}
+
+.cyan{
+    color: $navy-blue
+}
+
+// Fonts
+.poppins {
+    font-family: "Poppins", sans-serif;
+  }
+
+.font-weight-500 {
+    font-weight: 500 !important;
+  }
+
+.font-size-larger{
+    font-size: larger;
+}
+
+
+
+//Colors
+.blue-color {
+    color: $blue !important;
+}
+
+.blue-bg {
+    background-color: $blue !important;
+}
+
+.white {
+    color: $white !important;
+}
+
+.navy {
+    color: $navy-blue !important;
+}
+
+.navy-bg {
+    background-color: $navy-blue !important;
+}
+
+.white-bg {
+    background-color: $white;
+}
+
+.border-blue {
+    border: 1px solid $blue !important ;
+}
+
+.border-red {
+    border: 3px solid $red;
+}
+
+.border-none {
+    border: none;
+}
+
+// Position
+
+//Margins
+.no-margin {
+    margin: 0;
+}
+
+.m-b-0 {
+    margin-bottom: 0;
+}
+
+.m-b-8 {
+    margin-bottom: 8px;
+}
+
+.m-t-0 {
+    margin-top: 0;
+}
+
+//Positions
+.text-center {
+    text-align: center;
+}
+
+.padding-10 {
+    padding: 10px !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    // bottom: 0;
+}
+
+.pic-feedback {
+    top: 150px
+}
+
+
+.title {
+    top:130px;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+//Material Changes
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: $white;
+}
+
+.mat-mdc-form-field-icon-suffix>.mat-icon {
+    color: $blue !important;
+}
+
+.mdc-floating-label--required:not(.mdc-floating-label--hide-required-marker)::after {
+    margin-left: 1px;
+    margin-right: 0px;
+    content: none !important;
+}
+
+.mat-mdc-form-field-infix {
+    width: 143px !important;
+
+}
+//Paddings
+.padding-6 {
+    padding: 6px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-left {
+    padding-left: 10px;
+}
+
+.p-right-10 {
+    padding-right: 10px;
+}
+
+//Material Changes
+.mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon{
+    color: $blue;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: transparent;
+}
+
+.mat-raised-button {
+    height: 45px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-flex {
+    padding: 0 .75em 0 .75em;
+    margin-top: 0; 
+    position: relative;
+    border: 2px solid lightgrey;
+    background-color: $white;
+    border-top: none;
+}
+
+.mat-mdc-button:not(:disabled) {
+    color: $blue !important;
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+    height: 0 !important;
+}
+
+.mat-vertical-content {
+    padding: 0 0px 0px 24px !important;
+}
+
+.mat-step-header .mat-step-icon-selected{
+    color: transparent !important;
+}
+
+.mat-step-header {
+    padding-bottom: 0;
+}
+
+.mat-step-icon {
+    color: transparent !important;
+    background-color: #00486d !important;
+}
+
+.mat-step-icon .mat-step-icon-state-number .mat-step-icon-selected{
+background-color: #00486d !important;
+    background-color: #00486d !important;
+}
+
+.mat-stepper-vertical-line::before {
+    border-color: #00486d !important;
+    border-left-width: 2px !important;
+}
+
+.mat-mdc-radio-button .mdc-form-field {
+    color: $blue !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.logo-height {
+    height: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    .standard-width {
+        width: 100% !important;
+    }
+    .title {
+        width: 100%;
+    }
+}
+
+.mat-form-field-underline {
+    width: 0% !important;
+    transform: none !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: transparent !important;
+}
+.mat-form-field-underline {
+   width: 0% !important;
+    transform: none !important;
+}
+
+.mat-horizontal-content-container {
+    padding: 0 !important;
+}
+
+.mat-checkbox-inner-container {
+    height: 27px !important;
+    width: 27px !important;
+}
+.update-permanent-limits    {
+    .mat-form-field-infix {
+    border-top: 0 !important;
+}
+}
+
+
+input.mat-input-element {
+    font-weight: 700;
+    font-size: larger;
+}

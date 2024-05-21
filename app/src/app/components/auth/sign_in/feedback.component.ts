@@ -3,7 +3,8 @@
 //CORE_REFERENCE_IMPORTS
 //append_imports_start
 
-import { Component, Injector } from '@angular/core'; //_splitter_
+import { AfterViewInit, Component, Injector } from '@angular/core'; //_splitter_
+import { Router } from '@angular/router'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'; //_splitter_
@@ -16,7 +17,7 @@ import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'
     //appendnew_element_providers
   ],
 })
-export class feedbackComponent {
+export class feedbackComponent implements AfterViewInit {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -47,7 +48,7 @@ export class feedbackComponent {
 
   sd_56T8cQN6SbsueGCa(bh) {
     try {
-      bh = this.sd_VunbYKs9L21TSgvj(bh);
+      bh = this.sd_fcSQ6diiSXazBP8Q(bh);
       //appendnew_next_sd_56T8cQN6SbsueGCa
       return bh;
     } catch (e) {
@@ -55,7 +56,30 @@ export class feedbackComponent {
     }
   }
 
+  ngAfterViewInit() {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh = this.sd_rD3pRYlsYdPPyrb4(bh);
+      //appendnew_next_ngAfterViewInit
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_aLS5QS8kKGK8zZUi');
+    }
+  }
+
   //appendnew_flow_feedbackComponent_start
+
+  sd_fcSQ6diiSXazBP8Q(bh) {
+    try {
+      this.page.router = this.__page_injector__.get(Router);
+      bh = this.sd_VunbYKs9L21TSgvj(bh);
+      //appendnew_next_sd_fcSQ6diiSXazBP8Q
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_fcSQ6diiSXazBP8Q');
+    }
+  }
 
   sd_VunbYKs9L21TSgvj(bh) {
     try {
@@ -63,6 +87,20 @@ export class feedbackComponent {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_VunbYKs9L21TSgvj');
+    }
+  }
+
+  sd_rD3pRYlsYdPPyrb4(bh) {
+    try {
+      const page = this.page;
+      setTimeout(() => {
+        console.log(page.router);
+        page.router.navigate(['/home']);
+      }, 3000);
+      //appendnew_next_sd_rD3pRYlsYdPPyrb4
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_rD3pRYlsYdPPyrb4');
     }
   }
 

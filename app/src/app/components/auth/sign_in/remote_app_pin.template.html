@@ -1,1 +1,22 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" class="full-height" fxLayoutAlign="start center" [fxShow]="true" fxFill>
+  <div fxLayout="column wrap" class="full-height standard-width" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" style="height: 86%" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="column wrap" style="height: 100px" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" style="height:100%;" class="relative" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/Images/Hello.PNG" class="full-height full-width"><mat-icon class="absolute">arrow_back</mat-icon></div>
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+        <form style="height:20%;">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div fxLayout="row wrap" class="padding-6" fxLayoutAlign="center center" [fxShow]="true">
+              <mat-form-field class="white-bg full-width" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                <input matInput type="password" placeholder="Remote App PIN" [required]="false">
+                <mat-icon matSuffix>visibility_off</mat-icon> <mat-icon matPrefix>lock</mat-icon>
+              </mat-form-field>
+            </div>
+            <div fxLayout="row wrap" class="padding-10" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button routerLink="/activate-new-app" class="white blue-bg full-width">Continue</button></div>
+          </div>
+        </form>
+      </div>
+    </div><bh-footer class="text-center"></bh-footer>
+  </div>
+</div>
