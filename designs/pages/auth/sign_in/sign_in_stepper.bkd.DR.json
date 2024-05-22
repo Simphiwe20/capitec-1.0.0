@@ -258,6 +258,7 @@
                             {
                                 "_key": "class",
                                 "_value": [
+                                    "pointer",
                                     "blue-color"
                                 ],
                                 "_type": "dav",
@@ -281,6 +282,12 @@
                                 "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "/ftlanding",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ]
                     },
@@ -2419,7 +2426,6 @@
                     "36b28ad1-8e6c-648a-4b7e-d9415dcb7724": {
                         "paletteKey": "NG-RaisedButton",
                         "parentEditorKey": "65b5ae42-06d7-4a8c-c109-e1c7275ee7b6",
-                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {

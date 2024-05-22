@@ -1,8 +1,24 @@
 {
     "routes": [
         {
-            "path": "confirm_pic",
-            "component": "confirm_picComponent"
+            "path": "ftlanding",
+            "component": "ft_landingComponent"
+        },
+        {
+            "path": "activation-instruction",
+            "component": "activation_instructionsComponent"
+        },
+        {
+            "component": "instructionsComponent",
+            "path": "instruction"
+        },
+        {
+            "path": "identity",
+            "component": "verify_identityComponent"
+        },
+        {
+            "component": "confirm_picComponent",
+            "path": "confirm_pic"
         },
         {
             "path": "take-selfie",
@@ -69,12 +85,24 @@
             "component": "homeComponent"
         },
         {
-            "path": "savings",
-            "component": "savingsComponent"
+            "path": "footer",
+            "component": "footer_homeComponent"
+        },
+        {
+            "path": "prepare-selfie",
+            "component": "prepare_for_selfieComponent"
+        },
+        {
+            "component": "edit_cardsComponent",
+            "path": "edit-cards"
+        },
+        {
+            "path": "profile",
+            "component": "profileComponent"
         },
         {
             "path": "''",
-            "redirectTo": "/sign-in-stepper",
+            "redirectTo": "ftlanding",
             "pathMatch": "full",
             "default": true
         },

@@ -40,7 +40,15 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "profile",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "  [{icon:'person',text:'My details' , link:'/my-details'},   {icon:'edit_square',text:'My email address' , link:'/update-email'},   {icon:'heap_snapshot_multiple',text:'My tax details' , link:'/tax'},   {icon:'description',text:'My agreement & disclamers' , link:'/agreement'},   {icon:'shield_locked',text:'Our Primary Center' , link:'/policy'}]   "
+                }
+            }
+        ],
         "functionName": "sd_FAH1XmFgVHncNH1v",
         "category": "Function",
         "x": 180,
@@ -52,5 +60,24 @@
         "generateNext": false,
         "serviceName": "profileComponent",
         "generated": true
+    },
+    {
+        "id": "sd_NKQqvVY91Ly5IvkE",
+        "type": "Script",
+        "z": "sd_j52eEW1i8ysmFbKk",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "  [{icon:'person',text:'My details' , link:'/my-details'},\n  {icon:'edit_square',text:'My email address' , link:'/update-email'},\n  {icon:'heap_snapshot_multiple',text:'My tax details' , link:'/tax'},\n  {icon:'description',text:'My agreement & disclamers' , link:'/agreement'},\n  {icon:'shield_locked',text:'Our Primary Center' , link:'/policy'}]\n  ",
+        "functionName": "sd_NKQqvVY91Ly5IvkE",
+        "category": "Function",
+        "x": 260,
+        "y": 220,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "profileComponent"
     }
 ]

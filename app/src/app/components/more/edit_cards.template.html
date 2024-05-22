@@ -1,0 +1,59 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-toolbar class="blue">
+    <div fxLayout="row wrap" class="full-width" fxLayoutAlign="space-between center" [fxShow]="true">
+      <div fxLayout="row wrap" style="height: 60px;    width: 54%;" fxLayoutGap="30%" fxLayoutAlign="space-between center" [fxShow]="true"><mat-icon style="font-size: xx-large; padding-left: 6px;" class="pointer blue-color" routerLink="/home">arrow_back</mat-icon>
+        <p style="    width: 27%;     height: 50%;     border-radius: 16px;     display: flex;     align-items: center;     justify-content: center;" class="blue-bg white">
+          <b>Favourites</b>
+        </p>
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="end stretch" [fxShow]="true"><mat-icon>more_vert</mat-icon></div>
+    </div>
+  </mat-toolbar>
+  <div fxLayout="row wrap" style="    border-bottom: 1px solid #00000038;     background-color:white;     padding: 0 8px 0 8px; " fxLayoutAlign="space-between center" [fxShow]="true">
+    <p>
+      Add favourites</p><mat-icon class="text-color-blue"><span class="material-symbols-outlined"> add_circle</span></mat-icon>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="row wrap" fxLayoutAlign="start center" [fxShow]="true">
+      <div fxLayout="column wrap" style="    padding-left: 8px;" fxLayoutAlign="start stretch" [fxShow]="true" *ngIf="page.myFavourite.length &gt;0 ">
+        <p>
+          <b>My favourites</b>
+        </p>
+      </div>
+    </div>
+    <div fxLayout="column wrap" style="background:white;" class="full-width" fxLayoutAlign="center center" [fxShow]="true" *ngFor="let myfav of page.myFavourite">
+      <div fxLayout="row wrap" style="background:white ; border-bottom: 1px solid black; width: 95%;" fxLayoutAlign="space-between center" [fxShow]="true">
+        <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start center" [fxShow]="true">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="text-color-blue"><span class="material-symbols-outlined"> {{myfav.icon}}</span></mat-icon></div>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <p>
+              {{myfav.text}}
+            </p>
+          </div>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-checkbox [required]="false"></mat-checkbox></div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="start center" [fxShow]="true">
+    <div fxLayout="column wrap" style="    padding-left: 8px;" fxLayoutAlign="start stretch" [fxShow]="true">
+      <p>
+        <b>Choose favourites</b>
+      </p>
+    </div>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" style="background:white;" class="full-width" fxLayoutAlign="center center" [fxShow]="true" *ngFor="let fav of page.favourates">
+      <div fxLayout="row wrap" style="background:white ; border-bottom: 1px solid black; width: 95%;" fxLayoutAlign="space-between center" [fxShow]="true">
+        <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start center" [fxShow]="true">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="text-color-blue"><span class="material-symbols-outlined"> {{fav.icon}}</span></mat-icon></div>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <p>
+              {{fav.text}}
+            </p>
+          </div>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-checkbox (change)="click(fav)" [required]="false"></mat-checkbox></div>
+      </div>
+    </div>
+  </div>
+</div>
