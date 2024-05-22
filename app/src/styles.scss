@@ -22,6 +22,8 @@ $ghostwhite: #f5f5f5;
 $blackish : #2d2d2d; 
 // $navy-blue: #00486d;
 $blue-ish: #0299ac;
+$grey: #9c9e9f;
+$dark-blue: #0287ca;
 
 
 body {
@@ -173,6 +175,18 @@ body{
     color: $white;
 }
 
+.grey{
+    color: $grey;
+}
+
+.dark-blue{
+    color: $dark-blue;
+}
+
+.dark-blue-bg{
+    background-color: $dark-blue;
+}
+
 .cyan{
     color: $navy-blue
 }
@@ -195,6 +209,10 @@ body{
 //Colors
 .blue-color {
     color: $blue !important;
+}
+
+.grey-bg{
+    background-color: $ghostwhite;
 }
 
 .blue-bg {
@@ -381,6 +399,32 @@ background-color: #00486d !important;
 
 .logo-height {
     height: 50px;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                      //SAVINGS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.shadow{
+    box-shadow: 0px 10px;
+}
+
+.savings-available{
+    font-size: x-large;
+    font-weight: 300;
+}
+
+.mat-tab-label .mat-tab-label-content {
+    color: $white !important;
+}
+
+.mat-tab-label-container{
+    background-color: $blue !important;
+}
+
+
+.savings-available-under{
+    font-size: larger;
+    font-weight: 300;
 }
 
 @media screen and (max-width: 1024px) {

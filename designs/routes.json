@@ -69,6 +69,10 @@
             "component": "homeComponent"
         },
         {
+            "path": "savings",
+            "component": "savingsComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "/sign-in-stepper",
             "pathMatch": "full",

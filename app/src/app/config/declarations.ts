@@ -237,7 +237,6 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: '', redirectTo: 'scan-to-pay', pathMatch: 'full' },
   { path: 'confirm_pic', component: confirm_picComponent },
   { path: 'take-selfie', component: take_picComponent },
   { path: 'unable_to_capture', component: unable_to_captureComponent },
@@ -261,6 +260,7 @@ export const appRoutes = [
     component: update_permanent_limitsComponent,
   },
   { path: 'home', component: homeComponent },
+  { path: 'savings', component: savingsComponent },
   { path: '', redirectTo: '/sign-in-stepper', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
