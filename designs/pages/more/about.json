@@ -46,46 +46,6 @@
         "x": 180,
         "y": 30,
         "wires": [
-            [
-                "sd_aZOVZgpuPms22aZ3"
-            ]
-        ],
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "aboutComponent",
-        "generated": true
-    },
-    {
-        "id": "sd_aZOVZgpuPms22aZ3",
-        "type": "UseDependency",
-        "z": "sd_QgRMP4m2ouIJJJ4Z",
-        "viewType": "client-pages",
-        "nodeType": "flow",
-        "name": "",
-        "inputs": 1,
-        "outputs": 1,
-        "property": "",
-        "propertyType": "bh",
-        "propertyGv": "bh.",
-        "alias": "",
-        "modules": [
-            {
-                "textIp": "MatBottomSheet",
-                "typedIpValue": {
-                    "type": "this.page",
-                    "value": "bottomSheet"
-                },
-                "injectable": true
-            }
-        ],
-        "import_all": false,
-        "library": "@angular/material/bottom-sheet",
-        "serviceDesignerType": "pages",
-        "functionName": "sd_aZOVZgpuPms22aZ3",
-        "category": "Function",
-        "x": 325,
-        "y": 40,
-        "wires": [
             []
         ],
         "__n_excludedFromValidation__": {},

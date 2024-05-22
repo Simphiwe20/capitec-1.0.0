@@ -287,6 +287,7 @@ export const appRoutes = [
   { path: 'prepare-selfie', component: prepare_for_selfieComponent },
   { path: 'edit-cards', component: edit_cardsComponent },
   { path: 'profile', component: profileComponent },
+  { path: 'saving', component: savingsComponent },
   { path: '', redirectTo: 'ftlanding', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
