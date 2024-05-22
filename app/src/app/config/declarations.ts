@@ -16,6 +16,32 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-pay_userComponent
+import { pay_userComponent } from '../components/transact/pay_user.component';
+//CORE_REFERENCE_IMPORT-get_estimateComponent
+import { get_estimateComponent } from '../components/explore/get_estimate.component';
+//CORE_REFERENCE_IMPORT-loanComponent
+import { loanComponent } from '../components/explore/loan.component';
+//CORE_REFERENCE_IMPORT-creditComponent
+import { creditComponent } from '../components/explore/credit.component';
+//CORE_REFERENCE_IMPORT-buy_prepaid_mobileComponent
+import { buy_prepaid_mobileComponent } from '../components/transact/buy_prepaid_mobile.component';
+//CORE_REFERENCE_IMPORT-add_electricity_benComponent
+import { add_electricity_benComponent } from '../components/transact/add_electricity_ben.component';
+//CORE_REFERENCE_IMPORT-choose_banksComponent
+import { choose_banksComponent } from '../components/transact/choose_banks.component';
+//CORE_REFERENCE_IMPORT-bank_accountComponent
+import { bank_accountComponent } from '../components/transact/bank_account.component';
+//CORE_REFERENCE_IMPORT-payment_notifcationComponent
+import { payment_notifcationComponent } from '../components/transact/payment_notifcation.component';
+//CORE_REFERENCE_IMPORT-cellphoneComponent
+import { cellphoneComponent } from '../components/transact/cellphone.component';
+//CORE_REFERENCE_IMPORT-add_beneficiaryComponent
+import { add_beneficiaryComponent } from '../components/transact/add_beneficiary.component';
+//CORE_REFERENCE_IMPORT-transact_landingComponent
+import { transact_landingComponent } from '../components/transact/transact_landing.component';
+//CORE_REFERENCE_IMPORT-infoComponent
+import { infoComponent } from '../components/auth/sign_in/info.component';
 //CORE_REFERENCE_IMPORT-update_permanent_limitsComponent
 import { update_permanent_limitsComponent } from '../components/cards/update_permanent_limits.component';
 //CORE_REFERENCE_IMPORT-set_temporary_limitsComponent
@@ -128,6 +154,32 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-pay_userComponent
+  pay_userComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-get_estimateComponent
+  get_estimateComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-loanComponent
+  loanComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-creditComponent
+  creditComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-buy_prepaid_mobileComponent
+  buy_prepaid_mobileComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-add_electricity_benComponent
+  add_electricity_benComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-choose_banksComponent
+  choose_banksComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-bank_accountComponent
+  bank_accountComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-payment_notifcationComponent
+  payment_notifcationComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-cellphoneComponent
+  cellphoneComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-add_beneficiaryComponent
+  add_beneficiaryComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-transact_landingComponent
+  transact_landingComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-infoComponent
+  infoComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-update_permanent_limitsComponent
   update_permanent_limitsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-set_temporary_limitsComponent
@@ -252,6 +304,27 @@ export const appRoutes = [
     path: 'update-permanent-limits',
     component: update_permanent_limitsComponent,
   },
+  { path: 'info', component: infoComponent },
+  { path: 'landing', component: landingComponent },
+  { path: 'transact-landing', component: transact_landingComponent },
+  { path: 'pay-beneficiary', component: pay_beneficiaryComponent },
+  { path: 'add-beneficiary', component: add_beneficiaryComponent },
+  { path: 'cellphone', component: cellphoneComponent },
+  { path: 'payment-notification', component: payment_notifcationComponent },
+  { path: 'bank-account', component: bank_accountComponent },
+  { path: 'choose-banks', component: choose_banksComponent },
+  { path: 'buy-electricity', component: buy_electricityComponent },
+  { path: 'buy-prepaid', component: buy_prepaidComponent },
+  { path: 'add-electricity-ben', component: add_electricity_benComponent },
+  { path: 'buy-prepaid-mobile', component: buy_prepaid_mobileComponent },
+  { path: 'send-cash', component: send_cashComponent },
+  { path: 'transfer-money', component: transfer_moneyComponent },
+  { path: 'messages', component: messagesComponent },
+  { path: 'explore', component: exploreComponent },
+  { path: 'credit', component: creditComponent },
+  { path: 'loan', component: loanComponent },
+  { path: 'get-estimate', component: get_estimateComponent },
+  { path: 'pay-user', component: pay_userComponent },
   { path: '', redirectTo: '/savings-account', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

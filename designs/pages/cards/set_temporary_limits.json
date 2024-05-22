@@ -52,5 +52,49 @@
         "generateNext": false,
         "serviceName": "set_temporary_limitsComponent",
         "generated": true
+    },
+    {
+        "id": "sd_63L2pNyaQbb1Sb9e",
+        "type": "PageStart",
+        "z": "sd_DhseKfbPmhEGFeC0",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "show",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "show",
+        "category": "General",
+        "x": 60,
+        "y": 160,
+        "wires": [
+            [
+                "sd_OfVIsOQkcApx8mWl"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "set_temporary_limitsComponent"
+    },
+    {
+        "id": "sd_OfVIsOQkcApx8mWl",
+        "type": "Script",
+        "z": "sd_DhseKfbPmhEGFeC0",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "",
+        "functionName": "sd_OfVIsOQkcApx8mWl",
+        "category": "Function",
+        "x": 205,
+        "y": 160,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "set_temporary_limitsComponent",
+        "generated": true
     }
 ]

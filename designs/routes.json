@@ -53,6 +53,90 @@
             "component": "update_permanent_limitsComponent"
         },
         {
+            "path": "info",
+            "component": "infoComponent"
+        },
+        {
+            "path": "landing",
+            "component": "landingComponent"
+        },
+        {
+            "path": "transact-landing",
+            "component": "transact_landingComponent"
+        },
+        {
+            "path": "pay-beneficiary",
+            "component": "pay_beneficiaryComponent"
+        },
+        {
+            "path": "add-beneficiary",
+            "component": "add_beneficiaryComponent"
+        },
+        {
+            "path": "cellphone",
+            "component": "cellphoneComponent"
+        },
+        {
+            "path": "payment-notification",
+            "component": "payment_notifcationComponent"
+        },
+        {
+            "path": "bank-account",
+            "component": "bank_accountComponent"
+        },
+        {
+            "path": "choose-banks",
+            "component": "choose_banksComponent"
+        },
+        {
+            "path": "buy-electricity",
+            "component": "buy_electricityComponent"
+        },
+        {
+            "path": "buy-prepaid",
+            "component": "buy_prepaidComponent"
+        },
+        {
+            "path": "add-electricity-ben",
+            "component": "add_electricity_benComponent"
+        },
+        {
+            "path": "buy-prepaid-mobile",
+            "component": "buy_prepaid_mobileComponent"
+        },
+        {
+            "path": "send-cash",
+            "component": "send_cashComponent"
+        },
+        {
+            "path": "transfer-money",
+            "component": "transfer_moneyComponent"
+        },
+        {
+            "path": "messages",
+            "component": "messagesComponent"
+        },
+        {
+            "path": "explore",
+            "component": "exploreComponent"
+        },
+        {
+            "path": "credit",
+            "component": "creditComponent"
+        },
+        {
+            "path": "loan",
+            "component": "loanComponent"
+        },
+        {
+            "path": "get-estimate",
+            "component": "get_estimateComponent"
+        },
+        {
+            "path": "pay-user",
+            "component": "pay_userComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "/savings-account",
             "pathMatch": "full",

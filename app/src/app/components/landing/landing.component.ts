@@ -59,10 +59,34 @@ export class landingComponent {
 
   sd_xV0StEqkp7VzwxqT(bh) {
     try {
+      this.page.user = this.page.user;
+      bh = this.sd_bUfMVskuDy7DcZDk(bh);
       //appendnew_next_sd_xV0StEqkp7VzwxqT
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_xV0StEqkp7VzwxqT');
+    }
+  }
+
+  sd_bUfMVskuDy7DcZDk(bh) {
+    try {
+      this.page.result = JSON.parse(sessionStorage.getItem('accNo'));
+      bh = this.sd_hI3gfhVm39WC4LqQ(bh);
+      //appendnew_next_sd_bUfMVskuDy7DcZDk
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_bUfMVskuDy7DcZDk');
+    }
+  }
+
+  sd_hI3gfhVm39WC4LqQ(bh) {
+    try {
+      const page = this.page;
+      page.user = page.result.fullName;
+      //appendnew_next_sd_hI3gfhVm39WC4LqQ
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_hI3gfhVm39WC4LqQ');
     }
   }
 

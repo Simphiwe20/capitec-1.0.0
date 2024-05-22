@@ -4,12 +4,14 @@
 @import "nDefaults.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 $blue: #0f9ddf;
 $white: #ffffff;
 $ghostwhite: #f5f5f5;
 $blackish : #2d2d2d; 
 $navy-blue: #00486d;
 $blue-ish: #0299ac;
+$red: #dd211f;
 
 body{
     margin: 0 ;
@@ -57,6 +59,10 @@ body{
     background-color: $white;
 }
 
+.red-bg {
+    background-color: $red;
+}
+
 
 //Margins
 .no-margin {
@@ -101,6 +107,7 @@ body{
 .p-right-10 {
     padding-right: 10px;
 }
+
 
 //Material Changes
 .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon{
@@ -186,11 +193,30 @@ body{
 .update-permanent-limits    {
     .mat-form-field-infix {
     border-top: 0 !important;
+    }
 }
+
+.credit{
+    .mat-tab-label .mat-tab-label-content {
+        color: $white !important;
+    }
 }
 
 
 input.mat-input-element {
     font-weight: 700;
     font-size: larger;
+}
+
+.landing {
+    .mat-radio-checked .mat-radio-inner-circle .mat-radio-button{
+         background-color: $blue !important;
+    }
+}
+
+.loan {
+    mat-tab-label {
+        background-color: $red !important;
+        color: $white !important;
+ }
 }

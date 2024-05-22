@@ -57,6 +57,20 @@ export class set_temporary_limitsComponent {
     }
   }
 
+  show(...others) {
+    let bh: any = {};
+    try {
+      bh = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+      bh = this.sd_OfVIsOQkcApx8mWl(bh);
+      //appendnew_next_show
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_63L2pNyaQbb1Sb9e');
+    }
+  }
   //appendnew_flow_set_temporary_limitsComponent_start
 
   sd_ioJMVOwHjtQSgVUe(bh) {
@@ -65,6 +79,15 @@ export class set_temporary_limitsComponent {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_ioJMVOwHjtQSgVUe');
+    }
+  }
+
+  sd_OfVIsOQkcApx8mWl(bh) {
+    try {
+      //appendnew_next_sd_OfVIsOQkcApx8mWl
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_OfVIsOQkcApx8mWl');
     }
   }
 

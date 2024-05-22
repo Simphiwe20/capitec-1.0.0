@@ -40,13 +40,76 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "user",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "user"
+                }
+            }
+        ],
         "functionName": "sd_xV0StEqkp7VzwxqT",
         "category": "Function",
         "x": 180,
         "y": 30,
         "wires": [
+            [
+                "sd_bUfMVskuDy7DcZDk"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "landingComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_hI3gfhVm39WC4LqQ",
+        "type": "Script",
+        "z": "sd_MG6qnpt25Kl9pKRj",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.user = page.result.fullName ",
+        "functionName": "sd_hI3gfhVm39WC4LqQ",
+        "category": "Function",
+        "x": 465,
+        "y": 40,
+        "wires": [
             []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "landingComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_bUfMVskuDy7DcZDk",
+        "type": "Storage",
+        "z": "sd_MG6qnpt25Kl9pKRj",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "operationType": "getItem",
+        "storageType": "sessionStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "accNo"
+        },
+        "value": {},
+        "resultMapping": {
+            "type": "this.page",
+            "value": "result"
+        },
+        "functionName": "sd_bUfMVskuDy7DcZDk",
+        "category": "Storage",
+        "x": 340,
+        "y": 40,
+        "wires": [
+            [
+                "sd_hI3gfhVm39WC4LqQ"
+            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,

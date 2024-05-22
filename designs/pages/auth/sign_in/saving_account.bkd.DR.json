@@ -416,6 +416,12 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "#accForm",
+                        "_value": "ngForm",
+                        "_type": "kv",
+                        "_attrDef": "c"
                     }
                 ],
                 "490ee616-20e2-71a7-8af5-283f5a7feb7c": {
@@ -590,7 +596,7 @@
                                 },
                                 {
                                     "_key": "[(ngModel)]",
-                                    "_value": "",
+                                    "_value": "page.accNo.accNo",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -602,7 +608,7 @@
                                 },
                                 {
                                     "_key": "name",
-                                    "_value": "",
+                                    "_value": "accNo",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -679,10 +685,18 @@
                                 },
                                 {
                                     "_key": "(suffixIconClick)",
-                                    "_value": "",
+                                    "_value": "openInfo()",
                                     "_type": "a",
                                     "_attrDef": "p",
-                                    "_visibility": true
+                                    "_visibility": true,
+                                    "_customAttributeFlag": "flowpicker",
+                                    "objValue": {
+                                        "nodeID": "sd_5nu1tL9qPuuH2x6P",
+                                        "functionName": "openInfo",
+                                        "activeTree": "pages",
+                                        "z": "sd_56fMMdFaMPEibdPl",
+                                        "input": []
+                                    }
                                 },
                                 {
                                     "_key": "Prefix Icon",
@@ -814,9 +828,18 @@
                                 },
                                 {
                                     "_key": "(click)",
-                                    "_value": "",
+                                    "_value": "accNumber(accForm)",
                                     "_type": "kv",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "objValue": {
+                                        "nodeID": "sd_Otlqxan15c6188tr",
+                                        "functionName": "accNumber",
+                                        "activeTree": "pages",
+                                        "z": "sd_56fMMdFaMPEibdPl",
+                                        "input": [
+                                            "accForm"
+                                        ]
+                                    }
                                 },
                                 {
                                     "_key": "[disabled]",

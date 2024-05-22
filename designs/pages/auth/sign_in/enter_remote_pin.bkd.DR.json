@@ -1308,6 +1308,12 @@
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_visibility": false
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "/create-remote-pin",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ],
                         "60a9a6e8-4219-0381-2ef0-2e68520596c9": {
@@ -1635,7 +1641,6 @@
                     "609f492e-25aa-28df-aea8-327205580c4d": {
                         "paletteKey": "NG-RaisedButton",
                         "parentEditorKey": "6b051f13-b657-aa2e-5c95-51e70593d303",
-                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {

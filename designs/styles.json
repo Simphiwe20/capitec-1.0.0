@@ -9,6 +9,7 @@
         "white",
         "navy",
         "white-bg",
+        "red-bg",
         "no-margin",
         "m-b-0",
         "m-b-8",
@@ -40,6 +41,14 @@
         "mat-checkbox-inner-container",
         "update-permanent-limits",
         "mat-form-field-infix",
-        "mat-input-element"
+        "credit",
+        "mat-tab-label",
+        "mat-tab-label-content",
+        "mat-input-element",
+        "landing",
+        "mat-radio-checked",
+        "mat-radio-inner-circle",
+        "mat-radio-button",
+        "loan"
     ]
 }

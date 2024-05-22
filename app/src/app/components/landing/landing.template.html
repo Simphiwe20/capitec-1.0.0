@@ -1,1 +1,22 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="column wrap" class="full-width full-height standard-width" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" style="height:60px;" class="full-width" fxLayoutAlign="space-between center" [fxShow]="true">
+        <p style="width: 27%;height: 50%; border-radius: 16px;    display: flex;     align-items: center;     justify-content: center;     margin-left: 37%;" class="blue-bg white">
+          <b>For me</b>
+        </p><mat-icon style="font-size: xx-large; padding-left: 6px;" class="blue-color">more_vert</mat-icon>
+      </div>
+      <div fxLayout="column wrap" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/Images/hello-landing.PNG" class="full-width"></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/Images/background.PNG" style="position:relative;" class="full-width">
+        <div fxLayout="column wrap" style="position:absolute;right: 163px;top: 176px;" fxLayoutAlign="center center" [fxShow]="true">
+          <h3 style="    font-size: x-large;" class="m-b-0">
+            {{page.user}}
+          </h3>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div fxLayout="row wrap" class="landing" fxLayoutAlign="start stretch" [fxShow]="true"><mat-radio-button [required]="false"></mat-radio-button><mat-radio-button [required]="false"></mat-radio-button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

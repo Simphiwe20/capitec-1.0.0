@@ -12,8 +12,10 @@
   </div>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
     <div fxLayout="column wrap" class="padding-10" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true">
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="blue-bg white">Confirm</button></div>
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button style="border: 2px solid #0f9ddf;" class="blue-color">Cancel</button></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button routerLink="/activation-instructions" class="blue-bg white">Confirm</button></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button style="border: 2px solid #0f9ddf;" class="blue-color">Cancel</button></div>
+      </div>
     </div>
   </div><bh-footer style="position: absolute;     bottom: 0;" class="text-center"></bh-footer>
 </div>

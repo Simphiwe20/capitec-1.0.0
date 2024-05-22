@@ -1651,7 +1651,6 @@
                                 "f86ec1fa-e4fa-b276-d300-392cb33fadc0": {
                                     "paletteKey": "NG-checkbox",
                                     "parentEditorKey": "b607ef2b-e40c-07af-5c33-316cd671eb14",
-                                    "isCommented": "false",
                                     "commentid": null,
                                     "designerReference": [
                                         {
@@ -2446,7 +2445,7 @@
                                                 },
                                                 {
                                                     "_key": "html",
-                                                    "_value": "Cash withdrawals",
+                                                    "_value": "Card machine purchases",
                                                     "_type": "a",
                                                     "_attrDef": "p"
                                                 }
@@ -2797,7 +2796,6 @@
                                 "4512497f-7717-a54e-54ee-4298fc4983eb": {
                                     "paletteKey": "NG-checkbox",
                                     "parentEditorKey": "79d728ed-9030-3ad7-a259-c0efcbeb64d7",
-                                    "isCommented": "false",
                                     "commentid": null,
                                     "designerReference": [
                                         {
@@ -3592,7 +3590,7 @@
                                                 },
                                                 {
                                                     "_key": "html",
-                                                    "_value": "Cash withdrawals",
+                                                    "_value": "Online/scan to pay/phone",
                                                     "_type": "a",
                                                     "_attrDef": "p"
                                                 }
@@ -3943,7 +3941,6 @@
                                 "9de9dfb2-9819-f54f-6799-d10a7ca584b0": {
                                     "paletteKey": "NG-checkbox",
                                     "parentEditorKey": "b113c477-5944-c01f-43a2-62dcc98d0899",
-                                    "isCommented": "false",
                                     "commentid": null,
                                     "designerReference": [
                                         {

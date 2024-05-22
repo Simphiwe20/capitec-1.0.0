@@ -12,27 +12,28 @@
       To access the capitec Banking app (5 - 6 digits)</p>
   </div>
   <div fxLayout="column wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true">
-    <form style="gap:1em;" class="padding-6">
+    <form #createPinForm="ngForm" style="gap:1em;" class="padding-6">
       <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
         <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
           <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput type="password" placeholder="Create Remote App PIN" [required]="false">
+            <input matInput [(ngModel)]="page.pinForm.createPin" name="createPin" type="password" placeholder="Create Remote App PIN" [required]="true">
             <mat-icon matSuffix>visibility_off</mat-icon>
           </mat-form-field>
         </div>
         <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
           <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput type="password" placeholder="Confirm Remote App PIN" [required]="false">
+            <input matInput [(ngModel)]="page.pinForm.confirmPin" name="confirmPin" type="password" placeholder="Confirm Remote App PIN" [required]="true">
             <mat-icon matSuffix>visibility_off</mat-icon>
           </mat-form-field>
         </div>
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="blue-bg white padding-10" (click)="sd_3WQTZvnddTpQcB9m(createPinForm)">Create</button>
         <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
           <p style="margin-bottom:10px;" class="m-t-0 padding-left">
             <small>Your Remote app PIN is not your card PIN</small>
           </p>
         </div>
       </div>
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="blue-bg white padding-10">Create</button></div>
     </form>
   </div>
 </div>
