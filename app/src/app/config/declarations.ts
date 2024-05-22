@@ -16,6 +16,14 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-shared
+import { shared } from '../sd-services/shared';
+//CORE_REFERENCE_IMPORT-shared_cardsService
+import { shared_cardsService } from '../services/shared_cards/shared_cards.service';
+//CORE_REFERENCE_IMPORT-edit_cardsComponent
+import { edit_cardsComponent } from '../components/more/edit_cards.component';
+//CORE_REFERENCE_IMPORT-square_cardsComponent
+import { square_cardsComponent } from '../components/shared/square_cards.component';
 //CORE_REFERENCE_IMPORT-unable_to_captureComponent
 import { unable_to_captureComponent } from '../components/shared/unable_to_capture.component';
 //CORE_REFERENCE_IMPORT-confirm_picComponent
@@ -130,6 +138,10 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-edit_cardsComponent
+  edit_cardsComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-square_cardsComponent
+  square_cardsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-unable_to_captureComponent
   unable_to_captureComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-confirm_picComponent
@@ -229,6 +241,10 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-shared
+shared,
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-shared_cardsService
+shared_cardsService,
 ];
 
 /**
@@ -237,6 +253,13 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
+  { path: 'ftlanding', component: ft_landingComponent },
+  {
+    path: 'activation-instruction',
+    component: activation_instructionsComponent,
+  },
+  { path: 'instruction', component: instructionsComponent },
+  { path: 'identity', component: verify_identityComponent },
   { path: 'confirm_pic', component: confirm_picComponent },
   { path: 'take-selfie', component: take_picComponent },
   { path: 'unable_to_capture', component: unable_to_captureComponent },
@@ -260,7 +283,11 @@ export const appRoutes = [
     component: update_permanent_limitsComponent,
   },
   { path: 'home', component: homeComponent },
-  { path: '', redirectTo: '/sign-in-stepper', pathMatch: 'full' },
+  { path: 'footer', component: footer_homeComponent },
+  { path: 'prepare-selfie', component: prepare_for_selfieComponent },
+  { path: 'edit-cards', component: edit_cardsComponent },
+  { path: 'profile', component: profileComponent },
+  { path: '', redirectTo: 'ftlanding', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

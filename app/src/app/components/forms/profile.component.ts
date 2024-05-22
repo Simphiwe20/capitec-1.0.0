@@ -59,6 +59,25 @@ export class profileComponent {
 
   sd_FAH1XmFgVHncNH1v(bh) {
     try {
+      this.page.profile = [
+        { icon: 'person', text: 'My details', link: '/my-details' },
+        {
+          icon: 'edit_square',
+          text: 'My email address',
+          link: '/update-email',
+        },
+        {
+          icon: 'heap_snapshot_multiple',
+          text: 'My tax details',
+          link: '/tax',
+        },
+        {
+          icon: 'description',
+          text: 'My agreement & disclamers',
+          link: '/agreement',
+        },
+        { icon: 'shield_locked', text: 'Our Primary Center', link: '/policy' },
+      ];
       //appendnew_next_sd_FAH1XmFgVHncNH1v
       return bh;
     } catch (e) {

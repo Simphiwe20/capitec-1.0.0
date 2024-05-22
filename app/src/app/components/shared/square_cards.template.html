@@ -1,0 +1,9 @@
+<div fxLayout="column wrap" style="     height: 372px;" class="full-width" fxLayoutGap="1em" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="row wrap" style="    height: 371px ;  gap: 11px;width:95%;" fxLayoutAlign="start start" [fxShow]="true"><mat-card *ngFor="let item of page.fav" style="    width: 40.3%;    height: 22%;">
+      <mat-card-content align="center" style="display: flex;     flex-direction: column;     align-items: center;     justify-content: center;" class="full-width full-height"><mat-icon class="text-color-blue"><span class="material-symbols-outlined">{{item.icon}}</span></mat-icon>
+        <div>
+          {{item.text}}
+        </div>
+      </mat-card-content>
+    </mat-card></div>
+</div>

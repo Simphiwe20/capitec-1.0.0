@@ -19,11 +19,11 @@
         "name": "",
         "functionName": "sd_lZDyEpfnThvl8PcC",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 25,
+        "y": 40,
         "wires": [
             [
-                "sd_Nts7LXLNkF4cXfIp"
+                "sd_ovlJrf4RFzxVqSXu"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -40,11 +40,1380 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "registerForm",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "fileElement",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "fileElement1",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "result",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "uploadedFile",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "new FormData()"
+                }
+            },
+            {
+                "textIp": "uploadedFile1",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "new FormData()"
+                }
+            },
+            {
+                "textIp": "email",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "email"
+                }
+            },
+            {
+                "textIp": "uploadedFile2",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "new FormData()"
+                }
+            }
+        ],
         "functionName": "sd_Nts7LXLNkF4cXfIp",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 285,
+        "y": 40,
+        "wires": [
+            [
+                "sd_lzR62Q4QLHBX9c5F"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ovlJrf4RFzxVqSXu",
+        "type": "UseDependency",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "FormGroup",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "registerForm"
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "FormControl",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "Validators",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/forms",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_ovlJrf4RFzxVqSXu",
+        "category": "Function",
+        "x": 160,
+        "y": 40,
+        "wires": [
+            [
+                "sd_Nts7LXLNkF4cXfIp"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_upq3ammtCsx9w18p",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "submit_form",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "form",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "submitForm",
+        "category": "General",
+        "x": 45,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_mBpyQPCNbmwxVVEG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_lzR62Q4QLHBX9c5F",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(page.uploadedFile)\npage.registerForm =new FormGroup({\n      fullName :new FormControl('' , Validators.required),\n       ID :new FormControl('', [Validators.required, Validators.pattern(/^\\d{13}$/), Validators.maxLength(13)]),\n       contact :new FormControl('' ,Validators.required) ,\n       email:new FormControl('' ,[Validators.required, Validators.pattern(/^[^\\s@]+@([^\\s@.,]+\\.)+[^\\s@.,]{2,}$/)]),\n       pin :new FormControl('',[ Validators.required,Validators.minLength(5), Validators.maxLength(5)]),\n       PasswordConfirm :new FormControl('' ,Validators.required),\n    })\n   ",
+        "functionName": "sd_lzR62Q4QLHBX9c5F",
+        "category": "Function",
+        "x": 385,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_7bo8mH5cnWlMA1CP",
+        "type": "AfterViewInit",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "After View Init",
+        "functionName": "ngAfterViewInit",
+        "category": "Lifecycle Events",
+        "x": 45,
+        "y": 140,
+        "wires": [
+            [
+                "sd_jfe0bdfgpN36Rsnp"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_jfe0bdfgpN36Rsnp",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": " page.fileElement = document.getElementById('file');\npage.fileElement1 = document.getElementById('file1');\npage.fileElement2 = document.getElementById('file2');",
+        "functionName": "sd_jfe0bdfgpN36Rsnp",
+        "category": "Function",
+        "x": 225,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_OXjrVlhLaDux3k28",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "onInputChange",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "event",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "onInputChange",
+        "category": "General",
+        "x": 45,
+        "y": 240,
+        "wires": [
+            [
+                "sd_4K8i3KHHjhBnVO93"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_4K8i3KHHjhBnVO93",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": " // Get the input value from the event\n  let  inputText\n    let inputValue: string =bh.input.event.target.value;\n    // Replace all characters except digits using a regular expression\n    inputValue = inputValue.replace(/[^\\d]/g, '');\n    // Update the input field value with the modified value\n    bh.input.event.target.value = inputValue;\n    // Update the inputText property with the modified value\n    inputText = inputValue;",
+        "functionName": "sd_4K8i3KHHjhBnVO93",
+        "category": "Function",
+        "x": 225,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_4NgGlP9VLuMUKg8f",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "fileUpload",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "event",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "n",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "fileUpload",
+        "category": "General",
+        "x": 45,
+        "y": 820,
+        "wires": [
+            [
+                "sd_g734ED0TcU933Is5"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_g734ED0TcU933Is5",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": " ",
+        "script": "// page.uploadedfiles:file[][] = []\n// const files: FileList = event.target.files;\n//     console.log(files)\n//     const fileArray: File[] = [];\n//     for (let i = 0; i < files.length; i++) {\n//       fileArray.push(files[i]);\n//     }\n//     page.uploadedfiles[n] = fileArray;;\n\nconst file: File | null = bh.input.event.target.files?.[0] || null;\nconsole.log(file);\n\nif (file) {\n  // let email = {email: 'angel@gmail.com'}\n  page.uploadedFile.append('ID', file);\n  // page.uploadedFile = {'ID': file, body: {email: 'angel@gmail.com'}}\n  // console.log(page.uploadedFile)\n} else {\n  console.log('No file is uploaded')\n  // Handle the case where no file is selected\n}\n\n// page.uploadedFile = {ID: page.uploadedFile}\n\nconsole.log(page.uploadedFile)",
+        "functionName": "sd_g734ED0TcU933Is5",
+        "category": "Function",
+        "x": 145,
+        "y": 820,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_mBpyQPCNbmwxVVEG",
+        "type": "PageSwitch",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "form.valid",
+        "propertyType": "bh.input",
+        "propertyGv": "bh.input.form.valid",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_mBpyQPCNbmwxVVEG",
+        "category": "Function",
+        "x": 145,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_RtoAuMq5sKHQiI91"
+            ],
+            [
+                "sd_R0wft9WSvAKm6gg1"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_RtoAuMq5sKHQiI91",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(\"true\")\n delete bh.input.form.value.PasswordConfirm; \nconsole.log('formvalue',bh.input.form.value)\n",
+        "functionName": "sd_RtoAuMq5sKHQiI91",
+        "category": "Function",
+        "x": 245,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_RZXvQUtibvY2WoUz"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_R0wft9WSvAKm6gg1",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(\"false\", page.registerForm)",
+        "functionName": "sd_R0wft9WSvAKm6gg1",
+        "category": "Function",
+        "x": 245,
+        "y": 1060,
+        "wires": [
+            [
+                "sd_GeUOSC997fcZepP3"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_RZXvQUtibvY2WoUz",
+        "type": "Environment",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "envMaps": [
+            {
+                "flowVar": {
+                    "type": "this.page",
+                    "value": "ssdUrl"
+                },
+                "envProperty": "ssdURL"
+            }
+        ],
+        "functionName": "sd_RZXvQUtibvY2WoUz",
+        "category": "General",
+        "x": 345,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_0k9CeRuSzDAQudOX"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_bT9MibDTq7WQdm5h",
+        "type": "HttpRequest",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.Url",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "Url"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "bh.input.form.value",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "form.value"
+        },
+        "resultMapping": "bh.result",
+        "resultMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_bT9MibDTq7WQdm5h",
+        "category": "HTTP",
+        "x": 545,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_lRUsFVNuA6spW7k5"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_0k9CeRuSzDAQudOX",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.Url = page.ssdUrl + 'registration'",
+        "functionName": "sd_0k9CeRuSzDAQudOX",
+        "category": "Function",
+        "x": 445,
+        "y": 1000,
+        "wires": [
+            [
+                "sd_bT9MibDTq7WQdm5h"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_lRUsFVNuA6spW7k5",
+        "type": "SnackBar",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "message": {
+            "type": "str",
+            "value": "REGISTREATION IS SUCCESSFULLY AND AWAITING  APROVAL"
+        },
+        "action": {
+            "type": "str",
+            "value": "OK"
+        },
+        "duration": {
+            "type": "num",
+            "value": "3000"
+        },
+        "horizontalPosition": "center",
+        "verticalPosition": "bottom",
+        "panelClass": {
+            "type": "str",
+            "value": ""
+        },
+        "direction": "ltr",
+        "functionName": "sd_lRUsFVNuA6spW7k5",
+        "category": "General",
+        "x": 685,
+        "y": 1000,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_GeUOSC997fcZepP3",
+        "type": "SnackBar",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "message": {
+            "type": "str",
+            "value": "FILL ALL NESSESARY FILLS"
+        },
+        "action": {
+            "type": "str",
+            "value": "OK"
+        },
+        "duration": {
+            "type": "num",
+            "value": "3000"
+        },
+        "horizontalPosition": "center",
+        "horizontalPositionMap": "",
+        "verticalPosition": "bottom",
+        "verticalPositionMap": "",
+        "panelClass": {
+            "type": "str",
+            "value": ""
+        },
+        "direction": "ltr",
+        "functionName": "sd_GeUOSC997fcZepP3",
+        "category": "General",
+        "x": 345,
+        "y": 1080,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_dOJlQARsepuUkUGo",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "",
+        "functionName": "sd_dOJlQARsepuUkUGo",
+        "category": "Function",
+        "x": 820,
+        "y": 600,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_vIqg2qaG3HeBIiJM",
+        "type": "Log",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "\"DONE\"",
+        "functionName": "sd_vIqg2qaG3HeBIiJM",
+        "category": "General",
+        "x": 465,
+        "y": 920,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "str",
+                "value": "DONE",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_3GWywEXTrdJ4f8Wi",
+        "type": "HttpRequest",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.urlUploadID",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "urlUploadID"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "this.page.uploadedFile",
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "uploadedFile"
+        },
+        "resultMapping": "this.page.result",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_3GWywEXTrdJ4f8Wi",
+        "category": "HTTP",
+        "x": 345,
+        "y": 920,
+        "wires": [
+            [
+                "sd_vIqg2qaG3HeBIiJM"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_0uReLtAnwlsBtha4",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "upload",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "upload",
+        "category": "General",
+        "x": 45,
+        "y": 920,
+        "wires": [
+            [
+                "sd_zGcjKxFS01JESUKa"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_zGcjKxFS01JESUKa",
+        "type": "Environment",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "envMaps": [
+            {
+                "flowVar": {
+                    "type": "this.page",
+                    "value": "ssdUrl"
+                },
+                "envProperty": "ssdURL"
+            }
+        ],
+        "functionName": "sd_zGcjKxFS01JESUKa",
+        "category": "General",
+        "x": 145,
+        "y": 920,
+        "wires": [
+            [
+                "sd_xC1l32Ni8TYb4ABh"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_xC1l32Ni8TYb4ABh",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.urlUploadID = page.ssdUrl + 'upload-ID'\n\nconsole.log(page.uploadedFile)\n\npage.uploadedFile.email = page.registerForm.controls['email'].value\n",
+        "functionName": "sd_xC1l32Ni8TYb4ABh",
+        "category": "Function",
+        "x": 245,
+        "y": 920,
+        "wires": [
+            [
+                "sd_3GWywEXTrdJ4f8Wi"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_FtdKWsV86pUKlJ8H",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "submit",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "form",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "submit",
+        "category": "General",
+        "x": 45,
+        "y": 1140,
+        "wires": [
+            [
+                "sd_xAM57wjKSoxl8P2L"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_xAM57wjKSoxl8P2L",
+        "type": "PageCallService",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_Chk202Q1mGZRKnWi",
+            "type": "tab",
+            "createdDate": "2024-05-13T10:52:35.582Z",
+            "label": "verify_identity",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_upq3ammtCsx9w18p",
+            "flowName": "submitForm"
+        },
+        "inputVariables": [
+            {
+                "key": "form",
+                "map": true,
+                "valueType": "bh",
+                "value": "input.form"
+            }
+        ],
+        "outputMapping": [],
+        "serviceImportPath": "./",
+        "startName": "submitForm",
+        "inputParams": [
+            "bh.input.form"
+        ],
+        "accept_csd": false,
+        "functionName": "sd_xAM57wjKSoxl8P2L",
+        "category": "General",
+        "x": 185,
+        "y": 1140,
+        "wires": [
+            [
+                "sd_ca2JE1vIVw5eoMHN"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ca2JE1vIVw5eoMHN",
+        "type": "PageCallService",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_Chk202Q1mGZRKnWi",
+            "type": "tab",
+            "createdDate": "2024-05-13T10:52:35.582Z",
+            "label": "verify_identity",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_0uReLtAnwlsBtha4",
+            "flowName": "upload"
+        },
+        "inputVariables": [],
+        "outputMapping": [],
+        "serviceImportPath": "./",
+        "startName": "upload",
+        "inputParams": [],
+        "accept_csd": false,
+        "functionName": "sd_ca2JE1vIVw5eoMHN",
+        "category": "General",
+        "x": 345,
+        "y": 1140,
+        "wires": [
+            [
+                "sd_XXsYLiFcwAIRcHlw"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_HmDGSya3qea8OH9M",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "fileUpload1",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "event",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "n",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "fileUpload1",
+        "category": "General",
+        "x": 85,
+        "y": 360,
+        "wires": [
+            [
+                "sd_FRbAcr44aV0h07X3"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_FRbAcr44aV0h07X3",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": " ",
+        "script": "// page.uploadedFile1uploadedfile1ss:file[][] = []\n// const files: FileList = event.target.files;\n//     console.log(files)\n//     const fileArray: File[] = [];\n//     for (let i = 0; i < files.length; i++) {\n//       fileArray.push(files[i]);\n//     }\n//     page.uploadedfiles[n] = fileArray;;\n\nconst file: File | null = bh.input.event.target.files?.[0] || null;\nconsole.log(file);\n\nif (file) {\n  // let email = {email: 'angel@gmail.com'}\n  page.uploadedFile1.append('proof_of_residence', file);\n  // page.uploadedFile1 = {'ID': file, body: {email: 'angel@gmail.com'}}\n  // console.log(page.uploadedFile1)\n} else {\n  console.log('No file is uploaded')\n  // Handle the case where no file is selected\n}\n\n// page.uploadedFile1 = {ID: page.uploadedFile1}\n\nconsole.log(page.uploadedFile1)",
+        "functionName": "sd_FRbAcr44aV0h07X3",
+        "category": "Function",
+        "x": 165,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_yZSNWcQXp9qQaDtz",
+        "type": "Log",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "\"DONE picture\"",
+        "functionName": "sd_yZSNWcQXp9qQaDtz",
+        "category": "General",
+        "x": 465,
+        "y": 720,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "str",
+                "value": "DONE picture",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_wszUtRW6yc43JuHX",
+        "type": "HttpRequest",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.urlUploadpicture",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "urlUploadpicture"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "this.page.uploadedFile",
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "uploadedFile"
+        },
+        "resultMapping": "this.page.result",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_wszUtRW6yc43JuHX",
+        "category": "HTTP",
+        "x": 365,
+        "y": 720,
+        "wires": [
+            [
+                "sd_yZSNWcQXp9qQaDtz"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_FJIFP824XDj0CnmA",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "upload2",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "upload2",
+        "category": "General",
+        "x": 45,
+        "y": 720,
+        "wires": [
+            [
+                "sd_SuONHM4MqYANzdwR"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_SuONHM4MqYANzdwR",
+        "type": "Environment",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "envMaps": [
+            {
+                "flowVar": {
+                    "type": "this.page",
+                    "value": "ssdUrl"
+                },
+                "envProperty": "ssdURL"
+            }
+        ],
+        "functionName": "sd_SuONHM4MqYANzdwR",
+        "category": "General",
+        "x": 145,
+        "y": 720,
+        "wires": [
+            [
+                "sd_HtdMNe9gY6F8Z4jJ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_HtdMNe9gY6F8Z4jJ",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.urlUploadpicture = page.ssdUrl + 'upload-picture'\n",
+        "functionName": "sd_HtdMNe9gY6F8Z4jJ",
+        "category": "Function",
+        "x": 245,
+        "y": 720,
+        "wires": [
+            [
+                "sd_wszUtRW6yc43JuHX"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_RAwOtEG6kCUXeJaj",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "fileUpload2",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "event",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "n",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "fileUpload2",
+        "category": "General",
+        "x": 65,
+        "y": 620,
+        "wires": [
+            [
+                "sd_sO0HyFAAQXULsJrf"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_sO0HyFAAQXULsJrf",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": " ",
+        "script": "// page.uploadedfile1uploadedfile1ss:file[][] = []\n// const files: FileList = event.target.files;\n//     console.log(files)\n//     const fileArray: File[] = [];\n//     for (let i = 0; i < files.length; i++) {\n//       fileArray.push(files[i]);\n//     }\n//     page.uploadedfiles[n] = fileArray;;\n\nconst file: File | null = bh.input.event.target.files?.[0] || null;\nconsole.log(file);\n\nif (file) {\n  // let email = {email: 'angel@gmail.com'}\n  page.uploadedFile2.append('picture', file);\n  // page.uploadedFile2 = {'ID': file, body: {email: 'angel@gmail.com'}}\n  // console.log(page.uploadedFile2)\n} else {\n  console.log('No file is uploaded')\n  // Handle the case where no file is selected\n}\n\n// page.uploadedFile2 = {ID: page.uploadedfile1}\n\nconsole.log(page.uploadedFile2)",
+        "functionName": "sd_sO0HyFAAQXULsJrf",
+        "category": "Function",
+        "x": 145,
+        "y": 620,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_oxTtjACEyzMU6aDG",
+        "type": "HttpRequest",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.urlUploadproof",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "urlUploadproof"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "this.page.uploadedFile",
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "uploadedFile"
+        },
+        "resultMapping": "this.page.result",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_oxTtjACEyzMU6aDG",
+        "category": "HTTP",
+        "x": 345,
+        "y": 460,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_q7eSP8bXhrlStCYi",
+        "type": "PageStart",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "upload1",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "upload1",
+        "category": "General",
+        "x": 45,
+        "y": 480,
+        "wires": [
+            [
+                "sd_QdlQxPKdmmEjzRaS"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "verify_identityComponent"
+    },
+    {
+        "id": "sd_QdlQxPKdmmEjzRaS",
+        "type": "Environment",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "envMaps": [
+            {
+                "flowVar": {
+                    "type": "this.page",
+                    "value": "ssdUrl"
+                },
+                "envProperty": "ssdURL"
+            }
+        ],
+        "functionName": "sd_QdlQxPKdmmEjzRaS",
+        "category": "General",
+        "x": 125,
+        "y": 460,
+        "wires": [
+            [
+                "sd_iTTsEWd34NASI5vG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_iTTsEWd34NASI5vG",
+        "type": "Script",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.urlUploadproof = page.ssdUrl + 'upload-proof'\n",
+        "functionName": "sd_iTTsEWd34NASI5vG",
+        "category": "Function",
+        "x": 225,
+        "y": 460,
+        "wires": [
+            [
+                "sd_oxTtjACEyzMU6aDG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_XXsYLiFcwAIRcHlw",
+        "type": "PageCallService",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_Chk202Q1mGZRKnWi",
+            "type": "tab",
+            "createdDate": "2024-05-13T10:52:35.582Z",
+            "label": "verify_identity",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_q7eSP8bXhrlStCYi",
+            "flowName": "upload1"
+        },
+        "inputVariables": [],
+        "outputMapping": [],
+        "serviceImportPath": "./",
+        "startName": "upload1",
+        "inputParams": [],
+        "accept_csd": false,
+        "functionName": "sd_XXsYLiFcwAIRcHlw",
+        "category": "General",
+        "x": 440,
+        "y": 1160,
+        "wires": [
+            [
+                "sd_jdXEm8eTIOGZVnrn"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "verify_identityComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_jdXEm8eTIOGZVnrn",
+        "type": "PageCallService",
+        "z": "sd_Chk202Q1mGZRKnWi",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_Chk202Q1mGZRKnWi",
+            "type": "tab",
+            "createdDate": "2024-05-13T10:52:35.582Z",
+            "label": "verify_identity",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_FJIFP824XDj0CnmA",
+            "flowName": "upload2"
+        },
+        "inputVariables": [],
+        "outputMapping": [],
+        "serviceImportPath": "./",
+        "startName": "upload2",
+        "inputParams": [],
+        "accept_csd": false,
+        "functionName": "sd_jdXEm8eTIOGZVnrn",
+        "category": "General",
+        "x": 580,
+        "y": 1180,
         "wires": [
             []
         ],
