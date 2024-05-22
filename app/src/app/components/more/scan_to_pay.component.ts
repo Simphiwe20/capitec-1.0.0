@@ -55,6 +55,20 @@ export class scan_to_payComponent {
     }
   }
 
+  viewData(action: any = undefined, ...others) {
+    let bh: any = {};
+    try {
+      bh = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = { action };
+      bh.local = {};
+      bh = this.sd_iDWBGrb7ZN7K6OJV(bh);
+      //appendnew_next_viewData
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_rWyRUT8P5BOi0lE2');
+    }
+  }
   //appendnew_flow_scan_to_payComponent_start
 
   sd_tSQIFFsqjdZkMzg4(bh) {
@@ -63,6 +77,20 @@ export class scan_to_payComponent {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_tSQIFFsqjdZkMzg4');
+    }
+  }
+
+  sd_iDWBGrb7ZN7K6OJV(bh) {
+    try {
+      const page = this.page;
+      const data = JSON.stringify(bh.input.action.data.value[0].value);
+      const parsed = JSON.parse(data);
+      console.log(JSON.parse(parsed));
+
+      //appendnew_next_sd_iDWBGrb7ZN7K6OJV
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_iDWBGrb7ZN7K6OJV');
     }
   }
 

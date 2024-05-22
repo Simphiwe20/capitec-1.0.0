@@ -19,12 +19,15 @@ import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'
 export class ft_landingComponent {
   page: any = { dep: {} };
   constructor(
+    
     private __page_injector__: Injector,
     private sdService: SDBaseService,
-    public __serviceInvoker__: NeuServiceInvokerService
+    public __serviceInvoker__: NeuServiceInvokerService,
   ) {
     this.__page_injector__.get(SDPageCommonService).addPageDefaults(this.page);
     this.registerListeners();
+    console.log("hey")
+
     //appendnew_element_inject
   }
 
@@ -35,6 +38,7 @@ export class ft_landingComponent {
     {
       this.sd_5W6CdYlblZVEh4RY(bh);
     }
+
   }
 
   private registerListeners() {

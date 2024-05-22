@@ -55,6 +55,20 @@ export class aboutComponent {
     }
   }
 
+  openSheet(...others) {
+    let bh: any = {};
+    try {
+      bh = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+      bh = this.sd_phKnzEanbjgtpuDX(bh);
+      //appendnew_next_openSheet
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_dex3HxqoROjm2weM');
+    }
+  }
   //appendnew_flow_aboutComponent_start
 
   sd_Mfn92YfApsXtEeKE(bh) {
@@ -63,6 +77,15 @@ export class aboutComponent {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_Mfn92YfApsXtEeKE');
+    }
+  }
+
+  sd_phKnzEanbjgtpuDX(bh) {
+    try {
+      //appendnew_next_sd_phKnzEanbjgtpuDX
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_phKnzEanbjgtpuDX');
     }
   }
 

@@ -101,6 +101,10 @@
             "component": "profileComponent"
         },
         {
+            "path": "saving",
+            "component": "savingsComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "ftlanding",
             "pathMatch": "full",
