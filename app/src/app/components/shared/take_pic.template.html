@@ -1,1 +1,36 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" class="full-height" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="row wrap" class="standard-width" fxFlex="100" fxLayoutAlign="start start" [fxShow]="true">
+    <div fxLayout="column wrap" class="full-height full-width" fxLayoutAlign="start center" [fxShow]="true">
+      <div fxLayout="row wrap" class="full-width" fxLayoutAlign="end stretch" [fxShow]="true">
+        <div fxLayout="row wrap" style="width: 60%" fxLayoutAlign="space-between center" [fxShow]="true">
+          <p class="cyan">
+            Take a selfie</p><mat-icon class="blue-color">close</mat-icon>
+        </div>
+      </div>
+      <div fxLayout="row wrap" fxLayoutAlign="start center" [fxShow]="true"><img imgSrc="./Web/Images/capitec-logo.PNG" class="logo-height">
+        <h2 class="no-margin">
+          CAPITEC</h2>
+      </div>
+      <div fxLayout="column wrap" class="half-width title absolute navy-bg" fxLayoutAlign="start center" [fxShow]="true">
+        <div fxLayout="row wrap" fxLayoutAlign="start center" [fxShow]="true"><img imgSrc="./Web/Images/white-capitec.svg" class="logo-height">
+          <h2 style="margin-bottom: 0" class="margin-top-7px white">
+            CAPITEC</h2>
+        </div>
+        <p class="white margin-bottom-7px no-margin">
+          Banking App Selfie</p>
+      </div>
+      <div fxLayout="column wrap" class="relative height-60" fxLayoutAlign="start center" [fxShow]="true"><video controls [autoplay]="false" #video muted [class.border-red]="page.detection &amp;&amp; !page.detection.length" class="selfie-video">
+
+        </video><img imgSrc="./Web/Images/myphoto.jpg" #queryImage hidden>
+        <h2 #canvas *ngIf="page.detection" style="width: 100px" class="white pic-feedback absolute text-center">
+          <span>{{ page.detection?.length ? &quot;Hold face&quot; : &quot;Can&apos;t see your face&quot; }}</span>
+        </h2><canvas #canva hidden>
+        </canvas>
+      </div><img [src]="page.capturedImage" style="width: 50px; height: 50px" *ngIf="page.capturedImage">
+      <div fxLayout="row wrap" fxLayoutAlign="start center" [fxShow]="true"><img imgSrc="./Web/Images/capitec-logo.PNG" class="logo-height">
+        <h2>
+          CAPITEC</h2>
+      </div>
+    </div>
+  </div>
+</div>

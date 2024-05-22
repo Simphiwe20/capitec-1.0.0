@@ -1,0 +1,15 @@
+[
+    {
+        "id": "sd_7H7Z1QnaqaCSKJsM",
+        "type": "tab",
+        "createdDate": "2024-05-20T10:48:29.622Z",
+        "label": "shared",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "tabType": "client",
+        "generateNext": true,
+        "serviceName": "shared",
+        "relativeParentPath": ""
+    }
+]

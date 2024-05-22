@@ -1,9 +1,9 @@
-<div fxLayout="column wrap" class="landing standard-width" fxLayoutAlign="start center" [fxShow]="true" fxFill>
-  <div fxLayout="column wrap" style="width: 90%;     height: 100%;" fxLayoutAlign="start stretch" [fxShow]="true">
+<div fxLayout="column wrap" class="landing" fxLayoutAlign="start center" [fxShow]="true" fxFill>
+  <div fxLayout="column wrap" class="standard-width" fxLayoutAlign="start stretch" [fxShow]="true">
     <div fxLayout="row wrap" class="helo" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/image/hello.jpg" class="ft_landing"></div>
     <p class="text-center">
       What would you like to do ?</p>
-    <div fxLayout="column wrap" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" style="width:95%" fxLayoutAlign="start stretch" [fxShow]="true">
       <mat-button-toggle-group [appearance]="&apos;standard&apos;">
 
         <mat-button-toggle class="pick" (change)="direction(&apos;signIn&apos;)" (click)="direction(true)"> Signin
@@ -13,7 +13,7 @@
         </mat-button-toggle>
       </mat-button-toggle-group>
     </div>
-    <div fxLayout="column wrap" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true" *ngIf="page.show">
+    <div fxLayout="column wrap" style="width:95%" fxLayoutAlign="start stretch" [fxShow]="true" *ngIf="page.show">
       <p class="text-center">
         For</p>
       <mat-button-toggle-group [appearance]="&apos;standard&apos;">
@@ -25,7 +25,7 @@
         </mat-button-toggle>
       </mat-button-toggle-group>
     </div>
-    <div fxLayout="column wrap" class="margin-t-20px" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="full-width btn-bl" *ngIf="page.startmyself" [routerLink]="page.signIn ? &apos;/activatin-instruction&apos; : &apos;/instruction&apos;">Get Started</button>
+    <div fxLayout="column wrap" style="width:95%" class="margin-t-20px" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="full-width btn-bl" *ngIf="page.startmyself" [routerLink]="page.signIn ? &apos;/sign-in-stepper&apos; : &apos;/instruction&apos;">Get Started</button>
       <h1 *ngIf="page.business" class="text-center red-text">
         business is under constraction</h1>
     </div>

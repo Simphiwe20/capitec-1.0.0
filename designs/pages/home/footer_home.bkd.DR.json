@@ -213,7 +213,7 @@
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
-                                "_value": "Column",
+                                "_value": "home",
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -563,7 +563,7 @@
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
-                                "_value": "Column",
+                                "_value": "cards",
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -615,6 +615,12 @@
                                 "_value": "true",
                                 "_type": "kv",
                                 "_attrDef": "p"
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "/cards",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ],
                         "f02197fc-feb3-cf20-c2fc-5581c808d527": {
@@ -908,7 +914,7 @@
                     "designerReference": [
                         {
                             "_key": "componentLabel",
-                            "_value": "Column",
+                            "_value": "transaction",
                             "_type": "kv",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -962,6 +968,12 @@
                             "_value": "true",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "routerLink",
+                            "_value": "/transection",
+                            "_type": "kv",
+                            "_attrDef": "c"
                         }
                     ],
                     "fbc497af-9ce9-41d6-6368-8592cb521481": {
@@ -1315,7 +1327,7 @@
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
-                                "_value": "Column",
+                                "_value": "messages",
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -1367,6 +1379,12 @@
                                 "_value": "true",
                                 "_type": "kv",
                                 "_attrDef": "p"
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "/messsages",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ],
                         "f50a0f88-6aa5-d32b-5556-4023d73a4359": {
@@ -1659,7 +1677,7 @@
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
-                                "_value": "Column",
+                                "_value": "explore",
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -1711,6 +1729,12 @@
                                 "_value": "true",
                                 "_type": "kv",
                                 "_attrDef": "p"
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "/explore",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ],
                         "04658fa9-66ba-3e5e-09b3-78d529ecf30a": {

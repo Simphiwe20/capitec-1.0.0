@@ -328,31 +328,6 @@
         "generated": true
     },
     {
-        "id": "sd_Q9xrsZKwBX640FqV",
-        "type": "Log",
-        "z": "sd_YXVzfiUhwQur3QOu",
-        "viewType": "client-pages",
-        "nodeType": "flow",
-        "name": "",
-        "outputs": 0,
-        "logObject": "\"click\"",
-        "functionName": "sd_Q9xrsZKwBX640FqV",
-        "category": "General",
-        "x": 160,
-        "y": 140,
-        "wires": [],
-        "__ssdTypeInputs__": {
-            "logObject": {
-                "type": "str",
-                "value": "click",
-                "constant": false
-            }
-        },
-        "__n_excludedFromValidation__": {},
-        "generateNext": true,
-        "serviceName": "ft_landingComponent"
-    },
-    {
         "id": "sd_hS7QZwjSXQGlbakv",
         "type": "Log",
         "z": "sd_YXVzfiUhwQur3QOu",

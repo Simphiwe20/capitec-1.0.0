@@ -19,11 +19,11 @@
         "name": "",
         "functionName": "sd_56T8cQN6SbsueGCa",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 25,
+        "y": 40,
         "wires": [
             [
-                "sd_VunbYKs9L21TSgvj"
+                "sd_fcSQ6diiSXazBP8Q"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -43,8 +43,8 @@
         "globalVariables": [],
         "functionName": "sd_VunbYKs9L21TSgvj",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 305,
+        "y": 40,
         "wires": [
             []
         ],
@@ -52,5 +52,85 @@
         "generateNext": false,
         "serviceName": "feedbackComponent",
         "generated": true
+    },
+    {
+        "id": "sd_rD3pRYlsYdPPyrb4",
+        "type": "Script",
+        "z": "sd_RByZ79DBG5Js6ihk",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "setTimeout(() =>{\n    console.log(page.router)\n    page.router.navigate(['/home'])\n},3000)",
+        "functionName": "sd_rD3pRYlsYdPPyrb4",
+        "category": "Function",
+        "x": 165,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "feedbackComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_fcSQ6diiSXazBP8Q",
+        "type": "UseDependency",
+        "z": "sd_RByZ79DBG5Js6ihk",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "Router",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "router"
+                },
+                "injectable": true
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/router",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_fcSQ6diiSXazBP8Q",
+        "category": "Function",
+        "x": 160,
+        "y": 40,
+        "wires": [
+            [
+                "sd_VunbYKs9L21TSgvj"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "feedbackComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_aLS5QS8kKGK8zZUi",
+        "type": "AfterViewInit",
+        "z": "sd_RByZ79DBG5Js6ihk",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "After View Init",
+        "functionName": "ngAfterViewInit",
+        "category": "Lifecycle Events",
+        "x": 25,
+        "y": 140,
+        "wires": [
+            [
+                "sd_rD3pRYlsYdPPyrb4"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "feedbackComponent"
     }
 ]

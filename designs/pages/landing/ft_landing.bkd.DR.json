@@ -19,8 +19,7 @@
             {
                 "_key": "class",
                 "_value": [
-                    "landing",
-                    "standard-width"
+                    "landing"
                 ],
                 "_type": "dav",
                 "_attrDef": "p"
@@ -82,13 +81,15 @@
                 },
                 {
                     "_key": "style",
-                    "_value": "width: 90%;     height: 100%;",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "class",
-                    "_value": [],
+                    "_value": [
+                        "standard-width"
+                    ],
                     "_type": "dav",
                     "_attrDef": "p"
                 },
@@ -482,6 +483,7 @@
             "0d6a2cf7-1820-a1d7-9eca-a9df90448792": {
                 "paletteKey": "FlexLayoutCol",
                 "parentEditorKey": "e640a496-998c-6979-2bbd-42de01ef55cc",
+                "isCommented": "false",
                 "commentid": null,
                 "designerReference": [
                     {
@@ -493,15 +495,13 @@
                     },
                     {
                         "_key": "style",
-                        "_value": "",
+                        "_value": "width:95%",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
                         "_key": "class",
-                        "_value": [
-                            "full-width"
-                        ],
+                        "_value": [],
                         "_type": "dav",
                         "_attrDef": "p"
                     },
@@ -546,6 +546,7 @@
                     "paletteKey": "ng-button-toggle-group",
                     "parentEditorKey": "0d6a2cf7-1820-a1d7-9eca-a9df90448792",
                     "isAdvancedComponent": true,
+                    "isCommented": "false",
                     "commentid": null,
                     "designerReference": [
                         {
@@ -620,6 +621,7 @@
                         "paletteKey": "ng-button-toggle",
                         "parentEditorKey": "ae71498b-720e-c8d5-4b2c-da8e87d8e09e",
                         "isAdvancedChildComponent": true,
+                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {
@@ -768,6 +770,7 @@
                         "paletteKey": "ng-button-toggle",
                         "parentEditorKey": "ae71498b-720e-c8d5-4b2c-da8e87d8e09e",
                         "isAdvancedChildComponent": true,
+                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {
@@ -930,15 +933,13 @@
                     },
                     {
                         "_key": "style",
-                        "_value": "",
+                        "_value": "width:95%",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
                         "_key": "class",
-                        "_value": [
-                            "full-width"
-                        ],
+                        "_value": [],
                         "_type": "dav",
                         "_attrDef": "p"
                     },
@@ -1413,7 +1414,6 @@
                         "paletteKey": "ng-button-toggle",
                         "parentEditorKey": "f3f1a50d-fa6b-1fa9-3b0c-35261fed987d",
                         "isAdvancedChildComponent": true,
-                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {
@@ -1560,7 +1560,7 @@
                     },
                     {
                         "_key": "style",
-                        "_value": "",
+                        "_value": "width:95%",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -1680,7 +1680,7 @@
                         },
                         {
                             "_key": "[routerLink]",
-                            "_value": "page.signIn ? '/activatin-instruction' : '/instruction'",
+                            "_value": "page.signIn ? '/sign-in-stepper' : '/instruction'",
                             "_type": "kv",
                             "_attrDef": "c"
                         }

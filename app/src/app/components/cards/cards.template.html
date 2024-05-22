@@ -1,1 +1,90 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" class="standard-width" fxLayoutAlign="start stretch" [fxShow]="true" fxFill><mat-horizontal-stepper style="height:60px;" class="blue-bg"><mat-step label="Cards" class="full-height white">
+      <div fxLayout="column wrap" style="    margin-bottom: 40px;" fxLayoutAlign="center center" [fxShow]="true"><img imgSrc="/Web/Images/capitec-card.png" style="width:70%; height:70%;">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <p style="margin-top: 7px;     font-size: 20px;" class="text-center no-margin blue-color">
+            <small><b>Show Card Details</b></small>
+          </p>
+        </div>
+      </div>
+      <div fxLayout="column wrap" style="border-bottom: 1px solid grey;" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <h3 style="margin-bottom:10px; padding-left:10px;" class="no-margin">
+            Manage card</h3>
+        </div>
+        <div fxLayout="row wrap" style="padding-left: 10px;" class="white-bg full-width" fxLayoutAlign="space-between center" [fxShow]="true" routerLink="/tap-to-pay">
+          <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start center" [fxShow]="true"><mat-icon class="blue-color">rss_feed</mat-icon>
+            <p>
+              Tap to pay</p>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>
+        </div>
+      </div>
+      <div fxLayout="row wrap" style="padding-left: 10px;" class="white-bg full-width" fxLayoutAlign="space-between center" [fxShow]="true" routerLink="/stop-card">
+        <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start center" [fxShow]="true"><mat-icon class="blue-color">credit_card</mat-icon>
+          <p>
+            Stop card</p>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>
+      </div>
+      <div fxLayout="column wrap" style="border-bottom: 1px solid grey;" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <h3 style="margin-bottom:10px; margin-top:10px;padding-left:10px;" class="no-margin">
+            Manage daily limits</h3>
+        </div>
+        <div fxLayout="row wrap" style="padding-left: 10px;" class="white-bg full-width" fxLayoutAlign="space-between center" [fxShow]="true" routerLink="/set-temporary-limits">
+          <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start center" [fxShow]="true"><mat-icon class="blue-color"></mat-icon>
+            <p>
+              Set temporary limits</p>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>
+        </div>
+      </div>
+      <div fxLayout="row wrap" style="padding-left: 10px;" class="white-bg full-width" fxLayoutAlign="space-between center" [fxShow]="true" routerLink="/update-permanent-limits">
+        <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start center" [fxShow]="true"><mat-icon class="blue-color"></mat-icon>
+          <p>
+            Update permanent limits</p>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>
+      </div>
+    </mat-step><mat-step label="Virtual" class="full-height white">
+      <div fxLayout="column wrap" style="    margin-bottom: 40px;" fxLayoutAlign="center center" [fxShow]="true"><img imgSrc="/Web/Images/capitec-card.png" style="width:70%; height:70%;">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <p style="margin-top: 7px;     font-size: 20px;" class="text-center no-margin blue-color">
+            <small><b>Show Card Details</b></small>
+          </p>
+        </div>
+      </div>
+      <div fxLayout="column wrap" style="border-bottom: 1px solid grey;" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <h3 style="margin-bottom:10px; padding-left:10px;" class="no-margin">
+            Manage card</h3>
+        </div>
+        <div fxLayout="row wrap" style="   padding-left: 10px;" class="white-bg full-width" fxLayoutAlign="space-between center" [fxShow]="true" routerLink="/stop-card">
+          <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start center" [fxShow]="true"><mat-icon class="blue-color">credit_card</mat-icon>
+            <p>
+              Stop card</p>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>
+        </div>
+      </div>
+      <div fxLayout="column wrap" style="border-bottom: 1px solid grey;" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <h3 style="margin-bottom:10px; margin-top:10px; padding-left:10px;" class="no-margin">
+            Manage daily limits</h3>
+        </div>
+        <div fxLayout="row wrap" style="padding-left: 10px;" class="white-bg full-width" fxLayoutAlign="space-between center" [fxShow]="true" routerLink="/set-temporary-limits">
+          <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start center" [fxShow]="true"><mat-icon class="blue-color"></mat-icon>
+            <p>
+              Set temporary limits</p>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>
+        </div>
+      </div>
+      <div fxLayout="row wrap" style="padding-left: 10px;" class="white-bg full-width" fxLayoutAlign="space-between center" [fxShow]="true">
+        <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start center" [fxShow]="true" routerLink="/update-permanent-limits"><mat-icon class="blue-color"></mat-icon>
+          <p>
+            Update permanent limits</p>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>
+      </div>
+    </mat-step></mat-horizontal-stepper></div>

@@ -19,8 +19,7 @@
             {
                 "_key": "class",
                 "_value": [
-                    "verify_identity",
-                    "standard-width"
+                    "verify_identity"
                 ],
                 "_type": "dav",
                 "_attrDef": "p"
@@ -51,7 +50,7 @@
             },
             {
                 "_key": "pLayoutAlign",
-                "_value": "stretch",
+                "_value": "center",
                 "_type": "a",
                 "_attrDef": "p"
             },
@@ -89,7 +88,7 @@
                 {
                     "_key": "class",
                     "_value": [
-                        "full-width"
+                        "standard-width"
                     ],
                     "_type": "dav",
                     "_attrDef": "p"
@@ -2623,7 +2622,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "  <mat-label>ID Document</mat-label>\r\n <input  id=\"file\"  class=\"margin-b-1em\"  type=\"file\" >\r\n  <!-- <mat-label>Proof of Address</mat-label>\r\n  <input  id=\"file1\"   type=\"file\" > -->",
+                                    "_value": "  <mat-label>ID Document</mat-label>\r\n <input  id=\"file\"  class=\"margin-b-1em\" (change)='fileUpload($event, 0)' type=\"file\"  required>\r\n ",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }
@@ -2839,7 +2838,223 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "  <!-- <mat-label>ID Document</mat-label>\r\n <input  id=\"file\"  class=\"margin-b-1em\"  type=\"file\" > -->\r\n  <mat-label>Proof of Address</mat-label>\r\n  <input  id=\"file1\"   type=\"file\" >",
+                                    "_value": "  <!-- <mat-label>ID Document</mat-label>\r\n <input  id=\"file\"  class=\"margin-b-1em\"  type=\"file\" > -->\r\n  <mat-label>Proof of Address</mat-label>\r\n  <input  id=\"file1\" (change)='fileUpload1($event, 0)'  type=\"file\" required >",
+                                    "_type": "a",
+                                    "_attrDef": "p"
+                                }
+                            ]
+                        }
+                    },
+                    "37aad6fe-d024-a736-9fe0-1b1dbd3e9750": {
+                        "paletteKey": "Html5",
+                        "parentEditorKey": "a01c550d-1035-afa1-cd9b-7f8a07843278",
+                        "isAdvancedComponent": true,
+                        "commentid": null,
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": [
+                                    "flex-c"
+                                ],
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "htmlElement",
+                                "_value": "div",
+                                "_type": "dav",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "tagType",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "name",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "sandbox",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "src",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "srcdoc",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "width",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "[autoplay]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "[loop]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "data",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "audioSource",
+                                "_value": [],
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "videoSource",
+                                "_value": [],
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "audioDatasource",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "audioSrc",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "audioType",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "videoDatasource",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "videoSrc",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "videoType",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "(audioplay)",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "(videoplay)",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "(audiopause)",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "(videopause)",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "(audioended)",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            },
+                            {
+                                "_key": "(videoended)",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_visibility": false
+                            }
+                        ],
+                        "eaafe0a3-d889-d545-51cd-3c17e81ab670": {
+                            "paletteKey": "html-editor",
+                            "parentEditorKey": "37aad6fe-d024-a736-9fe0-1b1dbd3e9750",
+                            "isAdvancedChildComponent": true,
+                            "commentid": null,
+                            "designerReference": [
+                                {
+                                    "_key": "style",
+                                    "_value": "",
+                                    "_type": "kv",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "class",
+                                    "_value": "",
+                                    "_type": "dav",
+                                    "_attrDef": "p"
+                                },
+                                {
+                                    "_key": "html",
+                                    "_value": " \r\n  <mat-label>clear unfiltered selfie</mat-label>\r\n  <input  id=\"file3\"  (change)='fileUpload2($event, 0)' type=\"file\" required >",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }
@@ -2881,15 +3096,17 @@
                             },
                             {
                                 "_key": "(click)",
-                                "_value": "submitForm()",
+                                "_value": "submit( page.registerForm)",
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "objValue": {
-                                    "nodeID": "sd_upq3ammtCsx9w18p",
-                                    "functionName": "submitForm",
+                                    "nodeID": "sd_FtdKWsV86pUKlJ8H",
+                                    "functionName": "submit",
                                     "activeTree": "pages",
                                     "z": "sd_Chk202Q1mGZRKnWi",
-                                    "input": []
+                                    "input": [
+                                        " page.registerForm"
+                                    ]
                                 }
                             },
                             {

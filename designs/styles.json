@@ -1,5 +1,6 @@
 {
     "classes": [
+        "blue",
         "full-height",
         "text-color-blue",
         "white-bg",
@@ -20,7 +21,6 @@
         "pick",
         "instructions",
         "border-b",
-        "blue",
         "text-color-blackish",
         "toolbar",
         "height-418px",

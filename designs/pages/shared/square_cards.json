@@ -1,0 +1,125 @@
+[
+    {
+        "id": "sd_QGxhdDt8Qq4dQZed",
+        "type": "tab",
+        "createdDate": "2024-05-20T06:17:01.352Z",
+        "label": "square_cards",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "square_cardsComponent"
+    },
+    {
+        "id": "sd_XVRqdmiBFV84fA50",
+        "type": "OnInit",
+        "z": "sd_QGxhdDt8Qq4dQZed",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_XVRqdmiBFV84fA50",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_A0JXkA2wHsUNhPze"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "square_cardsComponent"
+    },
+    {
+        "id": "sd_A0JXkA2wHsUNhPze",
+        "type": "PageVariables",
+        "z": "sd_QGxhdDt8Qq4dQZed",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "fav",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "[]"
+                }
+            }
+        ],
+        "functionName": "sd_A0JXkA2wHsUNhPze",
+        "category": "Function",
+        "x": 165,
+        "y": 20,
+        "wires": [
+            [
+                "sd_NogDlS2CboSiXvpY"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "square_cardsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_NogDlS2CboSiXvpY",
+        "type": "Storage",
+        "z": "sd_QGxhdDt8Qq4dQZed",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "operationType": "getItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "fav"
+        },
+        "value": {},
+        "resultMapping": {
+            "type": "this.page",
+            "value": "fav"
+        },
+        "functionName": "sd_NogDlS2CboSiXvpY",
+        "category": "Storage",
+        "x": 300,
+        "y": 60,
+        "wires": [
+            [
+                "sd_XpZWgOcxtnKIs8Ub"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "square_cardsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_XpZWgOcxtnKIs8Ub",
+        "type": "Log",
+        "z": "sd_QGxhdDt8Qq4dQZed",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "this.page.fav",
+        "functionName": "sd_XpZWgOcxtnKIs8Ub",
+        "category": "General",
+        "x": 400,
+        "y": 120,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "this.page",
+                "value": "fav",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "square_cardsComponent",
+        "generated": true
+    }
+]

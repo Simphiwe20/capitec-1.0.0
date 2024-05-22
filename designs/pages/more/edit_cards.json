@@ -1,0 +1,283 @@
+[
+    {
+        "id": "sd_RC5mFRP4Xs1GBFdL",
+        "type": "tab",
+        "createdDate": "2024-05-20T06:47:06.488Z",
+        "label": "edit_cards",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "edit_cardsComponent"
+    },
+    {
+        "id": "sd_suFSMtpZ6T4aYdVU",
+        "type": "OnInit",
+        "z": "sd_RC5mFRP4Xs1GBFdL",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_suFSMtpZ6T4aYdVU",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_fh4NGwoseDfNTczZ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "edit_cardsComponent"
+    },
+    {
+        "id": "sd_fh4NGwoseDfNTczZ",
+        "type": "PageVariables",
+        "z": "sd_RC5mFRP4Xs1GBFdL",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "favourates",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "  [{icon:'group',text:'Pay beneficiary' , myfav:{icon:'group',text:'Pay beneficiary'}}  ,   {icon:'database',text:'Send cash', myfav:{icon:'database',text:'Send cash'}},   {icon:'bar_chart',text:'Track money', myfav:{icon:'bar_chart',text:'Track money'}},   {icon:'sync_alt',text:'Transefer money' ,myfav:{icon:'sync_alt',text:'Transefer money'}},   {icon:'emoji_objects',text:'Buy electricity',myfav:{icon:'emoji_objects',text:'Buy electricity'}},   {icon:'qr_code_2_add',text:'Scan to pay' ,myfav:{icon:'qr_code_2_add',text:'Scan to pay'}},   {icon:'qr_code',text:'Pay me',myfav:{icon:'qr_code',text:'Pay me'}},   {icon:'phone_android',text:'Buy prepaid mobile',myfav:{icon:'phone_android',text:'Buy prepaid mobile'}} ,   {icon:'poker_chip',text:'Play lotto' ,myfav:{icon:'poker_chip',text:'Play lotto'}},   {icon:'request_quote',text:'Pay bills' ,myfav:{icon:'request_quote',text:'Pay bills' }},   {icon:'redeem',text:'Buy voucher' ,myfav:{icon:'redeem',text:'Buy voucher'}},   {icon:'garage',text:'Renew licence disc' ,myfav:{icon:'garage',text:'Renew licence disc'}}]"
+                }
+            },
+            {
+                "textIp": "myFavourite",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "[]"
+                }
+            }
+        ],
+        "functionName": "sd_fh4NGwoseDfNTczZ",
+        "category": "Function",
+        "x": 265,
+        "y": 20,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "edit_cardsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_lImHdUZzQl5W220h",
+        "type": "Script",
+        "z": "sd_RC5mFRP4Xs1GBFdL",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "fav",
+        "script": "  [{icon:'group',text:'Pay beneficiary' , myfav:{icon:'group',text:'Pay beneficiary'}}  ,\n  {icon:'database',text:'Send cash', myfav:{icon:'database',text:'Send cash'}},\n  {icon:'bar_chart',text:'Track money', myfav:{icon:'bar_chart',text:'Track money'}},\n  {icon:'sync_alt',text:'Transefer money' ,myfav:{icon:'sync_alt',text:'Transefer money'}},\n  {icon:'emoji_objects',text:'Buy electricity',myfav:{icon:'emoji_objects',text:'Buy electricity'}},\n  {icon:'qr_code_2_add',text:'Scan to pay' ,myfav:{icon:'qr_code_2_add',text:'Scan to pay'}},\n  {icon:'qr_code',text:'Pay me',myfav:{icon:'qr_code',text:'Pay me'}},\n  {icon:'phone_android',text:'Buy prepaid mobile',myfav:{icon:'phone_android',text:'Buy prepaid mobile'}} ,\n  {icon:'poker_chip',text:'Play lotto' ,myfav:{icon:'poker_chip',text:'Play lotto'}},\n  {icon:'request_quote',text:'Pay bills' ,myfav:{icon:'request_quote',text:'Pay bills' }},\n  {icon:'redeem',text:'Buy voucher' ,myfav:{icon:'redeem',text:'Buy voucher'}},\n  {icon:'garage',text:'Renew licence disc' ,myfav:{icon:'garage',text:'Renew licence disc'}}]",
+        "functionName": "fav",
+        "category": "Function",
+        "x": 445,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "edit_cardsComponent"
+    },
+    {
+        "id": "sd_wF3Cvz0oGUmfG1YV",
+        "type": "PageStart",
+        "z": "sd_RC5mFRP4Xs1GBFdL",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "click",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "fav",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "click",
+        "category": "General",
+        "x": 85,
+        "y": 240,
+        "wires": [
+            [
+                "sd_6wgQRQmHe8kv36nO",
+                "sd_7hcsEus90i0F80hO"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "edit_cardsComponent"
+    },
+    {
+        "id": "sd_6wgQRQmHe8kv36nO",
+        "type": "Log",
+        "z": "sd_RC5mFRP4Xs1GBFdL",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "bh.input.fav",
+        "functionName": "sd_6wgQRQmHe8kv36nO",
+        "category": "General",
+        "x": 285,
+        "y": 160,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "bh.input",
+                "value": "fav",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "edit_cardsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_7hcsEus90i0F80hO",
+        "type": "Script",
+        "z": "sd_RC5mFRP4Xs1GBFdL",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "push",
+        "script": "let fav = page.favourates.splice(page.favourates.indexOf(bh.input.fav), 1)\n// page.favourates =  page.favourates.filter((fav: any, indx: number) => indx !== page.favourates.indexOf(bh.input.fav))\nconsole.log(page.favourates)\nconsole.log('index of value:', fav)\nconsole.log('index of:', page.favourates.indexOf(bh.input.fav))\n\n\npage.myFavourite.push(bh.input.fav)",
+        "functionName": "push",
+        "category": "Function",
+        "x": 285,
+        "y": 220,
+        "wires": [
+            [
+                "sd_pzwA73JVgzrcEy50",
+                "sd_NugnVx0wS9M7ed2z"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "edit_cardsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_pzwA73JVgzrcEy50",
+        "type": "Log",
+        "z": "sd_RC5mFRP4Xs1GBFdL",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "this.page.myFavourite",
+        "functionName": "sd_pzwA73JVgzrcEy50",
+        "category": "General",
+        "x": 445,
+        "y": 240,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "this.page",
+                "value": "myFavourite",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "edit_cardsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_NugnVx0wS9M7ed2z",
+        "type": "Storage",
+        "z": "sd_RC5mFRP4Xs1GBFdL",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "operationType": "setItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "fav"
+        },
+        "value": {
+            "type": "this.page",
+            "value": "myFavourite"
+        },
+        "resultMapping": {},
+        "functionName": "sd_NugnVx0wS9M7ed2z",
+        "category": "Storage",
+        "x": 425,
+        "y": 320,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "edit_cardsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_5mFlxEa2FNerKc0X",
+        "type": "PageStart",
+        "z": "sd_RC5mFRP4Xs1GBFdL",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "click2",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "fav",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "click2",
+        "category": "General",
+        "x": 85,
+        "y": 380,
+        "wires": [
+            [
+                "sd_minTwwUt402lawNz"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "edit_cardsComponent"
+    },
+    {
+        "id": "sd_minTwwUt402lawNz",
+        "type": "Script",
+        "z": "sd_RC5mFRP4Xs1GBFdL",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "let fav = page.myFavourite.splice(page.myFavourite.indexOf(bh.input.fav), 1)\n// page.myFavourite =  page.myFavourite.filter((fav: any, indx: number) => indx !== page.myFavourite.indexOf(bh.input.fav))\nconsole.log(page.myFavourite)\nconsole.log('index of value:', fav)\nconsole.log('index of:', page.myFavourite.indexOf(bh.input.fav))\n\n\npage.myFavourite.push(bh.input.fav)",
+        "functionName": "sd_minTwwUt402lawNz",
+        "category": "Function",
+        "x": 285,
+        "y": 380,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "edit_cardsComponent",
+        "generated": true
+    }
+]
