@@ -323,6 +323,7 @@ export const appRoutes = [
   { path: 'explore', component: exploreComponent },
   { path: 'credit', component: creditComponent },
   { path: 'loan', component: loanComponent },
+  { path: 'saving', component: savingsComponent },
   { path: 'get-estimate', component: get_estimateComponent },
   { path: 'pay-user', component: pay_userComponent },
   { path: '', redirectTo: '/savings-account', pathMatch: 'full' },

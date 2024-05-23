@@ -4,7 +4,7 @@
       Set Temporary Limits</h3>
   </div>
   <div fxLayout="column wrap" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true">
-    <form>
+    <form #tempForm="ngForm">
       <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
         <p style="margin-bottom:10px; padding-left:10px;">
           <b>Debit daily limits</b>
@@ -24,11 +24,11 @@
                 </p>
               </div>
             </div>
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-checkbox style="padding-right:10px;" [required]="false"></mat-checkbox></div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"></div>
           </div>
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
             <mat-form-field style="padding-left:10px;" class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-              <input matInput placeholder="Amount (max R10 000)" [required]="false">
+              <input matInput [(ngModel)]="page.temp. cash_withdrawals" name=" cash_withdrawals" placeholder="Amount (max R10 000)" [required]="true">
 
             </mat-form-field>
           </div>
@@ -46,11 +46,11 @@
                 </p>
               </div>
             </div>
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-checkbox style="padding-right:10px;" [required]="false"></mat-checkbox></div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"></div>
           </div>
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
             <mat-form-field style="padding-left:10px;" class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-              <input matInput placeholder="Amount (max R1 000 000)" [required]="false">
+              <input matInput [(ngModel)]="page.temp.card_machine" name="card_machine" placeholder="Amount (max R1 000 000)" [required]="true">
 
             </mat-form-field>
           </div>
@@ -68,16 +68,17 @@
                 </p>
               </div>
             </div>
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-checkbox style="padding-right:10px;" [required]="false"></mat-checkbox></div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"></div>
           </div>
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
             <mat-form-field style="padding-left:10px;" class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-              <input matInput placeholder="Amount (max R10 000)" [required]="false">
+              <input matInput [(ngModel)]="page.temp.online_scan" name="online_scan" placeholder="Amount (max R10 000)" [required]="true">
 
             </mat-form-field>
           </div>
         </div>
       </div>
+      <div fxLayout="column wrap" class="padding-10" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="blue-bg white" (click)="updateTemp(tempForm)">Set</button></div>
     </form>
   </div>
 </div>

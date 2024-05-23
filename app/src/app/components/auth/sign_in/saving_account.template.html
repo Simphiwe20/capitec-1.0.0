@@ -1,11 +1,11 @@
 <div fxLayout="column wrap" class="standard-width" fxLayoutAlign="start stretch" [fxShow]="true" fxFill>
-  <div fxLayout="column wrap" style="height: 20%" class="relative" fxLayoutAlign="start stretch" [fxShow]="true">
-    <div fxLayout="column wrap" style="height: 40%;" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon style="    width: 100%;     height: 100%;     color: whitesmoke;     z-index: 1;position: absolute;     top: 11px;     bottom: 5px;     left: 4px;     font-size: 33px;">arrow_back</mat-icon><img imgSrc="/Web/Images/Hello.PNG" style="position:absolute;" class="full-height full-width"></div>
+  <div fxLayout="column wrap" style="height: 20%" class="full-width relative" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" style="height: 40%;" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon style="    width: 100%;     height: 100%;     color: whitesmoke;     z-index: 1;position: absolute;     top: 11px;     bottom: 5px;     left: 4px;     font-size: 33px;">arrow_back</mat-icon><img imgSrc="/Web/Images/Hello.PNG" style="position:absolute; width: 100%" class="full-height full-width"></div>
   </div>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
     <form #accForm="ngForm" style="height:20%;">
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-        <div fxLayout="row wrap" class="padding-6" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="column wrap" class="full-width" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="row wrap" style="width:100%" class="full-width padding-6" fxLayoutAlign="start stretch" [fxShow]="true">
           <mat-form-field class="white-bg full-width" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
             <input matInput [(ngModel)]="page.accNo.accNo" name="accNo" placeholder="Savings account number" [required]="false">
             <mat-icon matSuffix (click)="openInfo()">info</mat-icon>

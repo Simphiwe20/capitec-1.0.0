@@ -46,6 +46,56 @@
         "x": 180,
         "y": 30,
         "wires": [
+            [
+                "sd_ayOnxlui5NlvtwCL"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "ft_landingComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_paoEFYsyoRBbzpIS",
+        "type": "Script",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(bh)",
+        "functionName": "sd_paoEFYsyoRBbzpIS",
+        "category": "Function",
+        "x": 420,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "ft_landingComponent"
+    },
+    {
+        "id": "sd_ayOnxlui5NlvtwCL",
+        "type": "UseDependency",
+        "z": "sd_YXVzfiUhwQur3QOu",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [],
+        "import_all": false,
+        "library": "@angular/material/bottom-sheet",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_ayOnxlui5NlvtwCL",
+        "category": "Function",
+        "x": 300,
+        "y": 40,
+        "wires": [
             []
         ],
         "__n_excludedFromValidation__": {},

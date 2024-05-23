@@ -197,7 +197,7 @@
                         },
                         {
                             "_key": "style",
-                            "_value": "height:60px;",
+                            "_value": "height:60px; background-color: #0f9ddf",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -315,7 +315,7 @@
                             "designerReference": [
                                 {
                                     "_key": "style",
-                                    "_value": "",
+                                    "_value": "color: white",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -592,7 +592,7 @@
                             "designerReference": [
                                 {
                                     "_key": "style",
-                                    "_value": "font-size: xx-large; padding-left: 6px;",
+                                    "_value": "font-size: xx-large; padding-left: 6px; color: white",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },

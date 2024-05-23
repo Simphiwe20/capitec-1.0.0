@@ -88,6 +88,7 @@
                 {
                     "_key": "class",
                     "_value": [
+                        "full-width",
                         "relative"
                     ],
                     "_type": "dav",
@@ -150,7 +151,9 @@
                     },
                     {
                         "_key": "class",
-                        "_value": "",
+                        "_value": [
+                            "full-width"
+                        ],
                         "_type": "dav",
                         "_attrDef": "p"
                     },
@@ -243,7 +246,7 @@
                         },
                         {
                             "_key": "style",
-                            "_value": "position:absolute;",
+                            "_value": "position:absolute; width: 100%",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -444,7 +447,9 @@
                         },
                         {
                             "_key": "class",
-                            "_value": "",
+                            "_value": [
+                                "full-width"
+                            ],
                             "_type": "dav",
                             "_attrDef": "p"
                         },
@@ -499,13 +504,14 @@
                             },
                             {
                                 "_key": "style",
-                                "_value": "",
+                                "_value": "width:100%",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
                             {
                                 "_key": "class",
                                 "_value": [
+                                    "full-width",
                                     "padding-6"
                                 ],
                                 "_type": "dav",

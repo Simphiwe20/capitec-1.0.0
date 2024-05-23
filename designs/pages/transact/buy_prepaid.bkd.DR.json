@@ -1268,7 +1268,7 @@
                                         },
                                         {
                                             "_key": "Suffix",
-                                            "_value": "",
+                                            "_value": " ",
                                             "_type": "a",
                                             "_attrDef": "p",
                                             "_visibility": true

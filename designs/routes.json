@@ -137,6 +137,10 @@
             "component": "pay_userComponent"
         },
         {
+            "path": "saving",
+            "component": "savingsComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "/savings-account",
             "pathMatch": "full",

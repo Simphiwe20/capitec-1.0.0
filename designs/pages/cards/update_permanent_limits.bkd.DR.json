@@ -1221,6 +1221,12 @@
                         "_value": "",
                         "_type": "kv",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "#permForm",
+                        "_value": "ngForm",
+                        "_type": "kv",
+                        "_attrDef": "c"
                     }
                 ],
                 "b2c7f065-e0a0-4619-97a0-95efa8752bc8": {
@@ -1717,7 +1723,7 @@
                                     },
                                     {
                                         "_key": "value",
-                                        "_value": "R0.00",
+                                        "_value": "",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1729,13 +1735,13 @@
                                     },
                                     {
                                         "_key": "[required]",
-                                        "_value": "false",
+                                        "_value": "true",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
                                     {
                                         "_key": "[(ngModel)]",
-                                        "_value": "",
+                                        "_value": "page.perm.cash_withdrawls_perm",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1747,7 +1753,7 @@
                                     },
                                     {
                                         "_key": "name",
-                                        "_value": "",
+                                        "_value": "cash_withdrawls_perm",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1856,6 +1862,12 @@
                                         "_type": "a",
                                         "_attrDef": "p",
                                         "_visibility": true
+                                    },
+                                    {
+                                        "_key": "[value]",
+                                        "_value": "page.perm.cash_withdrawls_perm",
+                                        "_type": "kv",
+                                        "_attrDef": "c"
                                     }
                                 ]
                             }
@@ -2294,7 +2306,7 @@
                                     },
                                     {
                                         "_key": "value",
-                                        "_value": "R0.00",
+                                        "_value": "",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -2306,13 +2318,13 @@
                                     },
                                     {
                                         "_key": "[required]",
-                                        "_value": "false",
+                                        "_value": "true",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
                                     {
                                         "_key": "[(ngModel)]",
-                                        "_value": "",
+                                        "_value": "page.perm.card_machine_perm",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -2324,7 +2336,7 @@
                                     },
                                     {
                                         "_key": "name",
-                                        "_value": "",
+                                        "_value": "card_machine_perm",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -2883,13 +2895,13 @@
                                     },
                                     {
                                         "_key": "[required]",
-                                        "_value": "false",
+                                        "_value": "true",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
                                     {
                                         "_key": "[(ngModel)]",
-                                        "_value": "",
+                                        "_value": "page.perm.online_scan_perm",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -2901,7 +2913,7 @@
                                     },
                                     {
                                         "_key": "name",
-                                        "_value": "",
+                                        "_value": "online_scan_perm",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -2943,7 +2955,7 @@
                                     },
                                     {
                                         "_key": "[hideRequiredMarker]",
-                                        "_value": "false",
+                                        "_value": "true",
                                         "_type": "kv",
                                         "_attrDef": "p",
                                         "_complexity": "advanced"
@@ -3113,9 +3125,18 @@
                                 },
                                 {
                                     "_key": "(click)",
-                                    "_value": "",
+                                    "_value": "updatePerm(permForm)",
                                     "_type": "kv",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "objValue": {
+                                        "nodeID": "sd_9KZv2RncQO2OEjVt",
+                                        "functionName": "updatePerm",
+                                        "activeTree": "pages",
+                                        "z": "sd_rLF456OWW1fgT21u",
+                                        "input": [
+                                            "permForm"
+                                        ]
+                                    }
                                 },
                                 {
                                     "_key": "[disabled]",

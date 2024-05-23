@@ -1,1 +1,87 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" style="overflow: hidden;" fxLayoutAlign="start stretch" [fxShow]="true" fxFill>
+  <div fxLayout="row wrap" style=" width: 107%" class="full-height standard-width" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" class="full-width full-height" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" style="height: 8%;overflow: hidden" class="shadow full-width blue-bg" fxLayoutAlign="space-between center" [fxShow]="true">
+        <div fxLayout="column wrap" style="margin-left: 5px" fxLayoutAlign="center center" [fxShow]="true"><mat-icon style="font-size: 40px; height: 100%;" class="white">arrow_back</mat-icon></div>
+        <div fxLayout="column wrap" style="margin-left:25px" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div>
+            <h3 class="white font-weight-500">Savings Account</h3>
+          </div>
+        </div>
+        <div fxLayout="column wrap" style="margin-right: 10px" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="row wrap" fxLayoutGap="0.5em" fxLayoutAlign="space-around start" [fxShow]="true">
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon style="   font-size: 40px;height: 100%;" class="white">search</mat-icon></div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon style="    font-size: 40px;height: 100%;" class="white">more_vert</mat-icon></div>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="row wrap" style="height: 20%;padding-top: 1em" class="full-width blue-bg" fxLayoutAlign="center start" [fxShow]="true">
+        <div fxLayout="column wrap" class="full-width full-height" fxLayoutAlign="start center" [fxShow]="true">
+          <div fxLayout="row wrap" style="width: 80%; height: 44%; border-radius: 7px" class="dark-blue-bg" fxLayoutAlign="center center" [fxShow]="true">
+            <div fxLayout="column wrap" style="width: 64%" fxLayoutAlign="end end" [fxShow]="true">
+              <div>
+                <span class="white savings-available">Available</span> <br>
+                <center><span class="white"> <b>1156.75</b></span></center>
+              </div>
+            </div>
+            <div fxLayout="column wrap" style="width: 32%; margin-right: 5px" fxLayoutAlign="end end" [fxShow]="true">
+              <div class="white">
+                <span class="material-symbols-outlined">
+info
+</span>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="row wrap" style="margin-top: 1em;" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div>
+              <span class="white savings-available-under">Balance</span> <br>
+              <center><span class="white"> <b>R5.75</b></span></center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-tab-group mat-align-tabs="center" mat-stretch-tabs animationDuration="0ms"><mat-tab label="All">
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+              <div fxLayout="row wrap" class="grey-bg" fxLayoutAlign="space-between stretch" [fxShow]="true">
+                <div fxLayout="row wrap" style="margin-left:5px" fxLayoutAlign="start center" [fxShow]="true">
+                  <div>
+                    <h3>May 2024</h3>
+                  </div>
+                </div>
+                <div fxLayout="row wrap" style="margin-right:1em" fxLayoutAlign="start center" [fxShow]="true">
+                  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                    <div>
+                      <h3 class="blue-color">Statement</h3>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>
+                </div>
+              </div>
+              <div fxLayout="row wrap" style="height: 70px;" class="full-width white-bg" fxLayoutAlign="start stretch" [fxShow]="true">
+                <div fxLayout="column wrap" class="full-width full-height" fxLayoutAlign="start stretch" [fxShow]="true">
+                  <div fxLayout="row wrap" class="full-height full-width" fxLayoutAlign="space-between center" [fxShow]="true">
+                    <div fxLayout="column wrap" style="margin-left:5px" fxLayoutAlign="start stretch" [fxShow]="true">
+                      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                        <div>
+                          <h3 class="no-margin savings-available-under">Cash Withdrawal</h3>
+                        </div>
+                      </div>
+                      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                        <div>
+                          <h3 class="no-margin savings-available-under grey">Today - Cash Withdrawal</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxLayout="column wrap" style="margin-right: 1.5em;" fxLayoutAlign="start center" [fxShow]="true">
+                      <div>
+                        <h3 class="no-margin">-R150</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-tab><mat-tab label="Money In"></mat-tab><mat-tab label="Money Out"></mat-tab><mat-tab label="Track"></mat-tab></mat-tab-group></div>
+    </div>
+  </div>
+</div>

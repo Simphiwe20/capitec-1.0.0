@@ -20,7 +20,7 @@
     </div>
   </div>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-    <form>
+    <form #permForm="ngForm">
       <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
         <div fxLayout="column wrap" style="border-bottom:1px solid lightgrey;" class="white-bg full-width no-margin" fxLayoutAlign="start stretch" [fxShow]="true">
           <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
@@ -29,7 +29,7 @@
           </div>
           <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
             <mat-form-field style="padding-left:10px;" class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-              <input matInput value="R0.00" [required]="false">
+              <input matInput [(ngModel)]="page.perm.cash_withdrawls_perm" name="cash_withdrawls_perm" [required]="true" [value]="page.perm.cash_withdrawls_perm">
 
             </mat-form-field>
           </div>
@@ -41,7 +41,7 @@
           </div>
           <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
             <mat-form-field style="padding-left:10px;" class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-              <input matInput value="R0.00" [required]="false">
+              <input matInput [(ngModel)]="page.perm.card_machine_perm" name="card_machine_perm" [required]="true">
 
             </mat-form-field>
           </div>
@@ -52,13 +52,13 @@
               Online/scan to pay/phone (max R50 000)</p>
           </div>
           <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-            <mat-form-field style="padding-left:10px;" class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-              <input matInput value="R0.00" [required]="false">
+            <mat-form-field style="padding-left:10px;" class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="true">
+              <input matInput [(ngModel)]="page.perm.online_scan_perm" name="online_scan_perm" value="R0.00" [required]="true">
 
             </mat-form-field>
           </div>
         </div>
-        <div fxLayout="column wrap" class="padding-10" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="white blue-bg">Update</button></div>
+        <div fxLayout="column wrap" class="padding-10" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="white blue-bg" (click)="updatePerm(permForm)">Update</button></div>
       </div>
     </form>
   </div>
