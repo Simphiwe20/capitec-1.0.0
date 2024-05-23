@@ -13,7 +13,9 @@ $blackish : #2d2d2d;
 // $navy-blue: #00486d;
 $blue-ish: #0299ac;
 $grey: grey;
-$dark-blue: blue;
+$dark-blue: #0186c9;
+
+
 
 
 body {
@@ -265,6 +267,12 @@ gap: 3px;
     border: 2px solid lightgrey;
     background-color: $white;
     border-top: none;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////scan-to-pay/////////////////////////////////////////////////
+.scan-blue{
+    background-color: $blue;
 }
 
 .mat-mdc-button:not(:disabled) {
@@ -715,6 +723,34 @@ body{
 .logo-height {
     height: 50px;
 }
+
+/////////////////////////////savings-styles/////////////////////////////////////////////////////////////////
+.mat-tab-label-container {
+    background-color: $blue;
+}
+
+.mat-tab-label .mat-tab-label-content{
+    color: white;
+}
+
+.savings-font{
+    font-weight: 500;
+}
+
+.savings-font-sub{
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.mat-ink-bar{
+    height: 4px !important;
+    background-color: white !important;
+}
+
+.money-out{
+    color: #d29d41;
+}
+
 
 @media screen and (max-width: 1024px) {
     .standard-width {

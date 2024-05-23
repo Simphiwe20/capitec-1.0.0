@@ -17,8 +17,8 @@
       </div>
       <div fxLayout="row wrap" style="height: 20%;padding-top: 1em" class="full-width blue-bg" fxLayoutAlign="center start" [fxShow]="true">
         <div fxLayout="column wrap" class="full-width full-height" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="row wrap" style="width: 80%; height: 44%; border-radius: 7px" class="dark-blue-bg" fxLayoutAlign="center center" [fxShow]="true">
-            <div fxLayout="column wrap" style="width: 64%" fxLayoutAlign="end end" [fxShow]="true">
+          <div fxLayout="row wrap" style="width: 80%; height: 44%; border-radius: 7px; background-color: #0186c9;" class="dark-blue-bg" fxLayoutAlign="center center" [fxShow]="true">
+            <div fxLayout="column wrap" style="width: 58%" fxLayoutAlign="end end" [fxShow]="true">
               <div>
                 <span class="white savings-available">Available</span> <br>
                 <center><span class="white"> <b>1156.75</b></span></center>
@@ -40,11 +40,11 @@ info
           </div>
         </div>
       </div>
-      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-tab-group mat-align-tabs="center" mat-stretch-tabs animationDuration="0ms"><mat-tab label="All">
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-tab-group mat-align-tabs="center" mat-stretch-tabs style="backround-color: red;" animationDuration="0ms"><mat-tab label="All">
             <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
               <div fxLayout="row wrap" class="grey-bg" fxLayoutAlign="space-between stretch" [fxShow]="true">
                 <div fxLayout="row wrap" style="margin-left:5px" fxLayoutAlign="start center" [fxShow]="true">
-                  <div>
+                  <div style="font-weight: 500;">
                     <h3>May 2024</h3>
                   </div>
                 </div>
@@ -57,24 +57,24 @@ info
                   <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>
                 </div>
               </div>
-              <div fxLayout="row wrap" style="height: 70px;" class="full-width white-bg" fxLayoutAlign="start stretch" [fxShow]="true">
+              <div fxLayout="row wrap" style="height: 70px;" class="full-width white-bg" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let log of page.array">
                 <div fxLayout="column wrap" class="full-width full-height" fxLayoutAlign="start stretch" [fxShow]="true">
                   <div fxLayout="row wrap" class="full-height full-width" fxLayoutAlign="space-between center" [fxShow]="true">
                     <div fxLayout="column wrap" style="margin-left:5px" fxLayoutAlign="start stretch" [fxShow]="true">
                       <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
                         <div>
-                          <h3 class="no-margin savings-available-under">Cash Withdrawal</h3>
+                          <h3 class="no-margin savings-font">{{log.from}}</h3>
                         </div>
                       </div>
                       <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
                         <div>
-                          <h3 class="no-margin savings-available-under grey">Today - Cash Withdrawal</h3>
+                          <h3 class="no-margin savings-font-sub">Today - {{log.moneyIn}}</h3>
                         </div>
                       </div>
                     </div>
                     <div fxLayout="column wrap" style="margin-right: 1.5em;" fxLayoutAlign="start center" [fxShow]="true">
                       <div>
-                        <h3 class="no-margin">-R150</h3>
+                        <h3 class="no-margin savings-font money-out">R{{log.amount}}</h3>
                       </div>
                     </div>
                   </div>

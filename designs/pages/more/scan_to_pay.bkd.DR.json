@@ -213,6 +213,8 @@
                         {
                             "_key": "class",
                             "_value": [
+                                "white",
+                                "blue-bg",
                                 "scan-blue"
                             ],
                             "_type": "dav",
@@ -940,7 +942,7 @@
                         },
                         {
                             "_key": "style",
-                            "_value": "",
+                            "_value": "max-height: 80%;",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -954,7 +956,7 @@
                         },
                         {
                             "_key": "fxFlex",
-                            "_value": "",
+                            "_value": "70",
                             "_type": "kv",
                             "_attrDef": "p"
                         },

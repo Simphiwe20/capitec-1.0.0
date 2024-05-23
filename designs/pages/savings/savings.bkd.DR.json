@@ -1107,7 +1107,7 @@
                                 },
                                 {
                                     "_key": "style",
-                                    "_value": "width: 80%; height: 44%; border-radius: 7px",
+                                    "_value": "width: 80%; height: 44%; border-radius: 7px; background-color: #0186c9;",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -1170,7 +1170,7 @@
                                     },
                                     {
                                         "_key": "style",
-                                        "_value": "width: 64%",
+                                        "_value": "width: 58%",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -2065,7 +2065,7 @@
                             },
                             {
                                 "_key": "style",
-                                "_value": "",
+                                "_value": "backround-color: red;",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -2435,7 +2435,7 @@
                                             "designerReference": [
                                                 {
                                                     "_key": "style",
-                                                    "_value": "",
+                                                    "_value": "font-weight: 500;",
                                                     "_type": "kv",
                                                     "_attrDef": "p"
                                                 },
@@ -2955,7 +2955,6 @@
                                                     "paletteKey": "html-editor",
                                                     "parentEditorKey": "38433f83-1cf6-bfe7-d3b3-3eab3d672594",
                                                     "isAdvancedChildComponent": true,
-                                                    "isCommented": "false",
                                                     "commentid": null,
                                                     "designerReference": [
                                                         {
@@ -3146,6 +3145,12 @@
                                             "_value": "true",
                                             "_type": "kv",
                                             "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "*ngFor",
+                                            "_value": "let log of page.array",
+                                            "_type": "kv",
+                                            "_attrDef": "c"
                                         }
                                     ],
                                     "dfaee9d3-023f-051e-7254-6a07b1b43b5f": {
@@ -3605,7 +3610,7 @@
                                                                 },
                                                                 {
                                                                     "_key": "html",
-                                                                    "_value": "<h3 class=\"no-margin savings-available-under\">Cash Withdrawal</h3>",
+                                                                    "_value": "<h3 class=\"no-margin savings-font\">{{log.from}}</h3>",
                                                                     "_type": "a",
                                                                     "_attrDef": "p"
                                                                 }
@@ -3881,7 +3886,7 @@
                                                                 },
                                                                 {
                                                                     "_key": "html",
-                                                                    "_value": "<h3 class=\"no-margin savings-available-under grey\">Today - Cash Withdrawal</h3>",
+                                                                    "_value": "<h3 class=\"no-margin savings-font-sub\">Today - {{log.moneyIn}}</h3>",
                                                                     "_type": "a",
                                                                     "_attrDef": "p"
                                                                 }
@@ -4158,7 +4163,7 @@
                                                             },
                                                             {
                                                                 "_key": "html",
-                                                                "_value": "<h3 class=\"no-margin\">-R150</h3>",
+                                                                "_value": "<h3 class=\"no-margin savings-font money-out\">R{{log.amount}}</h3>",
                                                                 "_type": "a",
                                                                 "_attrDef": "p"
                                                             }

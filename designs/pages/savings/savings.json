@@ -40,11 +40,237 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "user",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "user"
+                }
+            },
+            {
+                "textIp": "message",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "message"
+                }
+            },
+            {
+                "textIp": "array",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            }
+        ],
         "functionName": "sd_NcxYGB4Zjw58EuAK",
         "category": "Function",
         "x": 180,
         "y": 30,
+        "wires": [
+            [
+                "sd_ws3eRWrAAi88Wt29"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "savingsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ws3eRWrAAi88Wt29",
+        "type": "Storage",
+        "z": "sd_zdHwUt4VD3FKSWQV",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "operationType": "getItem",
+        "storageType": "sessionStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "accNo"
+        },
+        "value": {},
+        "resultMapping": {
+            "type": "bh",
+            "value": "result"
+        },
+        "functionName": "sd_ws3eRWrAAi88Wt29",
+        "category": "Storage",
+        "x": 280,
+        "y": 40,
+        "wires": [
+            [
+                "sd_HLVusWP0adg7ObT2"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "savingsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_HLVusWP0adg7ObT2",
+        "type": "Script",
+        "z": "sd_zdHwUt4VD3FKSWQV",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.user = bh.result;",
+        "functionName": "sd_HLVusWP0adg7ObT2",
+        "category": "Function",
+        "x": 380,
+        "y": 40,
+        "wires": [
+            [
+                "sd_42Smhw76ZRjv0MtI"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "savingsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_42Smhw76ZRjv0MtI",
+        "type": "Environment",
+        "z": "sd_zdHwUt4VD3FKSWQV",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "envMaps": [
+            {
+                "flowVar": {
+                    "type": "this.page",
+                    "value": "ssdUrl"
+                },
+                "envProperty": "ssdURL"
+            }
+        ],
+        "functionName": "sd_42Smhw76ZRjv0MtI",
+        "category": "General",
+        "x": 480,
+        "y": 40,
+        "wires": [
+            [
+                "sd_D19pftqT303eqcka"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "savingsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_D19pftqT303eqcka",
+        "type": "Script",
+        "z": "sd_zdHwUt4VD3FKSWQV",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.url = page.ssdUrl+ \"get-transfers\"\nbh.collection = \"money-transfer\"",
+        "functionName": "sd_D19pftqT303eqcka",
+        "category": "Function",
+        "x": 580,
+        "y": 40,
+        "wires": [
+            [
+                "sd_QN2SXvK1d8FAsrrm"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "savingsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_QN2SXvK1d8FAsrrm",
+        "type": "HttpRequest",
+        "z": "sd_zdHwUt4VD3FKSWQV",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.url",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "url"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.results",
+        "resultMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "results"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_QN2SXvK1d8FAsrrm",
+        "category": "HTTP",
+        "x": 680,
+        "y": 40,
+        "wires": [
+            [
+                "sd_dbRonqrl7ouRNVMj"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "savingsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_EcaSzh6dY8xG7j1N",
+        "type": "Log",
+        "z": "sd_zdHwUt4VD3FKSWQV",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "this.page.user[0].accountNumber",
+        "functionName": "sd_EcaSzh6dY8xG7j1N",
+        "category": "General",
+        "x": 805,
+        "y": 140,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "this.page",
+                "value": "user[0].accountNumber",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "savingsComponent"
+    },
+    {
+        "id": "sd_dbRonqrl7ouRNVMj",
+        "type": "Script",
+        "z": "sd_zdHwUt4VD3FKSWQV",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "\nbh.array = bh.results.filter((user: any) => {\n  return user.to == page.user[0].accountNumber;\n});\n\npage.array = bh.array\nconsole.log(\"answer\", page.array);\n\n",
+        "functionName": "sd_dbRonqrl7ouRNVMj",
+        "category": "Function",
+        "x": 780,
+        "y": 40,
         "wires": [
             []
         ],

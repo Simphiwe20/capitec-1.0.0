@@ -288,6 +288,7 @@ export const appRoutes = [
   { path: 'edit-cards', component: edit_cardsComponent },
   { path: 'profile', component: profileComponent },
   { path: 'saving', component: savingsComponent },
+  { path: 'scanner', component: scan_to_payComponent },
   { path: '', redirectTo: 'ftlanding', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

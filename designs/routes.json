@@ -105,6 +105,10 @@
             "component": "savingsComponent"
         },
         {
+            "path": "scanner",
+            "component": "scan_to_payComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "ftlanding",
             "pathMatch": "full",
