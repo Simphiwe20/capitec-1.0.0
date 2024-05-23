@@ -194,6 +194,7 @@
                 "2a6a6048-96ee-9b76-b3f8-b62a5a40cf7d": {
                     "paletteKey": "NG-Toolbar",
                     "parentEditorKey": "44dfec29-7ef3-73b1-bcfb-513d4ae79b03",
+                    "isCommented": "false",
                     "commentid": null,
                     "designerReference": [
                         {
@@ -212,9 +213,9 @@
                         {
                             "_key": "class",
                             "_value": [
+                                "toolbar",
                                 "blue",
-                                "border-b",
-                                "toolbar"
+                                "border-b"
                             ],
                             "_type": "dav",
                             "_attrDef": "p"
@@ -235,6 +236,7 @@
                     "3ea412e5-d271-8c63-ff7b-2ca729a6c8c4": {
                         "paletteKey": "NG-icon",
                         "parentEditorKey": "2a6a6048-96ee-9b76-b3f8-b62a5a40cf7d",
+                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {
@@ -280,6 +282,7 @@
                         "paletteKey": "Html5",
                         "parentEditorKey": "2a6a6048-96ee-9b76-b3f8-b62a5a40cf7d",
                         "isAdvancedComponent": true,
+                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {
@@ -469,6 +472,7 @@
                             "paletteKey": "html-editor",
                             "parentEditorKey": "d4c5b62d-1f56-adc1-428f-35fdd2ab682b",
                             "isAdvancedChildComponent": true,
+                            "isCommented": "false",
                             "commentid": null,
                             "designerReference": [
                                 {
@@ -485,7 +489,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "step 1 ",
+                                    "_value": "Step 1",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }

@@ -10,13 +10,13 @@ import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'
 //append_imports_end
 
 @Component({
-  selector: 'bh-profile',
-  templateUrl: './profile.template.html',
+  selector: 'bh-Our_privacy_center',
+  templateUrl: './Our_privacy_center.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class profileComponent {
+export class Our_privacy_centerComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -33,7 +33,7 @@ export class profileComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_uSUAwfJihRMS2q65(bh);
+      this.sd_8IypCuKzEFLCsP0X(bh);
     }
   }
 
@@ -45,35 +45,24 @@ export class profileComponent {
     //append_listeners
   }
 
-  sd_uSUAwfJihRMS2q65(bh) {
+  sd_8IypCuKzEFLCsP0X(bh) {
     try {
-      bh = this.sd_FAH1XmFgVHncNH1v(bh);
-      //appendnew_next_sd_uSUAwfJihRMS2q65
+      bh = this.sd_eGgv1qrPtFxTDkOL(bh);
+      //appendnew_next_sd_8IypCuKzEFLCsP0X
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_uSUAwfJihRMS2q65');
+      return this.errorHandler(bh, e, 'sd_8IypCuKzEFLCsP0X');
     }
   }
 
-  //appendnew_flow_profileComponent_start
+  //appendnew_flow_Our_privacy_centerComponent_start
 
-  sd_FAH1XmFgVHncNH1v(bh) {
+  sd_eGgv1qrPtFxTDkOL(bh) {
     try {
-      this.page.profile = [
-        { icon: 'person', text: 'My details', link: '/my-details' },
-        { icon: 'edit_square', text: 'My email address', link: '/email' },
-        {
-          icon: 'heap_snapshot_multiple',
-          text: 'My tax details',
-          link: '/tax',
-        },
-        { icon: 'description', text: 'My agreement & disclamers' },
-        { icon: 'shield_locked', text: 'Our Primary Center', link: '/privacy' },
-      ];
-      //appendnew_next_sd_FAH1XmFgVHncNH1v
+      //appendnew_next_sd_eGgv1qrPtFxTDkOL
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_FAH1XmFgVHncNH1v');
+      return this.errorHandler(bh, e, 'sd_eGgv1qrPtFxTDkOL');
     }
   }
 
@@ -93,5 +82,5 @@ export class profileComponent {
     bh.errorSource = src;
     throw e;
   }
-  //appendnew_flow_profileComponent_Catch
+  //appendnew_flow_Our_privacy_centerComponent_Catch
 }

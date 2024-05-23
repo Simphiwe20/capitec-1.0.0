@@ -16,6 +16,12 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-emailComponent
+import { emailComponent } from '../components/more/email.component';
+//CORE_REFERENCE_IMPORT-My_tax_detailsComponent
+import { My_tax_detailsComponent } from '../components/more/My_tax_details.component';
+//CORE_REFERENCE_IMPORT-Our_privacy_centerComponent
+import { Our_privacy_centerComponent } from '../components/more/Our_privacy_center.component';
 //CORE_REFERENCE_IMPORT-shared
 import { shared } from '../sd-services/shared';
 //CORE_REFERENCE_IMPORT-shared_cardsService
@@ -138,6 +144,12 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-emailComponent
+  emailComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-My_tax_detailsComponent
+  My_tax_detailsComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-Our_privacy_centerComponent
+  Our_privacy_centerComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-edit_cardsComponent
   edit_cardsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-square_cardsComponent
@@ -241,10 +253,10 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
-//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-shared
-shared,
-//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-shared_cardsService
-shared_cardsService,
+  //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-shared
+  shared,
+  //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-shared_cardsService
+  shared_cardsService,
 ];
 
 /**
@@ -287,6 +299,11 @@ export const appRoutes = [
   { path: 'prepare-selfie', component: prepare_for_selfieComponent },
   { path: 'edit-cards', component: edit_cardsComponent },
   { path: 'profile', component: profileComponent },
+  { path: 'privacy', component: Our_privacy_centerComponent },
+  { path: 'tax', component: My_tax_detailsComponent },
+  { path: 'email', component: emailComponent },
+  { path: 'my-details', component: sign_upComponent },
+  { path: 'buy_electricity', component: buy_electricityComponent },
   { path: '', redirectTo: 'ftlanding', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

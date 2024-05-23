@@ -8,7 +8,7 @@
     </div>
   </mat-toolbar>
   <div fxLayout="column wrap" style="background:white;" fxLayoutAlign="center center" [fxShow]="true">
-    <div fxLayout="row wrap" style="  width: 95%; height: 64px; border-bottom:1px solid black; width:" fxLayoutAlign="space-between center" [fxShow]="true" *ngFor="let item of page.profile">
+    <div fxLayout="row wrap" style="  width: 95%; height: 64px; border-bottom:1px solid black; width:" fxLayoutAlign="space-between center" [fxShow]="true" *ngFor="let item of page.profile" [routerLink]="item.link">
       <div fxLayout="row wrap" fxLayoutGap="5px" fxLayoutAlign="start center" [fxShow]="true"><mat-icon class="text-color-blue"><span class="material-symbols-outlined"> {{item.icon}} </span></mat-icon>
         <div>
           {{item.text}}

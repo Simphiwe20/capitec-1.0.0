@@ -36,6 +36,8 @@
         "mat-form-field-underline",
         "midcard",
         "over-flow-hidden",
-        "home"
+        "home",
+        "font-large",
+        "margin-5px"
     ]
 }

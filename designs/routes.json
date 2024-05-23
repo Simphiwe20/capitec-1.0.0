@@ -101,6 +101,26 @@
             "component": "profileComponent"
         },
         {
+            "path": "privacy",
+            "component": "Our_privacy_centerComponent"
+        },
+        {
+            "path": "tax",
+            "component": "My_tax_detailsComponent"
+        },
+        {
+            "path": "email",
+            "component": "emailComponent"
+        },
+        {
+            "path": "my-details",
+            "component": "sign_upComponent"
+        },
+        {
+            "path": "buy_electricity",
+            "component": "buy_electricityComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "ftlanding",
             "pathMatch": "full",

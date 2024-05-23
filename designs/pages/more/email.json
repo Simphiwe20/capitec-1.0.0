@@ -1,0 +1,86 @@
+[
+    {
+        "id": "sd_1tdt8Y0n7HhUrR47",
+        "type": "tab",
+        "createdDate": "2024-05-23T08:57:48.620Z",
+        "label": "email",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "emailComponent"
+    },
+    {
+        "id": "sd_i28NbvH7GQGAx3zH",
+        "type": "OnInit",
+        "z": "sd_1tdt8Y0n7HhUrR47",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_i28NbvH7GQGAx3zH",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_flX5UJ6XJe7G0Pgl"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "emailComponent"
+    },
+    {
+        "id": "sd_flX5UJ6XJe7G0Pgl",
+        "type": "PageVariables",
+        "z": "sd_1tdt8Y0n7HhUrR47",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "email",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_flX5UJ6XJe7G0Pgl",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_vrmKfUAJSGr9emAy"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "emailComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_vrmKfUAJSGr9emAy",
+        "type": "Script",
+        "z": "sd_1tdt8Y0n7HhUrR47",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.email = 'angel@gmail.com'",
+        "functionName": "sd_vrmKfUAJSGr9emAy",
+        "category": "Function",
+        "x": 285,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "emailComponent",
+        "generated": true
+    }
+]

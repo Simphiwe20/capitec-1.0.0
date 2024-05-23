@@ -1,1 +1,38 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-toolbar color="warn" style=" height: 50px;     justify-content: space-between;    " class="blue border-b"><mat-icon routerLink="/profile">arrow_back</mat-icon>
+      <p class="text-center">
+        My Details</p>
+      <p>
+        Update</p>
+    </mat-toolbar></div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+      <p>
+        Nickname</p>
+      <mat-form-field style="background:white" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput value="angel" [required]="false" [disabled]="false">
+        <mat-label>known as (optional)</mat-label>
+      </mat-form-field>
+    </div>
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+      <p>
+        Residential address</p>
+      <mat-form-field class="white-bg" [appearance]="&apos;fill&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput [required]="false">
+        <mat-label>email</mat-label>
+      </mat-form-field>
+      <mat-form-field class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Input" [required]="false">
+
+      </mat-form-field>
+      <mat-form-field class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Input" [required]="false">
+
+      </mat-form-field>
+      <mat-form-field class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Input" [required]="false">
+
+      </mat-form-field>
+    </div>
+  </div>
+</div>

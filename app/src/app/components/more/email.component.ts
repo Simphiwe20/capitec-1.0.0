@@ -10,13 +10,13 @@ import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'
 //append_imports_end
 
 @Component({
-  selector: 'bh-profile',
-  templateUrl: './profile.template.html',
+  selector: 'bh-email',
+  templateUrl: './email.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class profileComponent {
+export class emailComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -33,7 +33,7 @@ export class profileComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_uSUAwfJihRMS2q65(bh);
+      this.sd_i28NbvH7GQGAx3zH(bh);
     }
   }
 
@@ -45,35 +45,37 @@ export class profileComponent {
     //append_listeners
   }
 
-  sd_uSUAwfJihRMS2q65(bh) {
+  sd_i28NbvH7GQGAx3zH(bh) {
     try {
-      bh = this.sd_FAH1XmFgVHncNH1v(bh);
-      //appendnew_next_sd_uSUAwfJihRMS2q65
+      bh = this.sd_flX5UJ6XJe7G0Pgl(bh);
+      //appendnew_next_sd_i28NbvH7GQGAx3zH
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_uSUAwfJihRMS2q65');
+      return this.errorHandler(bh, e, 'sd_i28NbvH7GQGAx3zH');
     }
   }
 
-  //appendnew_flow_profileComponent_start
+  //appendnew_flow_emailComponent_start
 
-  sd_FAH1XmFgVHncNH1v(bh) {
+  sd_flX5UJ6XJe7G0Pgl(bh) {
     try {
-      this.page.profile = [
-        { icon: 'person', text: 'My details', link: '/my-details' },
-        { icon: 'edit_square', text: 'My email address', link: '/email' },
-        {
-          icon: 'heap_snapshot_multiple',
-          text: 'My tax details',
-          link: '/tax',
-        },
-        { icon: 'description', text: 'My agreement & disclamers' },
-        { icon: 'shield_locked', text: 'Our Primary Center', link: '/privacy' },
-      ];
-      //appendnew_next_sd_FAH1XmFgVHncNH1v
+      this.page.email = undefined;
+      bh = this.sd_vrmKfUAJSGr9emAy(bh);
+      //appendnew_next_sd_flX5UJ6XJe7G0Pgl
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_FAH1XmFgVHncNH1v');
+      return this.errorHandler(bh, e, 'sd_flX5UJ6XJe7G0Pgl');
+    }
+  }
+
+  sd_vrmKfUAJSGr9emAy(bh) {
+    try {
+      const page = this.page;
+      page.email = 'angel@gmail.com';
+      //appendnew_next_sd_vrmKfUAJSGr9emAy
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_vrmKfUAJSGr9emAy');
     }
   }
 
@@ -93,5 +95,5 @@ export class profileComponent {
     bh.errorSource = src;
     throw e;
   }
-  //appendnew_flow_profileComponent_Catch
+  //appendnew_flow_emailComponent_Catch
 }
