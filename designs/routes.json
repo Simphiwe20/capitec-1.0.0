@@ -90,7 +90,17 @@
         },
         {
             "path": "buy-electricity",
-            "component": "buy_electricityComponent"
+            "component": "buy_electricityComponent",
+            "children": [
+                {
+                    "path": "ele",
+                    "component": "electricityComponent"
+                },
+                {
+                    "path": "pay-ben-electric",
+                    "component": "pay_ben_electricComponent"
+                }
+            ]
         },
         {
             "path": "buy-prepaid",
@@ -139,6 +149,10 @@
         {
             "path": "saving",
             "component": "savingsComponent"
+        },
+        {
+            "path": "electricity",
+            "component": "electricityComponent"
         },
         {
             "path": "''",

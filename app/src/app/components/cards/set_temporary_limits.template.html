@@ -12,21 +12,21 @@
       </div>
       <div fxLayout="column wrap" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true">
         <div fxLayout="column wrap" class="white-bg" fxLayoutAlign="start stretch" [fxShow]="true">
-          <div fxLayout="row wrap" style="border-bottom: 1px solid grey;" fxLayoutAlign="space-between center" [fxShow]="true">
+          <div fxLayout="row wrap" style="border-bottom: 1px solid lightgrey;height:70px;" fxLayoutAlign="space-between center" [fxShow]="true">
             <div fxLayout="column wrap" class="no-margin" fxLayoutAlign="start stretch" [fxShow]="true">
               <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
                 <p style="padding-left:10px;" class="m-b-0">
                   Cash withdrawals</p>
               </div>
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-                <p style="margin-bottom:12px; padding-left:10px;" class="no-margin">
-                  <small>Expires on 18 may 2024 at midnight</small>
-                </p>
-              </div>
             </div>
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-checkbox style="padding-right:10px;" [(ngModel)]="isChecked" name="isChecked" [required]="false"></mat-checkbox></div>
           </div>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" *ngIf="(isChecked)">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+              <p style="margin-bottom:12px; padding-left:10px;" class="no-margin">
+                <small>Expires on 27 may 2024 at midnight</small>
+              </p>
+            </div>
             <mat-form-field style="padding-left:10px;" class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
               <input matInput [(ngModel)]="page.temp. cash_withdrawals" name=" cash_withdrawals" placeholder="Amount (max R10 000)" [required]="true">
 
@@ -34,21 +34,21 @@
           </div>
         </div>
         <div fxLayout="column wrap" class="white-bg" fxLayoutAlign="start stretch" [fxShow]="true">
-          <div fxLayout="row wrap" style="border-bottom: 1px solid grey;" fxLayoutAlign="space-between center" [fxShow]="true">
+          <div fxLayout="row wrap" style="border-bottom: 1px solid lightgrey;height:70px;" fxLayoutAlign="space-between center" [fxShow]="true">
             <div fxLayout="column wrap" class="no-margin" fxLayoutAlign="start stretch" [fxShow]="true">
               <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
                 <p style="padding-left:10px;" class="m-b-0">
                   Card machine purchases</p>
               </div>
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-                <p style="margin-bottom:12px; padding-left:10px;" class="no-margin">
-                  <small>Expires on 18 may 2024 at midnight</small>
-                </p>
-              </div>
             </div>
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-checkbox style="padding-right:10px;" [(ngModel)]="isTicked" name="checked" [required]="false"></mat-checkbox></div>
           </div>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" *ngIf="(isTicked)">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+              <p style="margin-bottom:12px; padding-left:10px;" class="no-margin">
+                <small>Expires on 27 may 2024 at midnight</small>
+              </p>
+            </div>
             <mat-form-field style="padding-left:10px;" class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
               <input matInput [(ngModel)]="page.temp.card_machine" name="card_machine" placeholder="Amount (max R1 000 000)" [required]="true">
 
@@ -56,21 +56,21 @@
           </div>
         </div>
         <div fxLayout="column wrap" class="white-bg" fxLayoutAlign="start stretch" [fxShow]="true">
-          <div fxLayout="row wrap" style="border-bottom: 1px solid grey;" fxLayoutAlign="space-between center" [fxShow]="true">
+          <div fxLayout="row wrap" style="border-bottom: 1px solid lightgrey;height:70px;" fxLayoutAlign="space-between center" [fxShow]="true">
             <div fxLayout="column wrap" class="no-margin" fxLayoutAlign="start stretch" [fxShow]="true">
               <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
                 <p style="padding-left:10px;" class="m-b-0">
                   Online/scan to pay/phone</p>
               </div>
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-                <p style="margin-bottom:12px; padding-left:10px;" class="no-margin">
-                  <small>Expires on 18 may 2024 at midnight</small>
-                </p>
-              </div>
             </div>
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-checkbox style="padding-right:10px;" [(ngModel)]="isCorrect" name="box" [required]="false"></mat-checkbox></div>
           </div>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" *ngIf="(isCorrect)">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+              <p style="margin-bottom:12px; padding-left:10px;" class="no-margin">
+                <small>Expires on 27 may 2024 at midnight</small>
+              </p>
+            </div>
             <mat-form-field style="padding-left:10px;" class="white-bg" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
               <input matInput [(ngModel)]="page.temp.online_scan" name="online_scan" placeholder="Amount (max R10 000)" [required]="true">
 

@@ -4366,7 +4366,7 @@
                                 },
                                 {
                                     "_key": "style",
-                                    "_value": "border-bottom:1px solid lightgrey;",
+                                    "_value": "border-bottom:1px solid lightgrey;padding-right:10px;",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -4423,7 +4423,7 @@
                                 "designerReference": [
                                     {
                                         "_key": "style",
-                                        "_value": "",
+                                        "_value": "padding-right:10px;",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },

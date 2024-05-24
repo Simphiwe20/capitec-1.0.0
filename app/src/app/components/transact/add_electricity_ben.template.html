@@ -7,17 +7,17 @@
       </div>
     </div>
     <div fxLayout="column wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true">
-      <form>
+      <form #electricForm="ngForm">
         <div fxLayout="column wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true">
           <div fxLayout="column wrap" style="border-bottom:1px solid lightgrey;" class="padding-left white-bg" fxLayoutAlign="start stretch" [fxShow]="true">
             <mat-form-field class="padding-left" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-              <input matInput placeholder="Beneficiary name" [required]="false">
+              <input matInput [(ngModel)]="page.electric.benName" name="benName" placeholder="Beneficiary name" [required]="true">
 
             </mat-form-field>
           </div>
           <div fxLayout="column wrap" style="border-bottom:1px solid lightgrey;" class="padding-left white-bg" fxLayoutAlign="start stretch" [fxShow]="true">
             <mat-form-field class="padding-left" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-              <input matInput placeholder="Meter number" [required]="false">
+              <input matInput [(ngModel)]="page.electric.meterNumber" name="meterNumber" placeholder="Meter number" [required]="true">
 
             </mat-form-field>
           </div>
@@ -34,7 +34,7 @@
             </mat-form-field>
           </div>
         </div>
-        <div fxLayout="column wrap" class="padding-10" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="white blue-bg">Add</button></div>
+        <div fxLayout="column wrap" class="padding-10" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button class="white blue-bg" (click)="addBeneficiary(electricForm)">Add</button></div>
       </form>
     </div>
   </div>

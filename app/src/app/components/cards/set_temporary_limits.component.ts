@@ -95,6 +95,9 @@ export class set_temporary_limitsComponent {
       this.page.submitted = false;
       this.page.user = undefined;
       this.page.temp = undefined;
+      this.page.isChecked = false;
+      this.page.isTicked = false;
+      this.page.isCorrect = false;
       bh = this.sd_8wWf3PwuMClpKDm3(bh);
       //appendnew_next_sd_ioJMVOwHjtQSgVUe
       return bh;
@@ -283,7 +286,9 @@ export class set_temporary_limitsComponent {
         this.sdService.getPathAndQParamsObj('/cards');
       await this.__page_injector__
         .get(Router)
-        .navigate([this.sdService.formatPathWithParams(path, undefined)]);
+        .navigate([this.sdService.formatPathWithParams(path, undefined)], {
+          queryParams: Object.assign(qprm, ''),
+        });
       bh = this.sd_3pSe9lC8E3ISnjO4(bh);
       //appendnew_next_sd_HkdUHoOyrV7dkEya
       return bh;

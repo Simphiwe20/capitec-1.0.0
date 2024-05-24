@@ -618,6 +618,12 @@
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "#electricForm",
+                            "_value": "ngForm",
+                            "_type": "kv",
+                            "_attrDef": "c"
                         }
                     ],
                     "68ad36d9-76f5-c3db-a9ed-ef4c956a736a": {
@@ -786,13 +792,13 @@
                                     },
                                     {
                                         "_key": "[required]",
-                                        "_value": "false",
+                                        "_value": "true",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
                                     {
                                         "_key": "[(ngModel)]",
-                                        "_value": "",
+                                        "_value": "page.electric.benName",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -804,7 +810,7 @@
                                     },
                                     {
                                         "_key": "name",
-                                        "_value": "",
+                                        "_value": "benName",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1022,13 +1028,13 @@
                                     },
                                     {
                                         "_key": "[required]",
-                                        "_value": "false",
+                                        "_value": "true",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
                                     {
                                         "_key": "[(ngModel)]",
-                                        "_value": "",
+                                        "_value": "page.electric.meterNumber",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1040,7 +1046,7 @@
                                     },
                                     {
                                         "_key": "name",
-                                        "_value": "",
+                                        "_value": "meterNumber",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1826,9 +1832,18 @@
                                 },
                                 {
                                     "_key": "(click)",
-                                    "_value": "",
+                                    "_value": "addBeneficiary(electricForm)",
                                     "_type": "kv",
-                                    "_attrDef": "p"
+                                    "_attrDef": "p",
+                                    "objValue": {
+                                        "nodeID": "sd_wGSCmU9uNxGGykSE",
+                                        "functionName": "addBeneficiary",
+                                        "activeTree": "pages",
+                                        "z": "sd_D1hMzChH8qZpINvk",
+                                        "input": [
+                                            "electricForm"
+                                        ]
+                                    }
                                 },
                                 {
                                     "_key": "[disabled]",

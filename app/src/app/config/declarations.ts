@@ -16,6 +16,10 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-pay_ben_electricComponent
+import { pay_ben_electricComponent } from '../components/transact/pay_ben_electric.component';
+//CORE_REFERENCE_IMPORT-electricityComponent
+import { electricityComponent } from '../components/transact/electricity.component';
 //CORE_REFERENCE_IMPORT-pay_userComponent
 import { pay_userComponent } from '../components/transact/pay_user.component';
 //CORE_REFERENCE_IMPORT-get_estimateComponent
@@ -154,6 +158,10 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-pay_ben_electricComponent
+  pay_ben_electricComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-electricityComponent
+  electricityComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-pay_userComponent
   pay_userComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-get_estimateComponent
@@ -313,7 +321,14 @@ export const appRoutes = [
   { path: 'payment-notification', component: payment_notifcationComponent },
   { path: 'bank-account', component: bank_accountComponent },
   { path: 'choose-banks', component: choose_banksComponent },
-  { path: 'buy-electricity', component: buy_electricityComponent },
+  {
+    path: 'buy-electricity',
+    component: buy_electricityComponent,
+    children: [
+      { path: 'ele', component: electricityComponent },
+      { path: 'pay-ben-electric', component: pay_ben_electricComponent },
+    ],
+  },
   { path: 'buy-prepaid', component: buy_prepaidComponent },
   { path: 'add-electricity-ben', component: add_electricity_benComponent },
   { path: 'buy-prepaid-mobile', component: buy_prepaid_mobileComponent },
@@ -323,9 +338,10 @@ export const appRoutes = [
   { path: 'explore', component: exploreComponent },
   { path: 'credit', component: creditComponent },
   { path: 'loan', component: loanComponent },
-  { path: 'saving', component: savingsComponent },
   { path: 'get-estimate', component: get_estimateComponent },
   { path: 'pay-user', component: pay_userComponent },
+  { path: 'saving', component: savingsComponent },
+  { path: 'electricity', component: electricityComponent },
   { path: '', redirectTo: '/savings-account', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

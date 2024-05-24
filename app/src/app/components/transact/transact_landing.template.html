@@ -1,11 +1,11 @@
 <div fxLayout="column wrap" class="standard-width" fxLayoutAlign="start stretch" [fxShow]="true">
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="column " class="full-view-height" fxLayoutAlign="start stretch" [fxShow]="true">
     <div fxLayout="column wrap" style="height:60px;" class="blue-bg" fxLayoutAlign="start stretch" [fxShow]="true">
       <h3 class="text-center white">
         Transact</h3>
     </div>
-    <div fxLayout="column wrap" style="scroll:overflow-y;" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true">
-      <div fxLayout="column wrap" style="margin-top:20px;" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column " style="overflow-y:scroll;" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="column wrap" style="margin-top:20px;" class="transact-height" fxLayoutAlign="start stretch" [fxShow]="true">
         <div fxLayout="row wrap" style="border-bottom:1px solid lightgrey;" class="white-bg" fxLayoutAlign="space-between center" [fxShow]="true" routerLink="/pay-beneficiary">
           <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
             <div fxLayout="row wrap" class="padding-left" fxLayoutGap="1em" fxLayoutAlign="center center" [fxShow]="true"><mat-icon class="blue-color">group</mat-icon>
@@ -53,11 +53,11 @@
           </div>
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>
         </div>
-        <div fxLayout="row wrap" style="border-bottom:1px solid lightgrey;" class="white-bg" fxLayoutAlign="space-between center" [fxShow]="true" routerLink="/buy-electricity">
+        <div fxLayout="row wrap" style="border-bottom:1px solid lightgrey;" class="white-bg" fxLayoutAlign="space-between center" [fxShow]="true" routerLink="/buy-electricity/pay-ben-electric">
           <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
             <div fxLayout="row wrap" class="padding-left" fxLayoutGap="1em" fxLayoutAlign="center center" [fxShow]="true"><mat-icon class="blue-color">power</mat-icon>
               <p>
-                Play electricity</p>
+                Pay electricity</p>
             </div>
           </div>
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><mat-icon class="blue-color">chevron_right</mat-icon></div>

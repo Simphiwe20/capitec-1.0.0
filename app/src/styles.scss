@@ -52,6 +52,10 @@ video {
     width: 100%;
 }
 
+.transact-height {
+    height: calc(100% - 60px);
+}
+
 .standard-width {
     width: 100% !important;
     min-width: 300px !important;

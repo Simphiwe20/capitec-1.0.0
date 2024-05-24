@@ -81,7 +81,9 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": [
+                        "full-view-height"
+                    ],
                     "_type": "dav",
                     "_attrDef": "p"
                 },
@@ -99,7 +101,7 @@
                 },
                 {
                     "_key": "wrap",
-                    "_value": "wrap",
+                    "_value": "",
                     "_type": "a",
                     "_attrDef": "p"
                 },
@@ -125,7 +127,6 @@
             "e6dd416e-ba31-09be-d3df-fa6879810f8d": {
                 "paletteKey": "FlexLayoutCol",
                 "parentEditorKey": "56ed8d22-db4e-a024-1f94-230978539fda",
-                "isCommented": "false",
                 "commentid": null,
                 "designerReference": [
                     {
@@ -190,7 +191,6 @@
                     "paletteKey": "Html5",
                     "parentEditorKey": "e6dd416e-ba31-09be-d3df-fa6879810f8d",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "commentid": null,
                     "designerReference": [
                         {
@@ -381,7 +381,6 @@
                         "paletteKey": "html-editor",
                         "parentEditorKey": "1843dabe-5e89-40f6-b0ac-9afa24ab85a4",
                         "isAdvancedChildComponent": true,
-                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {
@@ -420,13 +419,13 @@
                     },
                     {
                         "_key": "style",
-                        "_value": "scroll:overflow-y;",
+                        "_value": "overflow-y:scroll;",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
                     {
                         "_key": "class",
-                        "_value": "",
+                        "_value": [],
                         "_type": "dav",
                         "_attrDef": "p"
                     },
@@ -444,7 +443,7 @@
                     },
                     {
                         "_key": "wrap",
-                        "_value": "wrap",
+                        "_value": "",
                         "_type": "a",
                         "_attrDef": "p"
                     },
@@ -487,7 +486,9 @@
                         },
                         {
                             "_key": "class",
-                            "_value": "",
+                            "_value": [
+                                "transact-height"
+                            ],
                             "_type": "dav",
                             "_attrDef": "p"
                         },
@@ -3396,7 +3397,7 @@
                             },
                             {
                                 "_key": "routerLink",
-                                "_value": "/buy-electricity",
+                                "_value": "/buy-electricity/pay-ben-electric",
                                 "_type": "kv",
                                 "_attrDef": "c"
                             }
@@ -3772,7 +3773,7 @@
                                             },
                                             {
                                                 "_key": "html",
-                                                "_value": "Play electricity",
+                                                "_value": "Pay electricity",
                                                 "_type": "a",
                                                 "_attrDef": "p"
                                             }
