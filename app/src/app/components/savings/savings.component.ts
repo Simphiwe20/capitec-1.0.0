@@ -62,6 +62,7 @@ export class savingsComponent {
       this.page.user = this.page.user;
       this.page.message = this.page.message;
       this.page.array = undefined;
+      this.page.moneyOut = undefined;
       bh = this.sd_ws3eRWrAAi88Wt29(bh);
       //appendnew_next_sd_NcxYGB4Zjw58EuAK
       return bh;
@@ -145,6 +146,13 @@ export class savingsComponent {
 
       page.array = bh.array;
       console.log('answer', page.array);
+
+      bh.out = bh.results.filter((user: any) => {
+        return user.from == page.user[0].accountNumber;
+      });
+
+      page.moneyOut = bh.out;
+      console.log('moneyOut', page.moneyOut);
 
       //appendnew_next_sd_dbRonqrl7ouRNVMj
       return bh;
