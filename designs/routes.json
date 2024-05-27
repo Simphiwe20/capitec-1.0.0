@@ -112,7 +112,7 @@
         },
         {
             "path": "buy-prepaid-mobile",
-            "component": "buy_prepaid_mobileComponent"
+            "component": "buy_prepaid_mobile_add_benComponent"
         },
         {
             "path": "send-cash",
@@ -153,6 +153,10 @@
         {
             "path": "electricity",
             "component": "electricityComponent"
+        },
+        {
+            "path": "buy-airtime",
+            "component": "buy_airtimeComponent"
         },
         {
             "path": "''",

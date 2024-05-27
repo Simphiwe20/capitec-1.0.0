@@ -16,6 +16,10 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-buy_prepaid_mobile_add_benComponent
+import { buy_prepaid_mobile_add_benComponent } from '../components/transact/buy_prepaid_mobile_add_ben.component';
+//CORE_REFERENCE_IMPORT-buy_airtimeComponent
+import { buy_airtimeComponent } from '../components/transact/buy_airtime.component';
 //CORE_REFERENCE_IMPORT-pay_ben_electricComponent
 import { pay_ben_electricComponent } from '../components/transact/pay_ben_electric.component';
 //CORE_REFERENCE_IMPORT-electricityComponent
@@ -28,8 +32,6 @@ import { get_estimateComponent } from '../components/explore/get_estimate.compon
 import { loanComponent } from '../components/explore/loan.component';
 //CORE_REFERENCE_IMPORT-creditComponent
 import { creditComponent } from '../components/explore/credit.component';
-//CORE_REFERENCE_IMPORT-buy_prepaid_mobileComponent
-import { buy_prepaid_mobileComponent } from '../components/transact/buy_prepaid_mobile.component';
 //CORE_REFERENCE_IMPORT-add_electricity_benComponent
 import { add_electricity_benComponent } from '../components/transact/add_electricity_ben.component';
 //CORE_REFERENCE_IMPORT-choose_banksComponent
@@ -158,6 +160,10 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-buy_prepaid_mobile_add_benComponent
+  buy_prepaid_mobile_add_benComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-buy_airtimeComponent
+  buy_airtimeComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-pay_ben_electricComponent
   pay_ben_electricComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-electricityComponent
@@ -170,8 +176,6 @@ export const appDeclarations = [
   loanComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-creditComponent
   creditComponent,
-  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-buy_prepaid_mobileComponent
-  buy_prepaid_mobileComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-add_electricity_benComponent
   add_electricity_benComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-choose_banksComponent
@@ -331,7 +335,10 @@ export const appRoutes = [
   },
   { path: 'buy-prepaid', component: buy_prepaidComponent },
   { path: 'add-electricity-ben', component: add_electricity_benComponent },
-  { path: 'buy-prepaid-mobile', component: buy_prepaid_mobileComponent },
+  {
+    path: 'buy-prepaid-mobile',
+    component: buy_prepaid_mobile_add_benComponent,
+  },
   { path: 'send-cash', component: send_cashComponent },
   { path: 'transfer-money', component: transfer_moneyComponent },
   { path: 'messages', component: messagesComponent },
@@ -342,6 +349,7 @@ export const appRoutes = [
   { path: 'pay-user', component: pay_userComponent },
   { path: 'saving', component: savingsComponent },
   { path: 'electricity', component: electricityComponent },
+  { path: 'buy-airtime', component: buy_airtimeComponent },
   { path: '', redirectTo: '/savings-account', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

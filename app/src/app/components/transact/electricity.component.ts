@@ -256,10 +256,29 @@ export class electricityComponent {
           horizontalPosition: 'center',
           verticalPosition: 'bottom',
         });
+      bh = this.sd_px9eesC7aJdWFd3W(bh);
       //appendnew_next_sd_4UJL3Q7xrHDyFXo1
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_4UJL3Q7xrHDyFXo1');
+    }
+  }
+
+  async sd_px9eesC7aJdWFd3W(bh) {
+    try {
+      let requestOptions = {
+        url: bh.url,
+        method: 'post',
+        responseType: 'json',
+        headers: {},
+        params: {},
+        body: this.page.airtimeForm,
+      };
+      this.page.results = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_px9eesC7aJdWFd3W
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_px9eesC7aJdWFd3W');
     }
   }
 

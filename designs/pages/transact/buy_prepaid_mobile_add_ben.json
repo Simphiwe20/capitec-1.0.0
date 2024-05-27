@@ -1,43 +1,39 @@
 [
     {
-        "id": "sd_PlC8Hna0mq9eQZzs",
+        "id": "sd_rRpEu3GDESHjaCpb",
         "type": "tab",
-        "createdDate": "2024-05-24T11:57:37.162Z",
-        "label": "pay_ben_electric",
+        "createdDate": "2024-05-20T10:32:11.745Z",
+        "label": "buy_prepaid_mobile_add_ben",
         "disabled": false,
         "info": "",
         "functionSeq": 0,
         "generateNext": true,
-        "serviceName": "pay_ben_electricComponent"
+        "serviceName": "buy_prepaid_mobile_add_benComponent"
     },
     {
-        "id": "sd_xf7t8X9Ye6lM7YIS",
+        "id": "sd_wr62p43ImUbzs4Dn",
         "type": "OnInit",
-        "z": "sd_PlC8Hna0mq9eQZzs",
+        "z": "sd_rRpEu3GDESHjaCpb",
         "viewType": "common",
         "nodeType": "start",
         "name": "",
-        "inputVariables": [],
-        "localVariables": [],
-        "outputVariables": [],
-        "pageVariables": [],
-        "functionName": "sd_xf7t8X9Ye6lM7YIS",
+        "functionName": "sd_wr62p43ImUbzs4Dn",
         "category": "Lifecycle Events",
-        "x": 45,
-        "y": 40,
+        "x": 30,
+        "y": 30,
         "wires": [
             [
-                "sd_IWl8M6oJAKBcyY6N"
+                "sd_bSHe584qLSNTYCz2"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "pay_ben_electricComponent"
+        "serviceName": "buy_prepaid_mobile_add_benComponent"
     },
     {
-        "id": "sd_IWl8M6oJAKBcyY6N",
+        "id": "sd_bSHe584qLSNTYCz2",
         "type": "PageVariables",
-        "z": "sd_PlC8Hna0mq9eQZzs",
+        "z": "sd_rRpEu3GDESHjaCpb",
         "viewType": "pages",
         "nodeType": "flow",
         "name": "",
@@ -53,7 +49,7 @@
                 }
             },
             {
-                "textIp": "benArray",
+                "textIp": "airArray",
                 "typedIpValue": {
                     "type": "literal",
                     "value": ""
@@ -67,24 +63,24 @@
                 }
             }
         ],
-        "functionName": "sd_IWl8M6oJAKBcyY6N",
+        "functionName": "sd_bSHe584qLSNTYCz2",
         "category": "Function",
-        "x": 160,
-        "y": 50,
+        "x": 180,
+        "y": 30,
         "wires": [
             [
-                "sd_UqSs5cRIzT53bSy2"
+                "sd_x82c9DrHU8d7mLTT"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "pay_ben_electricComponent",
+        "serviceName": "buy_prepaid_mobile_add_benComponent",
         "generated": true
     },
     {
-        "id": "sd_j6BmzFZsyKTZNyJU",
+        "id": "sd_jSBc3QOVyKXsqQ5s",
         "type": "Environment",
-        "z": "sd_PlC8Hna0mq9eQZzs",
+        "z": "sd_rRpEu3GDESHjaCpb",
         "viewType": "client-pages",
         "nodeType": "flow",
         "name": "",
@@ -98,46 +94,46 @@
                 "envProperty": "ssdURL"
             }
         ],
-        "functionName": "sd_j6BmzFZsyKTZNyJU",
+        "functionName": "sd_jSBc3QOVyKXsqQ5s",
         "category": "General",
-        "x": 365,
-        "y": 40,
+        "x": 405,
+        "y": 120,
         "wires": [
             [
-                "sd_6bU6IPM2y6cpEn2r"
+                "sd_qqfmO7ib8qrqwX5x"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "pay_ben_electricComponent",
+        "serviceName": "buy_prepaid_mobile_add_benComponent",
         "generated": true
     },
     {
-        "id": "sd_6bU6IPM2y6cpEn2r",
+        "id": "sd_qqfmO7ib8qrqwX5x",
         "type": "Script",
-        "z": "sd_PlC8Hna0mq9eQZzs",
+        "z": "sd_rRpEu3GDESHjaCpb",
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "bh.url = page.ssdurl + \"get-beneficiary-electricity\";\npage.collection = \"beneficiary-electricity\";\n\n",
-        "functionName": "sd_6bU6IPM2y6cpEn2r",
+        "script": "bh.url = page.ssdurl + \"get-beneficiary-airtime\";\npage.collection = \"beneficiary-airtime\";\n\n",
+        "functionName": "sd_qqfmO7ib8qrqwX5x",
         "category": "Function",
-        "x": 495,
-        "y": 50,
+        "x": 515,
+        "y": 130,
         "wires": [
             [
-                "sd_ndxvOY5zJnissX0D"
+                "sd_DFbGfk9ftLxT1x6e"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "pay_ben_electricComponent",
+        "serviceName": "buy_prepaid_mobile_add_benComponent",
         "generated": true
     },
     {
-        "id": "sd_ndxvOY5zJnissX0D",
+        "id": "sd_DFbGfk9ftLxT1x6e",
         "type": "HttpRequest",
-        "z": "sd_PlC8Hna0mq9eQZzs",
+        "z": "sd_rRpEu3GDESHjaCpb",
         "viewType": "client-pages",
         "nodeType": "flow",
         "name": "",
@@ -170,44 +166,44 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "functionName": "sd_ndxvOY5zJnissX0D",
+        "functionName": "sd_DFbGfk9ftLxT1x6e",
         "category": "HTTP",
-        "x": 595,
-        "y": 50,
+        "x": 615,
+        "y": 130,
         "wires": [
             [
-                "sd_geeTXGYJtFb3Ef1M"
+                "sd_nMaQRRhAySnc8NmT"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "pay_ben_electricComponent",
+        "serviceName": "buy_prepaid_mobile_add_benComponent",
         "generated": true
     },
     {
-        "id": "sd_geeTXGYJtFb3Ef1M",
+        "id": "sd_nMaQRRhAySnc8NmT",
         "type": "Script",
-        "z": "sd_PlC8Hna0mq9eQZzs",
+        "z": "sd_rRpEu3GDESHjaCpb",
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "\nbh.beneficiaries = page.results.filter((user:any) => {\n  return  user.accountNumber == page.user.accountNumber;\n})\npage.benArray = bh.beneficiaries\n\nconsole.log(bh.beneficiaries)",
-        "functionName": "sd_geeTXGYJtFb3Ef1M",
+        "script": "\nbh.beneficiaries = page.results.filter((user:any) => {\n  return  user.accountNumber == page.user.accountNumber;\n})\npage.airArray = bh.beneficiaries\n\nconsole.log(bh.beneficiaries)",
+        "functionName": "sd_nMaQRRhAySnc8NmT",
         "category": "Function",
-        "x": 715,
-        "y": 50,
+        "x": 735,
+        "y": 130,
         "wires": [
             []
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "pay_ben_electricComponent",
+        "serviceName": "buy_prepaid_mobile_add_benComponent",
         "generated": true
     },
     {
-        "id": "sd_UqSs5cRIzT53bSy2",
+        "id": "sd_x82c9DrHU8d7mLTT",
         "type": "Storage",
-        "z": "sd_PlC8Hna0mq9eQZzs",
+        "z": "sd_rRpEu3GDESHjaCpb",
         "viewType": "client-pages",
         "nodeType": "flow",
         "name": "",
@@ -223,27 +219,27 @@
             "type": "this.page",
             "value": "user"
         },
-        "functionName": "sd_UqSs5cRIzT53bSy2",
+        "functionName": "sd_x82c9DrHU8d7mLTT",
         "category": "Storage",
-        "x": 275,
-        "y": 50,
+        "x": 295,
+        "y": 130,
         "wires": [
             [
-                "sd_j6BmzFZsyKTZNyJU"
+                "sd_jSBc3QOVyKXsqQ5s"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "pay_ben_electricComponent",
+        "serviceName": "buy_prepaid_mobile_add_benComponent",
         "generated": true
     },
     {
-        "id": "sd_imxRlcjMb6AzDfsg",
+        "id": "sd_tyTSmuGEA6EKXtaG",
         "type": "PageStart",
-        "z": "sd_PlC8Hna0mq9eQZzs",
+        "z": "sd_rRpEu3GDESHjaCpb",
         "viewType": "pages",
         "nodeType": "start",
-        "name": "pay",
+        "name": "",
         "outputs": 1,
         "inputVariables": [
             {
@@ -252,50 +248,50 @@
                     "type": "any",
                     "value": ""
                 },
-                "output": true
+                "output": false
             }
         ],
         "localVariables": [],
         "flow_type": "sync",
-        "functionName": "pay",
+        "functionName": "sd_tyTSmuGEA6EKXtaG",
         "category": "General",
-        "x": 85,
-        "y": 200,
+        "x": 60,
+        "y": 320,
         "wires": [
             [
-                "sd_fdywoKIQ7rD6pDeH"
+                "sd_PZwAwe7Oig9ZcB7a"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "pay_ben_electricComponent"
+        "serviceName": "buy_prepaid_mobile_add_benComponent"
     },
     {
-        "id": "sd_fdywoKIQ7rD6pDeH",
+        "id": "sd_PZwAwe7Oig9ZcB7a",
         "type": "Script",
-        "z": "sd_PlC8Hna0mq9eQZzs",
+        "z": "sd_rRpEu3GDESHjaCpb",
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "\npage.selected = bh.input.Index\nconsole.log(page.selected)\n",
-        "functionName": "sd_fdywoKIQ7rD6pDeH",
+        "script": "page.selected = bh.input.Index \nconsole.log(page.selected)",
+        "functionName": "sd_PZwAwe7Oig9ZcB7a",
         "category": "Function",
-        "x": 210,
-        "y": 200,
+        "x": 220,
+        "y": 320,
         "wires": [
             [
-                "sd_EjSuXhjTOYlGmLHM"
+                "sd_8W3ZdWWMtGkJy0Tt"
             ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "pay_ben_electricComponent",
+        "serviceName": "buy_prepaid_mobile_add_benComponent",
         "generated": true
     },
     {
-        "id": "sd_EjSuXhjTOYlGmLHM",
+        "id": "sd_8W3ZdWWMtGkJy0Tt",
         "type": "Storage",
-        "z": "sd_PlC8Hna0mq9eQZzs",
+        "z": "sd_rRpEu3GDESHjaCpb",
         "viewType": "client-pages",
         "nodeType": "flow",
         "name": "",
@@ -304,23 +300,23 @@
         "outputs": 1,
         "key": {
             "type": "str",
-            "value": "electricBen"
+            "value": "airtimeBen"
         },
         "value": {
-            "type": "this.page",
-            "value": "selected"
+            "type": "bh.input",
+            "value": "Index"
         },
         "resultMapping": {},
-        "functionName": "sd_EjSuXhjTOYlGmLHM",
+        "functionName": "sd_8W3ZdWWMtGkJy0Tt",
         "category": "Storage",
-        "x": 310,
-        "y": 200,
+        "x": 365,
+        "y": 320,
         "wires": [
             []
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
-        "serviceName": "pay_ben_electricComponent",
+        "serviceName": "buy_prepaid_mobile_add_benComponent",
         "generated": true
     }
 ]
